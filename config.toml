@@ -53,6 +53,9 @@ theme = "hugo-icarus-theme"
     label  = "Home"
     link   = "/"
 
+# Enter a link for the follow button on the left
+[params.profile]
+    follow_button = "https://twitter.com/dataandme"
 
 [social]
 # Add your social network accounts to the profile section on the left
@@ -73,7 +76,7 @@ theme = "hugo-icarus-theme"
     youtube         = ""
     vimeo           = ""
     vine            = ""
-    medium          = ""
+    medium          = "dataandme"
     wordpress       = ""
     tumblr          = ""
     xing            = ""
