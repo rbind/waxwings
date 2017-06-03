@@ -22,7 +22,7 @@ theme = "hugo-icarus-theme"
     # Tell me who you are
     author = "Mara Averick"
     bio = "data nerd at large"
-    location = ""
+    location = "Massachusetts, USA"
     site_description = ""
     copyright  = "Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice)."
     avatar = "css/images/mga_profile_pic.png"
