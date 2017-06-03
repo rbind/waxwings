@@ -1,3 +1,7 @@
+{{ with .Site.Social.twitter }}
+<td><a href="//twitter.com/{{.}}" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></td>
+{{ end }}
+
 {{ with .Site.Social.github }}
 <td><a href="//github.com/{{.}}" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></td>
 {{ end }}
@@ -98,6 +102,3 @@
 <td><a href="//facebook.com/{{.}}" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></td>
 {{ end }}
 
-{{ with .Site.Social.twitter }}
-<td><a href="//twitter.com/{{.}}" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></td>
-{{ end }}
