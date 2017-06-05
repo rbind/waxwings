@@ -1,0 +1,10 @@
+<!-- Hugo Tufte div.html -->
+<!-- https://github.com/shawnohare/hugo-tufte/blob/master/layouts/shortcodes/div.html -->
+{{ $loc := .Get 0  }}
+{{ if .IsNamedParams }}
+  <div {{with .Get "class"}} class="{{.}}"{{end}}{{with .Get "id"}} id="{{.}}"{{end}}>
+{{ else if or (eq $loc "") (eq $loc "begin") }}
+  <div>
+{{ else if eq $loc "end" }}
+  </div>
+{{ end }}

@@ -1,0 +1,5 @@
+<!-- Hugo Tufte sidenote.html -->
+<!-- https://github.com/shawnohare/hugo-tufte/blob/master/layouts/shortcodes/sidenote.html -->
+<label for="{{ .Get "id" }}" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="{{ .Get "id" }}" class="margin-toggle"/>
+<span class="sidenote">{{ .Inner }}</span>

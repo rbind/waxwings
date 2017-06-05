@@ -1,0 +1,15 @@
+<!-- Hugo Tufte epigraph.html -->
+<!-- https://github.com/shawnohare/hugo-tufte/blob/master/layouts/shortcodes/epigraph.html -->
+<div class="epigraph">
+<blockquote>
+{{ $t := .Get "type" }}
+{{ if eq $t "compact"  }}{{ .Inner }}{{ else }}<p>{{ .Inner }}</p>{{ end }}
+{{ if .IsNamedParams }}
+<footer>
+{{ with .Get "pre" }}{{ . }}{{ end }}
+{{ with .Get "cite" }}<cite>{{ . }}</cite>{{ end }}
+{{ with .Get "post" }}{{ . }}{{ end }}
+</footer>
+{{ end }}
+<blockquote>
+</div>

@@ -1,0 +1,10 @@
+<!-- Hugo Tufte section.html -->
+<!-- https://github.com/shawnohare/hugo-tufte/blob/master/layouts/shortcodes/section.html -->
+{{ $loc := .Get 0  }}
+{{ if .IsNamedParams }}
+  <section {{with .Get "class"}} class="{{.}}"{{end}}{{with .Get "id"}} id="{{.}}"{{end}}>
+{{ else if or (eq $loc "") (eq $loc "begin") }}
+  <section>
+{{ else if eq $loc "end" }}
+  </section>
+{{ end }}
