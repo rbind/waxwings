@@ -2,6 +2,8 @@ baseurl = "/"
 relativeurls = true
 languageCode = "en-us"
 title = "Mara Averick"
+# Enable emoji
+enableEmoji = true
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
