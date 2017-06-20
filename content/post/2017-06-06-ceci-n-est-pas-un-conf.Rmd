@@ -4,22 +4,35 @@ author: ~
 date: '2017-06-06'
 slug: ceci-n-est-pas-un-conf
 categories: []
-tags: []
-banner: 'nest_pas_unconf.png'
+tags: [R]
+banner: 'banners/nest_pas_unconf.png'
 description: ''
-images: ["nest_pas_unconf.png"]
+images: ['img/orig_unconf_post.png']
 menu: ''
 draft: TRUE
 ---
 
-# This is a header
+## Meta lessons learned
 
-!['unconf'](img/nest_pas_unconf.png)
+This is _not_ the post I originally intended to write about the [**rOpenSci Unconf**](http://unconf17.ropensci.org/) (and, I promise, this isn't just a lame attempt to take the Magritte joke a step further). Rather, what follows is wisdom gleaned in my (failed) attempts to write said original post capturing my unconf experience.[^1]
+<!--more-->
+In our two days of un-conferring, there were [**20 packages**](https://ropenscilabs.github.io/runconf17-projects/) written by ~70 [participants](http://unconf17.ropensci.org/#participants).[^2] So, how is it that almost _a month later_ I've been unable to produce a summary of/reflections on what went down? Well, I have some theories, and they have to do with the nature/organization of the unconf itself (something I've come to appreciate more and more with each passing day).[^3]
 
-some content
+### I ❤️ deadlines?
 
-```{r tidyverse}
+Far-fetched though it may seem, a temporal constraint can be a beautiful thing. This is not to say that the packages produced won't require more work-- heck, [Julia Silge](https://twitter.com/juliasilge) and [David Robinson](https://twitter.com/drob)'s [tidytext](https://github.com/juliasilge/tidytext) was started at an unconf, and (amazing though they are) that was _not_ a two-day endeavor. However, having a firm stopping time made it clear that we'd have to clearly scope our work, and allow certain things to be left for later. 
+
+Perhaps this comes naturally to some people. Alas, I am not one of them. Even ignoring the fact that my earlier unconf post drafts _had_ a bibliography, the amount of time I spent trying to deal with footnotes in sidenotes (see below) was ridiculous.
+
+![](orig_unconf_post.png)
+
+```{r tidyverse, message=FALSE, warning=TRUE}
 library(tidyverse)
 ```
 
-<!--more-->
+
+[^1]: Luckily, you can find thorough recaps on the [rOpenSci blog unconf](https://ropensci.org/tags/unconf/) series, and through the written recollections of other attendees, including (but not limited to) posts by: [David Smith](http://blog.revolutionanalytics.com/2017/05/runconf17.html), [Jasmine Dumas](https://jasdumas.github.io/2017-05-28-runconf17-experience/), [Karl Broman](http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/), [Bob Rudis](https://rud.is/b/2017/05/28/l-a-unconf-idential-a-k-a-an-ropensci-runconf17-retrospective/); and a [Storify by Karthik Ram](https://storify.com/_inundata/4th-annual-ropensci-unconf).
+
+[^2]: I had the excellent fortune of collaborating with [Joe Cheng](https://twitter.com/jcheng), [Robert M Flight](https://twitter.com/rmflight), and [Christopher Tull](https://twitter.com/ctullito) on [**testrmd**](https://github.com/ropenscilabs/testrmd), which you should most definitely check out.
+
+[^3]: Seriously, the unconf organizing team did an incredible job. So, major thank yous to [Stefanie Butland](https://twitter.com/stefaniebutland), [Karthik Ram](https://twitter.com/_inundata), [Noam Ross](https://twitter.com/noamross), and [Scott Chamberlain](https://twitter.com/sckottie), 
