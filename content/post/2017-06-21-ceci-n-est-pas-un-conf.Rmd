@@ -1,6 +1,6 @@
 ---
 title: Ceci n'est pas un conf.
-author: ~
+author: Mara Averick
 date: '2017-06-21'
 slug: ceci-n-est-pas-un-conf
 categories: []
@@ -9,7 +9,6 @@ banner: 'banners/nest_pas_unconf.png'
 description: ''
 images: ['img/orig_unconf_post.png']
 menu: ''
-draft: TRUE
 ---
 
 ## Meta lesson learned
