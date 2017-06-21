@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "http://maraaverick.netlify.com/"
 relativeurls = true
 languageCode = "en-us"
 title = "Mara Averick"
