@@ -1,4 +1,4 @@
-baseurl = "http://maraaverick.rbind.io/"
+baseurl = "http://maraaverick.netlify.com/"
 relativeurls = true
 languageCode = "en-us"
 title = "Mara Averick"
