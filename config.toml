@@ -2,15 +2,19 @@ baseurl = "http://maraaverick.rbind.io/"
 relativeurls = true
 languageCode = "en-us"
 title = "Mara Averick"
+
 # Enable emoji
 enableEmoji = true
+
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
+
 # Define the number of posts per page
 paginate = 10
 footnotereturnlinkcontents = "↩"
+
 theme = "hugo-icarus-theme"
 # Comment the themesDir option if you use this theme in production
 # themesDir = "../.."
