@@ -22,6 +22,7 @@ vignettes/*.pdf
 # Temporary files created by R markdown
 *.utf8.md
 *.knit.md
+# Public folder
 public/
 .Rproj.user
 .DS_Store
