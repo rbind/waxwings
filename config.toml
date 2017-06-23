@@ -7,9 +7,9 @@ title = "Mara Averick"
 enableEmoji = true
 
 # Enable comments by entering your Disqus shortname
-disqusShortname = ""
+disqusShortname = "maraaverick"
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+googleAnalytics = "UA-101515030-1"
 
 # Define the number of posts per page
 paginate = 10
