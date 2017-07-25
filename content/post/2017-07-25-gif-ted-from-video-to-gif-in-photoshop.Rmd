@@ -13,7 +13,7 @@ When I found out that [Amelia McNamara](https://twitter.com/AmeliaMN) and [Aran 
 
 ![](http://i.imgur.com/ED0AO7a.png)
 
-**Big picture:** I read a [cool post](http://www.seascapemodels.org/rstats/2017/07/06/r-interactive-dataviz.html) by Christopher J. Brown (aka [@bluecology](https://twitter.com/bluecology)) which featured an interactive visualization.[^4] I wanted to share this post with my very closest friends (by which I mean Twitter), and capture the gist of it visually so they'd know whether to deem it click-worthy. Thus, I giffed (_not a real world, but it totally should be_) a few seconds of me playing around with the viz as tweetable enticement.  
+**Big picture:** I read a [cool post](http://www.seascapemodels.org/rstats/2017/07/06/r-interactive-dataviz.html) by Christopher J. Brown (aka @[bluecology](https://twitter.com/bluecology)) which featured an interactive visualization.[^4] I wanted to share this post with my very closest friends (by which I mean Twitter), and capture the gist of it visually so they'd know whether to deem it click-worthy. Thus, I giffed (_not a real world, but it totally should be_) a few seconds of me playing around with the viz as tweetable enticement.  
 
 ![](http://i.imgur.com/5SKgRFI.gif)
 
@@ -111,9 +111,9 @@ If I got stuff wrong (which I'm sure I did, as I do so on the regular), feel fre
 ----
 [^1]: Amelia is pretty damn brilliant, so when she makes a suggestion, I [meta]suggest you pay attention.
 
-[^2]: See exhibits 1 to 473 in [Elijah Meeks'](https://twitter.com/Elijah_Meeks) and my [*Be*yond the Tip: a data-driven exploration of Archer](**https://archervisualization.herokuapp.com/)
+[^2]: See exhibits 1 to 473 in [Elijah Meeks'](https://twitter.com/Elijah_Meeks) and my [*Beyond the Tip: a data-driven exploration of Archer*](https://archervisualization.herokuapp.com/)
 
-[^3]: I'm an R user. If this wastep wa_really_ part of the tutorial, I would ne_ver i_ndex starting at 0.
+[^3]: I'm an R user. If this step was really part of the tutorial, I would _never_ index it starting at 0.
 
 [^4]: In the post, ["Communicating trends and detail on the same dataviz with interactive visuals in R"](http://www.seascapemodels.org/rstats/2017/07/06/r-interactive-dataviz.html), this is accomplished using R (obviously), and the [dygraphs](https://rstudio.github.io/dygraphs/) package.
 
