@@ -113,7 +113,7 @@ If I got stuff wrong (which I'm sure I did, as I do so on the regular), feel fre
 
 [^2]: See exhibits 1 to 473 in [Elijah Meeks'](https://twitter.com/Elijah_Meeks) and my [*Be*yond the Tip: a data-driven exploration of Archer](**https://archervisualization.herokuapp.com/)
 
-[^3]: I'm an R user. If this wastep s _really_ part of the tutorial, I would never index starting at 0.
+[^3]: I'm an R user. If this wastep wa_really_ part of the tutorial, I would ne_ver i_ndex starting at 0.
 
 [^4]: In the post, ["Communicating trends and detail on the same dataviz with interactive visuals in R"](http://www.seascapemodels.org/rstats/2017/07/06/r-interactive-dataviz.html), this is accomplished using R (obviously), and the [dygraphs](https://rstudio.github.io/dygraphs/) package.
 
