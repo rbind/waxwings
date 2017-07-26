@@ -4,6 +4,7 @@ author: Mara Averick
 date: '2017-07-25'
 slug: gif-ted-from-video-to-gif-in-photoshop
 categories: []
+tags: [sci-comm]
 description: 'How to make Tweetable GIFs from video, using Photoshop'
 banner: 'img/giffing_import.gif'
 ---
@@ -14,7 +15,7 @@ When I found out that [Amelia McNamara](https://twitter.com/AmeliaMN) and [Aran 
 
 **Big picture:** I read a [cool post](http://www.seascapemodels.org/rstats/2017/07/06/r-interactive-dataviz.html) by Christopher J. Brown (aka @[bluecology](https://twitter.com/bluecology)) which featured an interactive visualization.[^4] I wanted to share this post with my very closest friends (by which I mean Twitter), and capture the gist of it visually so they'd know whether to deem it click-worthy. Thus, I giffed (_not a real world, but it totally should be_) a few seconds of me playing around with the viz as tweetable enticement.  
 
-![](http://i.imgur.com/5SKgRFI.gif)
+![](http://i.imgur.com/vhxwW1W.gif)
 
 ## Step 0: Getting and/or making a video
 
