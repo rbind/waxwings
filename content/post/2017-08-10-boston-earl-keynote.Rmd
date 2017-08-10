@@ -10,6 +10,7 @@ tags:
   - events
   - sci-comm
 banner: 'banners/maverick_earl_banner.png'
+images: ['img/maverick_earl_banner.png']
 description: "The rumors are true 😱, I'll be speaking at the “Enterprise Applications of the R Language” (better known as EARL) conference in Boston. Technically, it's a keynote (🗝📝). But, since I've never even given a regular note, I can't really say whether or not there will be more 🔑s involved than usual."
 ---
 
