@@ -1,0 +1,27 @@
+---
+title: Boston EARL Keynote
+author: Mara Averick
+date: '2017-08-10'
+slug: boston-earl-keynote
+categories:
+  - R
+tags:
+  - R
+  - events
+  - sci-comm
+banner: 'banners/maverick_earl_banner.png'
+description: "The rumors are true 😱, I'll be speaking at the “Enterprise Applications of the R Language” (better known as EARL) conference in Boston. Technically, it's a keynote (🗝📝). But, since I've never even given a regular note, I can't really say whether or not there will be more 🔑s involved than usual."
+---
+
+The rumors are true 😱 _(ok, maybe there weren't really any rumors)_, I'll be speaking at the “Enterprise Applications of the R Language”, better known as [EARL, conference in Boston](https://earlconf.com/boston/). Technically, it's a keynote (🗝📝). But, since I've never even given a _regular_ note, I can't really say whether or not there will be more 🔑s involved than usual.[^1]
+
+Actual real adult data scientist, [David Robinson](https://www.mango-solutions.com/blog/keynote-speaker-announcement-david-robinson-stack-overflow) (aka [\@drob](https://twitter.com/drob)) will also be keynoting,[^2] which means you should totally go.
+
+Since there are few things I loathe more than attempting to write about myself,[^3] you should check out the announcement on the Mango blog for details: [**Boston EARL Keynote speaker announcement: Mara Averick**](https://www.mango-solutions.com/blog/boston-earl-keynote-speaker-announcement-mara-averick).
+
+
+[^1]: Don't worry! _Yes_, I know that keys (as in 🔐) and _keynotes_ (as in 🗣) are entirely unrelated.
+
+[^2]: I'm pretty sure that's not a real word, but you get the idea...
+
+[^3]: Without the help of Mango's brilliant marketing maven, [Karis Bouher](https://twitter.com/KarisBouher), I'd still be trying to choose a word to follow _"Mara Averick is"_ in my bio. (It started out as _"Mara Averick was"_, but then the kind people of Twitter informed me that such a use of the past tense is best restricted to obituaries).
