@@ -1,0 +1,177 @@
+---
+title: "👍📚 Part 1: rgoodreads 📦"
+author: Mara Averick
+date: '2017-08-11'
+publishdate: '2017-08-14'
+slug: goodreads-part-i-rgoodreads
+categories:
+  - R
+tags:
+  - R
+description: "There are very few things considered normal (in the ordinary sense of the word) about my reading habits. Let's just say that, when I saw `#BokLoversDay` ws trending on Twitter, my first thought was: _itme!_ Hwever, it also served as a reminder of my struggles regarding reading and normalcy"
+---
+
+#### 🤓 What is "normal" reading?
+
+There are very few things considered "normal" (in the "ordinary" sense of the word) about my reading habits. Let's just say that, when I saw `#BookLoversDay` was trending on Twitter, my first thought was: _it me!_ However, it also served as a reminder of my struggles regarding reading and "normalcy" of the [Gaussian distribution](https://en.wikipedia.org/wiki/Normal_distribution) variety.[^normal]
+
+
+```{r echo=FALSE}
+blogdown::shortcode('tweet', '895291279206174720')
+```
+
+My beef is not with books themselves, but rather the limitations of rating them on [Goodreads](https://www.goodreads.com/) using an oh-so-limiting 5-star scale. My reviews are often peppered with complaints re. "starflation," and, at times, caveats regarding my use of an arbitrary, author-adjusted marks.
+
+```{r echo=FALSE}
+blogdown::shortcode('tweet', '895300309773320192')
+```
+
+### Goodreads × `R`
+
+First, I'll be taking the [`rgoodreads`](https://github.com/Famguy/rgoodreads) package by [Sagun Pai](https://github.com/Famguy) for a spin, which requires `devtools` for installation.
+
+As described in the docs:
+
+>  **Rgoodreads - an R package for the Goodreads API**  
+>  This R package acts as a wrapper for the read-only features of the [Goodreads API](https://www.goodreads.com/api) with the ability to retrieve information on books, authors, users, reviews, etc. so that they can be analyzed in R.  
+
+```{r rgoodreads}
+# install.packages("devtools")
+# devtools::install_github("famguy/rgoodreads")
+library(rgoodreads)
+```
+
+In order to actually _do_ anything with this package, you'll need to get an API key for Goodreads set up (as detailed in Saguan Pai's [_Getting Started_](https://github.com/Famguy/rgoodreads#getting-started) section).
+
+Once you've done that, you can set it up as an environmental variable, either by way of your `.Rprofile` or or `.Renviron` files.[^efficientR] You can load your API 🔑 by running:
+
+```{r gr_key, eval=FALSE}
+Sys.setenv(GOODREADS_KEY = "YOUR_KEY_HERE")
+```
+
+### Getting data with the [`rgoodreads`](https://github.com/Famguy/rgoodreads) 📦 
+
+```{r other libs, message=FALSE, warning=FALSE}
+library(httr)  
+library(tidyverse)
+library(hrbrthemes) # make things pretty
+```
+
+You can use the `user()` function to get data about that user. If you _are_ a Goodreads user and want to use your own user id, it is the number found in the url to your profile (e.g. `https://www.goodreads.com/user/show/1923002-mara`).
+
+```{r user}
+it_me <- user("1923002")
+
+glimpse(it_me)
+```
+
+Though you can get the proper urls for things such as user updates or reviews, this isn't terribly helpful unto itself. Unfortunately, the Goodreads API limits the types of information you can retrieve for a user to reviews and/or updates. Since I don't always review the books I read, some will be missing.[^chrs]
+
+### Your own Goodreads data
+
+Luckily, you _can_ export your books from Goodreads on their [import/export](https://www.goodreads.com/review/import) page. So, for now, I'll be doing that.
+
+I've stashed my data in a GitHub repo, so I'll be reading it in directly from there with `readr`.
+
+```{r remoteread, message=FALSE}
+my_books <- read_csv("https://raw.githubusercontent.com/batpigandme/goodreadin/master/data/goodreads_library_export.csv")
+
+glimpse(my_books)
+```
+
+Since I like my variable names to be in snakecase, I'll use the [`snakecase`](https://github.com/Tazinho/snakecase) package to generate new column names.
+
+```{r snakecase}
+# devtools::install_github("Tazinho/snakecase")
+library(snakecase)
+orig_colnames <- colnames(my_books)  # get original colnames
+new_colnames <- to_any_case(orig_colnames, case = "snake", preprocess = ":|\\.")
+colnames(my_books) <- new_colnames  # assign new colnames
+colnames(my_books)  # check to make sure it worked
+```
+
+As it so happens, I don't really care about most of this data. You can tell from the `glimpse()` output that there are several variables that, if they ever _had_ values, would be numeric. There's also some funky stuff going on with the `isbn` values from the exported csv.
+
+Since `rgoodreads` gives you the ability to [**lookup books**](https://github.com/Famguy/rgoodreads#lookup-books) by `book_id`, the book-related data can be easily retrieved on-demand. There are also a bunch of variables that I almost never fill out (e.g. `original_purchase_date`, `condition`, etc.)-- so, I can whittle things down considerably.
+
+I'll make a vector of the columns I consider "keepers." 
+
+```{r keepercols}
+keeper_cols <- c("book_id", "title", "author", "my_rating", "number_of_pages", 
+                 "original_publication_year", "date_read", "date_added", "bookshelves")
+```
+
+Now I can use `dplyr::select` to make a leaner data frame.[^lean]
+
+
+```{r subsetvars}
+books_myvars <- my_books %>%
+  select(one_of(keeper_cols))
+```
+
+Because I just want to look at books I've _read_, now I'll filter the observations, restricting them to books with values for `date_read`. 
+
+```{r filterread}
+read_books <- books_myvars %>%
+  filter(!is.na(date_read))
+```
+
+Now I'll make use of [`lubridate`](http://lubridate.tidyverse.org/) 🗓, which has helper functions for this scenario.
+
+```{r lubridated, message=FALSE}
+library(lubridate)
+
+read_books <- read_books %>%
+  mutate(date_read = ymd(date_read)) %>%
+  mutate(year_read = year(date_read)) %>%
+  arrange(desc(date_read))
+```
+
+#### 📚 read per year
+
+Let's look quickly at the number of books read by year. I'm using one of the styles from [Bob Rudis](https://rud.is/b/)' [`hrbrthemes`](https://hrbrmstr.github.io/hrbrthemes/) 📦, which I highly recommend checking out.
+
+```{r hist}
+read_books %>%
+  ggplot(aes(year_read)) +
+  geom_bar(stat = "count") +
+  labs(title = "Books read per year", 
+       caption = "source: Mara's goodreads") +
+  hrbrthemes::theme_ipsum_rc()
+```
+
+Though I can safely say I read more _now_ than I did circa 1989,[^1] I didn't join Goodreads until 2009 (according to my user data), and wasn't much of an "active user" until 2012 or so. So, lets look at just the past few years.
+
+```{r 5yrhist}
+read_books %>%
+  filter(year_read >= 2012) %>%
+  ggplot(aes(year_read)) +
+  geom_bar(stat = "count") +
+  labs(title = "Books read per year: 2012 - 2017", 
+       caption = "source: Mara's goodreads") +
+  theme_ipsum_rc()
+```
+
+#### ⭐️ rating distribution
+
+```{r starhist}
+read_books %>%
+  filter(my_rating >= 1) %>%
+  ggplot(aes(my_rating)) +
+  geom_bar(stat = "count") +
+  labs(title = "My ratings: Star distribution", 
+       caption = "source: Mara's goodreads") +
+  theme_ipsum_rc()
+```
+
+It's not quite as bad as I'd feared 🙀. But, in the next part, we'll take a closer look at if my quest for (faux) reading-normalcy has been a success.
+
+[^normal]: Yes, I know that a 5-point Likert scale is an ordinal variable and, thus, cannot be normally distributed (after all, it's not continuous), but that doesn't make me yearn for it any less.
+
+[^efficientR]: Check out the [`.Rprofile` file](https://csgillespie.github.io/efficientR/3-3-r-startup.html#rprofile) and [`.Renviron` file](https://csgillespie.github.io/efficientR/3-3-r-startup.html#renviron) sections of [Colin Gillespie](https://twitter.com/csgillespie) & [Robin Lovelace](https://twitter.com/robinlovelace)'s book, [_Efficient R programming_](https://csgillespie.github.io/efficientR/), free online.
+
+[^chrs]: If I _was_ going to use this data, I'd also want to do quite a bit of cleaning with data types etc. See? This is why `readr` is so glorious.
+
+[^lean]: This isn't actually a term, like _tidy_, or whatever; I just feel like using it.
+
+[^1]: I mean, I _could've_ been a 5-year-old bibliophile, for all you know 🤷!

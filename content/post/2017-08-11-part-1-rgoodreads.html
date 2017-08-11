@@ -1,0 +1,194 @@
+---
+title: "👍📚 Part 1: rgoodreads 📦"
+author: Mara Averick
+date: '2017-08-11'
+publishdate: '2017-08-14'
+slug: goodreads-part-i-rgoodreads
+categories:
+  - R
+tags:
+  - R
+description: "There are very few things considered normal (in the ordinary sense of the word) about my reading habits. Let's just say that, when I saw `#BokLoversDay` ws trending on Twitter, my first thought was: _itme!_ Hwever, it also served as a reminder of my struggles regarding reading and normalcy"
+---
+
+
+
+<div id="what-is-normal-reading" class="section level4">
+<h4>🤓 What is “normal” reading?</h4>
+<p>There are very few things considered “normal” (in the “ordinary” sense of the word) about my reading habits. Let’s just say that, when I saw <code>#BookLoversDay</code> was trending on Twitter, my first thought was: <em>it me!</em> However, it also served as a reminder of my struggles regarding reading and “normalcy” of the <a href="https://en.wikipedia.org/wiki/Normal_distribution">Gaussian distribution</a> variety.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+{{% tweet 895291279206174720 %}}
+<p>My beef is not with books themselves, but rather the limitations of rating them on <a href="https://www.goodreads.com/">Goodreads</a> using an oh-so-limiting 5-star scale. My reviews are often peppered with complaints re. “starflation,” and, at times, caveats regarding my use of an arbitrary, author-adjusted marks.</p>
+{{% tweet 895300309773320192 %}}
+</div>
+<div id="goodreads-r" class="section level3">
+<h3>Goodreads × <code>R</code></h3>
+<p>First, I’ll be taking the <a href="https://github.com/Famguy/rgoodreads"><code>rgoodreads</code></a> package by <a href="https://github.com/Famguy">Sagun Pai</a> for a spin, which requires <code>devtools</code> for installation.</p>
+<p>As described in the docs:</p>
+<blockquote>
+<p><strong>Rgoodreads - an R package for the Goodreads API</strong><br />
+This R package acts as a wrapper for the read-only features of the <a href="https://www.goodreads.com/api">Goodreads API</a> with the ability to retrieve information on books, authors, users, reviews, etc. so that they can be analyzed in R.</p>
+</blockquote>
+<pre class="r"><code># install.packages(&quot;devtools&quot;)
+# devtools::install_github(&quot;famguy/rgoodreads&quot;)
+library(rgoodreads)</code></pre>
+<p>In order to actually <em>do</em> anything with this package, you’ll need to get an API key for Goodreads set up (as detailed in Saguan Pai’s <a href="https://github.com/Famguy/rgoodreads#getting-started"><em>Getting Started</em></a> section).</p>
+<p>Once you’ve done that, you can set it up as an environmental variable, either by way of your <code>.Rprofile</code> or or <code>.Renviron</code> files.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> You can load your API 🔑 by running:</p>
+<pre class="r"><code>Sys.setenv(GOODREADS_KEY = &quot;YOUR_KEY_HERE&quot;)</code></pre>
+</div>
+<div id="getting-data-with-the-rgoodreads" class="section level3">
+<h3>Getting data with the <a href="https://github.com/Famguy/rgoodreads"><code>rgoodreads</code></a> 📦</h3>
+<pre class="r"><code>library(httr)  
+library(tidyverse)
+library(hrbrthemes) # make things pretty</code></pre>
+<p>You can use the <code>user()</code> function to get data about that user. If you <em>are</em> a Goodreads user and want to use your own user id, it is the number found in the url to your profile (e.g. <code>https://www.goodreads.com/user/show/1923002-mara</code>).</p>
+<pre class="r"><code>it_me &lt;- user(&quot;1923002&quot;)
+
+glimpse(it_me)</code></pre>
+<pre><code>## Observations: 1
+## Variables: 20
+## $ id              &lt;chr&gt; &quot;1923002&quot;
+## $ name            &lt;chr&gt; &quot;Mara&quot;
+## $ user_name       &lt;chr&gt; &quot;batpigandme&quot;
+## $ link            &lt;chr&gt; &quot;https://www.goodreads.com/user/show/1923002-m...
+## $ image_url       &lt;chr&gt; &quot;https://images.gr-assets.com/users/1372346616...
+## $ small_image_url &lt;chr&gt; &quot;https://images.gr-assets.com/users/1372346616...
+## $ about           &lt;chr&gt; &quot;Getting in on the whole BookLikes thing: &lt;a t...
+## $ age             &lt;chr&gt; &quot;&quot;
+## $ gender          &lt;chr&gt; &quot;&quot;
+## $ location        &lt;chr&gt; &quot;&quot;
+## $ website         &lt;chr&gt; &quot;http://batpigandme.com&quot;
+## $ joined          &lt;chr&gt; &quot;01/2009&quot;
+## $ last_active     &lt;chr&gt; &quot;08/2017&quot;
+## $ interests       &lt;chr&gt; &quot;&quot;
+## $ updates_rss_url &lt;chr&gt; &quot;https://www.goodreads.com/user/updates_rss/19...
+## $ reviews_rss_url &lt;chr&gt; &quot;https://www.goodreads.com/review/list_rss/192...
+## $ friends_count   &lt;chr&gt; &quot;271&quot;
+## $ groups_count    &lt;chr&gt; &quot;3&quot;
+## $ reviews_count   &lt;chr&gt; &quot;1772&quot;
+## $ updates         &lt;chr&gt; &quot;gave 3 stars to &lt;a href=\&quot;https://www.goodrea...</code></pre>
+<p>Though you can get the proper urls for things such as user updates or reviews, this isn’t terribly helpful unto itself. Unfortunately, the Goodreads API limits the types of information you can retrieve for a user to reviews and/or updates. Since I don’t always review the books I read, some will be missing.<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a></p>
+</div>
+<div id="your-own-goodreads-data" class="section level3">
+<h3>Your own Goodreads data</h3>
+<p>Luckily, you <em>can</em> export your books from Goodreads on their <a href="https://www.goodreads.com/review/import">import/export</a> page. So, for now, I’ll be doing that.</p>
+<p>I’ve stashed my data in a GitHub repo, so I’ll be reading it in directly from there with <code>readr</code>.</p>
+<pre class="r"><code>my_books &lt;- read_csv(&quot;https://raw.githubusercontent.com/batpigandme/goodreadin/master/data/goodreads_library_export.csv&quot;)
+
+glimpse(my_books)</code></pre>
+<pre><code>## Observations: 1,772
+## Variables: 31
+## $ Book Id                    &lt;int&gt; 149572, 18753581, 24875398, 16361, ...
+## $ Title                      &lt;chr&gt; &quot;The Odessa File&quot;, &quot;An Illustrated ...
+## $ Author                     &lt;chr&gt; &quot;Frederick Forsyth&quot;, &quot;Ali Almossawi...
+## $ Author l-f                 &lt;chr&gt; &quot;Forsyth, Frederick&quot;, &quot;Almossawi, A...
+## $ Additional Authors         &lt;chr&gt; NA, &quot;Alejandro Giraldo&quot;, NA, NA, NA...
+## $ ISBN                       &lt;chr&gt; &quot;=\&quot;0553271989\&quot;&quot;, &quot;=\&quot;\&quot;&quot;, &quot;=\&quot;039...
+## $ ISBN13                     &lt;chr&gt; &quot;=\&quot;9780553271980\&quot;&quot;, &quot;=\&quot;978098993...
+## $ My Rating                  &lt;int&gt; 0, 4, 4, 3, 0, 0, 5, 5, 0, 4, 2, 5,...
+## $ Average Rating             &lt;dbl&gt; 4.10, 3.76, 3.99, 3.85, 4.23, 3.32,...
+## $ Publisher                  &lt;chr&gt; &quot;Bantam&quot;, &quot;Ali Almossawi&quot;, &quot;G.P. Pu...
+## $ Binding                    &lt;chr&gt; &quot;Paperback&quot;, &quot;Hardcover&quot;, &quot;Hardcove...
+## $ Number of Pages            &lt;int&gt; 334, 64, 352, 400, 301, 192, 256, 2...
+## $ Year Published             &lt;int&gt; 1983, 2013, 2015, 2001, 2017, 2010,...
+## $ Original Publication Year  &lt;int&gt; 1972, 2013, 2015, 1925, 2017, 2010,...
+## $ Date Read                  &lt;date&gt; NA, 2017-08-09, 2017-08-06, 2017-0...
+## $ Date Added                 &lt;date&gt; 2017-08-09, 2017-08-09, 2017-08-05...
+## $ Bookshelves                &lt;chr&gt; &quot;currently-reading, 2017-reads, lib...
+## $ Bookshelves with positions &lt;chr&gt; &quot;currently-reading (#4), 2017-reads...
+## $ Exclusive Shelf            &lt;chr&gt; &quot;currently-reading&quot;, &quot;read&quot;, &quot;read&quot;...
+## $ My Review                  &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+## $ Spoiler                    &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+## $ Private Notes              &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+## $ Read Count                 &lt;int&gt; 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1,...
+## $ Recommended For            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+## $ Recommended By             &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+## $ Owned Copies               &lt;int&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,...
+## $ Original Purchase Date     &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+## $ Original Purchase Location &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+## $ Condition                  &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+## $ Condition Description      &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA,...
+## $ BCID                       &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA,...</code></pre>
+<p>Since I like my variable names to be in snakecase, I’ll use the <a href="https://github.com/Tazinho/snakecase"><code>snakecase</code></a> package to generate new column names.</p>
+<pre class="r"><code># devtools::install_github(&quot;Tazinho/snakecase&quot;)
+library(snakecase)
+orig_colnames &lt;- colnames(my_books)  # get original colnames
+new_colnames &lt;- to_any_case(orig_colnames, case = &quot;snake&quot;, preprocess = &quot;:|\\.&quot;)
+colnames(my_books) &lt;- new_colnames  # assign new colnames
+colnames(my_books)  # check to make sure it worked</code></pre>
+<pre><code>##  [1] &quot;book_id&quot;                    &quot;title&quot;                     
+##  [3] &quot;author&quot;                     &quot;author_l_-_f&quot;              
+##  [5] &quot;additional_authors&quot;         &quot;isbn&quot;                      
+##  [7] &quot;isbn_13&quot;                    &quot;my_rating&quot;                 
+##  [9] &quot;average_rating&quot;             &quot;publisher&quot;                 
+## [11] &quot;binding&quot;                    &quot;number_of_pages&quot;           
+## [13] &quot;year_published&quot;             &quot;original_publication_year&quot; 
+## [15] &quot;date_read&quot;                  &quot;date_added&quot;                
+## [17] &quot;bookshelves&quot;                &quot;bookshelves_with_positions&quot;
+## [19] &quot;exclusive_shelf&quot;            &quot;my_review&quot;                 
+## [21] &quot;spoiler&quot;                    &quot;private_notes&quot;             
+## [23] &quot;read_count&quot;                 &quot;recommended_for&quot;           
+## [25] &quot;recommended_by&quot;             &quot;owned_copies&quot;              
+## [27] &quot;original_purchase_date&quot;     &quot;original_purchase_location&quot;
+## [29] &quot;condition&quot;                  &quot;condition_description&quot;     
+## [31] &quot;bcid&quot;</code></pre>
+<p>As it so happens, I don’t really care about most of this data. You can tell from the <code>glimpse()</code> output that there are several variables that, if they ever <em>had</em> values, would be numeric. There’s also some funky stuff going on with the <code>isbn</code> values from the exported csv.</p>
+<p>Since <code>rgoodreads</code> gives you the ability to <a href="https://github.com/Famguy/rgoodreads#lookup-books"><strong>lookup books</strong></a> by <code>book_id</code>, the book-related data can be easily retrieved on-demand. There are also a bunch of variables that I almost never fill out (e.g. <code>original_purchase_date</code>, <code>condition</code>, etc.)– so, I can whittle things down considerably.</p>
+<p>I’ll make a vector of the columns I consider “keepers.”</p>
+<pre class="r"><code>keeper_cols &lt;- c(&quot;book_id&quot;, &quot;title&quot;, &quot;author&quot;, &quot;my_rating&quot;, &quot;number_of_pages&quot;, 
+                 &quot;original_publication_year&quot;, &quot;date_read&quot;, &quot;date_added&quot;, &quot;bookshelves&quot;)</code></pre>
+<p>Now I can use <code>dplyr::select</code> to make a leaner data frame.<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></p>
+<pre class="r"><code>books_myvars &lt;- my_books %&gt;%
+  select(one_of(keeper_cols))</code></pre>
+<p>Because I just want to look at books I’ve <em>read</em>, now I’ll filter the observations, restricting them to books with values for <code>date_read</code>.</p>
+<pre class="r"><code>read_books &lt;- books_myvars %&gt;%
+  filter(!is.na(date_read))</code></pre>
+<p>Now I’ll make use of <a href="http://lubridate.tidyverse.org/"><code>lubridate</code></a> 🗓, which has helper functions for this scenario.</p>
+<pre class="r"><code>library(lubridate)
+
+read_books &lt;- read_books %&gt;%
+  mutate(date_read = ymd(date_read)) %&gt;%
+  mutate(year_read = year(date_read)) %&gt;%
+  arrange(desc(date_read))</code></pre>
+<div id="read-per-year" class="section level4">
+<h4>📚 read per year</h4>
+<p>Let’s look quickly at the number of books read by year. I’m using one of the styles from <a href="https://rud.is/b/">Bob Rudis</a>’ <a href="https://hrbrmstr.github.io/hrbrthemes/"><code>hrbrthemes</code></a> 📦, which I highly recommend checking out.</p>
+<pre class="r"><code>read_books %&gt;%
+  ggplot(aes(year_read)) +
+  geom_bar(stat = &quot;count&quot;) +
+  labs(title = &quot;Books read per year&quot;, 
+       caption = &quot;source: Mara&#39;s goodreads&quot;) +
+  hrbrthemes::theme_ipsum_rc()</code></pre>
+<p><img src="/post/2017-08-11-part-1-rgoodreads_files/figure-html/hist-1.png" width="672" /></p>
+<p>Though I can safely say I read more <em>now</em> than I did circa 1989,<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a> I didn’t join Goodreads until 2009 (according to my user data), and wasn’t much of an “active user” until 2012 or so. So, lets look at just the past few years.</p>
+<pre class="r"><code>read_books %&gt;%
+  filter(year_read &gt;= 2012) %&gt;%
+  ggplot(aes(year_read)) +
+  geom_bar(stat = &quot;count&quot;) +
+  labs(title = &quot;Books read per year: 2012 - 2017&quot;, 
+       caption = &quot;source: Mara&#39;s goodreads&quot;) +
+  theme_ipsum_rc()</code></pre>
+<p><img src="/post/2017-08-11-part-1-rgoodreads_files/figure-html/5yrhist-1.png" width="672" /></p>
+</div>
+<div id="rating-distribution" class="section level4">
+<h4>⭐️ rating distribution</h4>
+<pre class="r"><code>read_books %&gt;%
+  filter(my_rating &gt;= 1) %&gt;%
+  ggplot(aes(my_rating)) +
+  geom_bar(stat = &quot;count&quot;) +
+  labs(title = &quot;My ratings: Star distribution&quot;, 
+       caption = &quot;source: Mara&#39;s goodreads&quot;) +
+  theme_ipsum_rc()</code></pre>
+<p><img src="/post/2017-08-11-part-1-rgoodreads_files/figure-html/starhist-1.png" width="672" /></p>
+<p>It’s not quite as bad as I’d feared 🙀. But, in the next part, we’ll take a closer look at if my quest for (faux) reading-normalcy has been a success.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Yes, I know that a 5-point Likert scale is an ordinal variable and, thus, cannot be normally distributed (after all, it’s not continuous), but that doesn’t make me yearn for it any less.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>Check out the <a href="https://csgillespie.github.io/efficientR/3-3-r-startup.html#rprofile"><code>.Rprofile</code> file</a> and <a href="https://csgillespie.github.io/efficientR/3-3-r-startup.html#renviron"><code>.Renviron</code> file</a> sections of <a href="https://twitter.com/csgillespie">Colin Gillespie</a> &amp; <a href="https://twitter.com/robinlovelace">Robin Lovelace</a>’s book, <a href="https://csgillespie.github.io/efficientR/"><em>Efficient R programming</em></a>, free online.<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>If I <em>was</em> going to use this data, I’d also want to do quite a bit of cleaning with data types etc. See? This is why <code>readr</code> is so glorious.<a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p>This isn’t actually a term, like <em>tidy</em>, or whatever; I just feel like using it.<a href="#fnref4">↩</a></p></li>
+<li id="fn5"><p>I mean, I <em>could’ve</em> been a 5-year-old bibliophile, for all you know 🤷!<a href="#fnref5">↩</a></p></li>
+</ol>
+</div>
