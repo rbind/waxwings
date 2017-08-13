@@ -8,7 +8,7 @@ categories:
   - R
 tags:
   - R
-description: "There are very few things considered normal (in the ordinary sense of the word) about my reading habits. Let's just say that, when I saw `#BokLoversDay` ws trending on Twitter, my first thought was: _itme!_ Hwever, it also served as a reminder of my struggles regarding reading and normalcy"
+description: "There are very few things considered normal (in the ordinary sense of the word) about my reading habits. Let's just say that, when I saw #BookLoversDay was trending on Twitter, my first thought was: it me! However, it also served as a reminder of my struggles regarding reading and normalcy"
 ---
 
 #### 🤓 What is "normal" reading?
