@@ -164,7 +164,7 @@ read_books %>%
   theme_ipsum_rc()
 ```
 
-It's not quite as bad as I'd feared 🙀. But, in the next part, we'll take a closer look at if my quest for (faux) reading-normalcy has been a success.
+It's not quite as bad as I'd feared 🙀. But, in the next part, we'll take a closer look at whether or not my quest for (faux) reading-normalcy has been a success.
 
 [^normal]: Yes, I know that a 5-point Likert scale is an ordinal variable and, thus, cannot be normally distributed (after all, it's not continuous), but that doesn't make me yearn for it any less.
 
