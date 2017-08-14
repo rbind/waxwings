@@ -17,7 +17,7 @@ description: "There are very few things considered normal (in the ordinary sense
 
 There are very few things considered "normal" (in the "ordinary" sense of the word) about my reading habits. Let's just say that, when I saw `#BookLoversDay` was trending on Twitter, my first thought was: _it me!_ However, it also served as a reminder of my struggles regarding reading and "normalcy" of the [Gaussian distribution](https://en.wikipedia.org/wiki/Normal_distribution) variety.[^normal]  
 
-My beef is not with books themselves, but rather the limitations of rating them on [Goodreads](https://www.goodreads.com/) using an oh-so-limiting 5-star scale. My reviews are often peppered with complaints re. "starflation," and, at times, caveats regarding my use of an arbitrary, author-adjusted marks.
+My beef is not with books themselves, but rather the limitations of rating them on [Goodreads](https://www.goodreads.com/) using a restrictive 5-star scale. My reviews are often peppered with complaints re. "starflation," and, at times, caveats regarding my use of an arbitrary, author-adjusted marks.
 
 ```{r echo=FALSE}
 blogdown::shortcode('tweet', '895300309773320192')
