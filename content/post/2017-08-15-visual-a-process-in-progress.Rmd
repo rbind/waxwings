@@ -1,0 +1,90 @@
+---
+title: 'Visual ⁉️: A process in progress'
+author: Mara Averick
+date: '2017-08-15'
+slug: visual-a-process-in-progress
+categories: []
+tags:
+  - wild-card
+description: "I've always been a fan of marginalia. Likewise, I've been known to use a post-it or two (or five) from time to time. Why? Sometimes it's just easier to communicate when you keep your visual options open."
+---
+
+I've always been a fan of [_marginalia_](https://en.wikipedia.org/wiki/Marginalia).[^haylib] Likewise, I've been known to use a post-it or two (or five) from time to time. _Why?_ Sometimes it's just easier to communicate when you keep your visual options open.[^elijahbook]
+
+Such was the case the other day, when I had a question about how best to approach a problem in GitHub. (I'm not going to explain it in words, because it's hard, and I'm lazy, and that's how I ended up here in the first place!)
+
+![](http://i.imgur.com/RGvpz8i.png)
+
+Though I [tweeted](https://twitter.com/dataandme/status/896712790185881600) my question, the visual aid would have been helpful (at least to me) regardless of the 140-character limit.
+
+[Rick Pack](https://twitter.com/rick_pack2) asked for a "how's it made" on this little four-up layout. 
+
+```{r echo=FALSE}
+blogdown::shortcode('tweet', '896728937413447681')
+```
+
+Though I warned all interested parties that my "methods" are haphazard and inconsistent, [Stefanie Butland](https://twitter.com/StefanieButland) said to write it up anyway.
+
+```{r echo=FALSE}
+blogdown::shortcode('tweet', '896803448460517377')
+```
+
+So, consider yourself warned! ⚠️
+
+#### Step 1: Screenshots 💻
+
+I actually do most of these on my iPad, but there's no emoji for that. You can also do this on your computer (Mac is `Command-Shift-3`) with or without third-party software.[^snagit]
+
+Crop as necessary to avoid visual overload. ✂️
+
+#### Step 2: Montage/Collage
+
+So, this is where things get a bit free-form. Behold the collection of photo/art/note apps I have amassed on my iPad over the past 7 years!
+
+![](http://i.imgur.com/o7MI94y.jpg) 
+
+I'm honestly not even sure that all of these work anymore. But, through some combination of [loss aversion](https://en.wikipedia.org/wiki/Loss_aversion), and certain little things I like/dislike about each one, they continue to hang out on my iPad.
+
+Of late, I've been into [Inkflow Plus](https://itunes.apple.com/us/app/inkflow-plus-visual-notebook/id550062698?mt=8) for this part. Though, again, I'm _sure_ you can do many of the same things with other applications.
+
+![](http://i.imgur.com/3dLYRVA.png)
+
+ *  It's not _not_ a collage app, doesn't restrict or dictate anything about aspect ratio, and lets you resize/move each image individually.  
+ *  You can use "custom stationary," which basically means any image you want can be the background (e.g. corkboard).
+ *  You can draw _on the photos_, which is not an option in other apps I've tried.[^markup]
+
+#### Step 3: Annotation
+
+As mentioned above, you can draw on photos in Inkflow Plus (something I didn't figure out until recently). However, my favorite app for this is [YouDoodle](https://itunes.apple.com/us/app/you-doodle-draw-on-photos-and-text-editor/id517871755?mt=8). YouDoodle and InkflowPlus both let you 🔎 zoom as much as you like, and don't make you use a special pane of any sort for that 👍. YouDoodle has a "draw in straight lines"[^lines] option that InkFlow doesn't. So...🤷
+
+#### Step 4: Zoom
+
+In this case, I happened to be on my computer, so I did the zoom in Snagit. However, I usually do this in iOS Markup, which you can access by editing a photo on your iPhone or iPad.
+
+![](http://i.imgur.com/ypj2M2Q.png)
+
+#### Step 5: 🙂😎😝
+
+Optional (and likely extraneous) is the addition of emoji. I haven't found an app that I really like for this task yet. These are the two that I hate _least_ (Photo Editor and [Insta Emoji](https://itunes.apple.com/us/app/insta-emoji-photo-editor-add-cool-emoticon-stickers/id644680748?mt=8)).[^pe]
+
+![](http://i.imgur.com/YYNdBD6.jpg)
+
+One of them restricts your aspect ratio, often resulting in my adding emoji upside down. The other one forces you to scroll through every possible permutation of the people emoji to get to the one you want. My most-used emoji is 📦, which is on page **51**. All of the emoji reload each time, so it's not fast, either. However, the aspect ratio thing means that, after all my hard work, I'd be cutting something out just to add a dumb smiley face 😡![^argh]
+
+### Fin 🎉
+
+Ta-da! There you have it: my crazy, inefficient workflow through which I can make code changes look like they've been requested by a 5 year-old with a crayon! 🖍
+
+[^haylib]: Though I resented it at the time, it was probably a good thing that they only let you enter the [special collections library](http://library.brown.edu/hay/) with a golf-✏️ in college.
+
+[^snagit]: I use [Snagit](https://www.techsmith.com/screen-capture.html) sometimes (which costs 💸), but that's mainly for bells and whistles not used in this particular example.
+
+[^elijahbook]: I could _literally_ write a book (or 📚) discussing the reasons why...and [Elijah Meeks](https://twitter.com/elijah_meeks) and I totally _will_ be doing just that, someday.
+
+[^markup]: You can also do this with the pre-installed Markup app on iOS now.
+
+[^lines]: Not what it's actually called, I'm sure.
+
+[^pe]: For some reason I can't find Photo Editor now. 😳
+
+[^argh]: As you can tell, I'm not bitter about it or anything... Seriously, if you have a better app for this, let me know 🙏!
