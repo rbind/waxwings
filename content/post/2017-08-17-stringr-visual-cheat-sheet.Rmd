@@ -9,7 +9,7 @@ tags:
   - R
   - resources
 description: "A visual guide (aka cheat sheet) to stringr 📦 functions, by Lise Vaudor."
-d--
+---
 
 So, kinda the whole point of this _“making-a-blog”_ endeavor (aside from getting to play with [Yihui Xie](https://github.com/yihui/)'s super awesome [`blogdown`](https://github.com/rstudio/blogdown) 📦) was to give a more permanent home to some of the resources I've found and/or tweeted. So, without further ado...
 
