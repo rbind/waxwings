@@ -1,0 +1,20 @@
+---
+title: "About"
+menu: "main"
+disable_comments: true
+nodateline: true
+output:
+  html_document:
+    keep_md: TRUE
+---
+
+Hi! It's me, Mara (which I assume was readily apparent).
+
+There are many things I'm good at, but writing about myself is _not_ one of them 🙁.
+
+Fortunately, the wild and wonderful internet lets me punt the question...
+
+Twitter , [\@dataandme](https://twitter.com/dataandme), is probably the best place to go if you're looking to get info straight from the source (me).T
+here's also that handy little sidebar with links to other sites.
+
+Not sure it's really _the_ Mara Averick? Take a gander at my [keybase](https://keybase.io/maraaverick) page to put your mind at ease.
