@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/maraaverick
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://maraaverick.rbind.io
+  * I am maraaverick (https://keybase.io/maraaverick) on keybase.
+  * I have a public key ASBGZYlMVMOAmXm5NnWjniIDny002jlVi144EAtWkvcz9wo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101e7ce096f60a8972cce3b66256efa930f8a91df2ef357de04075671c2aa85a7680a",
+      "host": "keybase.io",
+      "kid": "01204665894c54c3809979b93675a39e22039f2d34da39558b5e38100b5692f733f70a",
+      "uid": "cbe5bf09421747a257fce933b8638919",
+      "username": "maraaverick"
+    },
+    "merkle_root": {
+      "ctime": 1503157697,
+      "hash": "3b4e5b5705ab864fda4c0204bcc3dfdcc5ed68c8e02848eec3a01ecf9e4acb81dd02eb0938be67f9fa0614208df9f3d1f0ccf84098f68427b0f07778fec04b83",
+      "hash_meta": "3baf08a277bcb7272cd1805045c96329f2a4fb1775c3c8a8449164f839c0fa97",
+      "seqno": 1335766
+    },
+    "service": {
+      "hostname": "maraaverick.rbind.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.28"
+  },
+  "ctime": 1503157851,
+  "expire_in": 504576000,
+  "prev": "86a271702d5088dc8c2557ac11e2edc41778830ac4e30bc705a6d7f8a9f1c454",
+  "seqno": 18,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgRmWJTFTDgJl5uTZ1o54iA58tNNo5VYteOBALVpL3M/cKp3BheWxvYWTFA1B7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxZTdjZTA5NmY2MGE4OTcyY2NlM2I2NjI1NmVmYTkzMGY4YTkxZGYyZWYzNTdkZTA0MDc1NjcxYzJhYTg1YTc2ODBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNDY2NTg5NGM1NGMzODA5OTc5YjkzNjc1YTM5ZTIyMDM5ZjJkMzRkYTM5NTU4YjVlMzgxMDBiNTY5MmY3MzNmNzBhIiwidWlkIjoiY2JlNWJmMDk0MjE3NDdhMjU3ZmNlOTMzYjg2Mzg5MTkiLCJ1c2VybmFtZSI6Im1hcmFhdmVyaWNrIn0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTAzMTU3Njk3LCJoYXNoIjoiM2I0ZTViNTcwNWFiODY0ZmRhNGMwMjA0YmNjM2RmZGNjNWVkNjhjOGUwMjg0OGVlYzNhMDFlY2Y5ZTRhY2I4MWRkMDJlYjA5MzhiZTY3ZjlmYTA2MTQyMDhkZjlmM2QxZjBjY2Y4NDA5OGY2ODQyN2IwZjA3Nzc4ZmVjMDRiODMiLCJoYXNoX21ldGEiOiIzYmFmMDhhMjc3YmNiNzI3MmNkMTgwNTA0NWM5NjMyOWYyYTRmYjE3NzVjM2M4YTg0NDkxNjRmODM5YzBmYTk3Iiwic2Vxbm8iOjEzMzU3NjZ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoibWFyYWF2ZXJpY2sucmJpbmQuaW8iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4yOCJ9LCJjdGltZSI6MTUwMzE1Nzg1MSwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiI4NmEyNzE3MDJkNTA4OGRjOGMyNTU3YWMxMWUyZWRjNDE3Nzg4MzBhYzRlMzBiYzcwNWE2ZDdmOGE5ZjFjNDU0Iiwic2Vxbm8iOjE4LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQM46eTcPVAb2hf1wHGR3RkO6PEBFE/EMYuH0fLfle7bKVf1+S05f3qGHLcomm8puQx9VcUHCevX+A8Pr0ENSKQCoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCBkTsBgXexW1yOVHfjm13V1fd0NxrmmCvXJ9J6fJlubaqN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/maraaverick
+
+==================================================================
