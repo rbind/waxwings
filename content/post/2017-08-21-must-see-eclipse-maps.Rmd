@@ -1,0 +1,22 @@
+---
+title: "Very Important, Must-See, 🐐 Eclipse Maps"
+author: Mara Averick
+date: '2017-08-21'
+slug: must-see-eclipse-maps
+categories: []
+tags:
+  - maps
+banner: 'banners/eclipse_jscarto_montage.jpeg'
+images: ['banners/eclipse_jscarto_montage.jpeg']
+description: "If, like me, you're nowhere near full-eclipse viewing today, you can take solace knowing that at least you saw these 🗺s..."
+---
+
+If, like me, you're nowhere near full-eclipse viewing today, you can take solace knowing that at least you saw these...
+
+[Joshua Stevens](http://www.joshuastevens.net/)' [**Sunsquatch**](https://twitter.com/jscarto/status/892933635761995780) eclipse map was just the beginning.
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "892933635761995780")
+```
+
+Now, go protect your eyes 😎, put on your requisite 15 pieces of flair, avoid dysentery, and then watch the literal-lyrics version of the [Total Eclipse of the Heart](https://youtu.be/fsgWUq0fdKk) music video (you won't be disappointed).
