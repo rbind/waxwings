@@ -1,0 +1,53 @@
+---
+title: tidyeval resource roundup
+author: Mara Averick
+date: '2017-08-26'
+slug: tidyeval-resource-roundup
+categories: []
+tags:
+  - R
+  - resources
+  - tidyeval
+  - tidyverse
+banner: 'banners/tidyeval_combo.png'
+images: ['banners/tidyeval_combo.png']
+description: 'After posting a link to Edwin Thoen’s ⭐️ "Tidy evaluation: most common actions," I was asked if there were other tidyeval tutorials I knew of. And so, here are some resources I’ve found and tweeted.'
+---
+
+Though, naturally, the [Honorable Doctor Sir Lord General Hadley Wickham](http://hadley.nz/)'s [**Programming with dplyr**](http://dplyr.tidyverse.org/articles/programming.html) article is the _ne plus ultra_ of getting oneself aquainted with the latest and greatest in [tidyeval programming recipes](http://dplyr.tidyverse.org/articles/programming.html#programming-recipes), [quoting](http://dplyr.tidyverse.org/articles/programming.html#quoting), and [quasiquotation](http://dplyr.tidyverse.org/articles/programming.html#quasiquotation); there _are_ some other resources out there.
+
+After posting a link to [Edwin Thoen](https://edwinth.github.io)'s ⭐️ [**Tidy evaluation, most common actions**](https://edwinth.github.io/blog/dplyr-recipes/), I was asked if there were other `tidyeval` tutorials I knew of. And so, here are some resources I've found and tweeted.[^1]
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "901429535266267136")
+```
+
+### [Lesser known `dplyr` tricks](http://www.brodrigues.co/blog/2017-02-17-lesser_known_tricks/?utm_content=buffer46268&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) by Bruno Rodrigues
+
+```{r echo=FALSE}
+blogdown::shortcode('tweet', '881860624808128512')
+```
+
+### [Making Sense of `dplyr` 0.6](http://www.json.blog/2017/05/making-sense-of-dplyr-0.6/?utm_content=bufferb2c45&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) by Jason Becker
+
+```{r echo=FALSE}
+blogdown::shortcode('tweet', '865975935245451264')
+```
+
+### [gentle non-standard evaluation in `dplyr` 0.6](https://alexpghayes.github.io/2017/gentle-non-standard-evaluation-in-dplyr-0-6/?utm_content=buffer3fc76&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) by Alex Hayes
+
+```{r echo=FALSE}
+blogdown::shortcode('tweet', '866364480212611072')
+```
+
+### [Excluding Rows](https://romain.rbind.io/blog/2017/07/01/excluding-rows/?utm_content=bufferc1336&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) by Romain François
+
+```{r echo=FALSE}
+blogdown::shortcode('tweet', '881584765073227780')
+```
+
+### Ta-da 🎉
+
+If you've written and/or found more examples that you think would be helpful to have in here, by all means give me a shout! Actually, a tweet 🐦 ([\@dataandme](https://twitter.com/dataandme)) would probably be best...which, I know, is totally tragic.
+
+[^1]: Yes, I'm just leaving them as tweets, because they already have author names, and screenshots and...y'know what? If you don't want them in tweet form, go write your own post! (I'm kidding, of course 😉)
