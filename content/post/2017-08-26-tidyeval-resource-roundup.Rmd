@@ -22,7 +22,7 @@ After posting a link to [Edwin Thoen](https://edwinth.github.io)'s ⭐️ [**Tid
 blogdown::shortcode("tweet", "901429535266267136")
 ```
 
-### [Lesser known `dplyr` tricks](http://www.brodrigues.co/blog/2017-02-17-lesser_known_tricks/?utm_content=buffer46268&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) by Bruno Rodrigues
+### [Lesser known `dplyr` 0.7* tricks](http://www.brodrigues.co/blog/2017-06-19-dplyr-0-70-tutorial/) by Bruno Rodrigues
 
 ```{r echo=FALSE}
 blogdown::shortcode('tweet', '881860624808128512')
