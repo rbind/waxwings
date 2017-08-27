@@ -46,6 +46,13 @@ blogdown::shortcode('tweet', '866364480212611072')
 blogdown::shortcode('tweet', '881584765073227780')
 ```
 
+### [`set_na_where()`: a nonstandard evaluation use case](https://tjmahr.github.io/set-na-where-nonstandard-evaluation-use-case/?utm_content=buffer2d7a9&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) by Tristan Mahr
+
+```{r echo=FALSE}
+blogdown::shortcode('tweet', '899341779962605568')
+```
+
+
 ### Ta-da 🎉
 
 If you've written and/or found more examples that you think would be helpful to have in here, by all means give me a shout! Actually, a tweet 🐦 ([\@dataandme](https://twitter.com/dataandme)) would probably be best...which, I know, is totally tragic.
