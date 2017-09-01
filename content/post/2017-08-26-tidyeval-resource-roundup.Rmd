@@ -22,7 +22,7 @@ After posting a link to [Edwin Thoen](https://edwinth.github.io)'s ⭐️ [**Tid
 blogdown::shortcode("tweet", "901429535266267136")
 ```
 
-### [Lesser known `dplyr` 0.7* tricks](http://www.brodrigues.co/blog/2017-06-19-dplyr-0-70-tutorial/) by Bruno Rodrigues
+### [Lesser known `dplyr` 0.7* tricks](http://www.brodrigues.co/blog/2017-06-19-dplyr-0-70-tutorial/) by Bruno Rodrigues[^2]
 
 ```{r echo=FALSE}
 blogdown::shortcode('tweet', '881860624808128512')
@@ -58,3 +58,5 @@ blogdown::shortcode('tweet', '899341779962605568')
 If you've written and/or found more examples that you think would be helpful to have in here, by all means give me a shout! Actually, a tweet 🐦 ([\@dataandme](https://twitter.com/dataandme)) would probably be best...which, I know, is totally tragic.
 
 [^1]: Yes, I'm just leaving them as tweets, because they already have author names, and screenshots and...y'know what? If you don't want them in tweet form, go write your own post! (I'm kidding, of course 😉)
+
+[^2]: Bruno also wrote a second post, [**Why I find tidyeval useful**](http://www.brodrigues.co/blog/2017-08-27-why_tidyeval/), which is a good example of _when_ you might want to put your tidyeval skills to work.
