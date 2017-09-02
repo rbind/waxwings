@@ -1,0 +1,53 @@
+---
+title: base-shaming and the fetishisation of tidy data
+author: Mara Averick
+date: '2017-09-02'
+draft: TRUE
+slug: base-shaming-fetishisation-of-tidy-data
+categories: []
+tags:
+  - R
+  - tidyverse
+  - STS
+---
+
+Back in 2016, Nathan Yau (author/curator of <flowingdata.com>) wrote a post on his blog, [**Comparing ggplot2 and R Base Graphics**](https://flowingdata.com/2016/03/22/comparing-ggplot2-and-r-base-graphics/). His conclusion is unsurprising (when in doubt, _it depends_ is almost always a legitimate answer):
+
+> Should _you_ use ggplot2 or base graphics? Tough call.
+
+The impetus for the post, as he described it, seemed somewhat more value-laden.
+
+> However, last month, Jeff Leek explained [why he purposely avoids ggplot2](https://simplystatistics.org/2016/02/11/why-i-dont-use-ggplot2/). Then David Robinson rebutted with [why ggplot2 is superior to R’s lowly base graphics](http://varianceexplained.org/r/why-I-use-ggplot2/).
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "712263204349423617")
+```
+
+When I tweeted that link (I was so young and innocent back in March of 2016), I guess I didn't fully appreciate that the tensions among the parties (_actor networks_, if you will) went beyond good-natured banter.
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "903001691598897152")
+```
+
+
+I _certainly_ didn't think it indicated anything nearing the magnitude of one of the great statistical "controversies" (for lack of a better word) of the past two centuries.[^Mcgrayne2012]
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "903003120317325314")
+
+blogdown::shortcode("tweet", "902933897587171329")
+```
+
+
+## `base` vs. `tidyverse`: a false dichotomy with real consequences?
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "902910720165203968")
+```
+
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "902916684612239360")
+```
+
+[^Mcgrayne2012]: McGrayne, Sharon Bertsch. 2012. The Theory That Would Not Die: How Bayes’ Rule Cracked the Enigma Code, Hunted Down Russian Submarines, and Emerged Triumphant from Two Centuries of Controversy. Yale University Press.
