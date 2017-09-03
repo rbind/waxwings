@@ -13,8 +13,8 @@ banner: 'banners/tidyeval_combo.png'
 images: ['banners/tidyeval_combo.png']
 description: 'After posting a link to Edwin Thoen’s ⭐️ "Tidy evaluation: most common actions," I was asked if there were other tidyeval tutorials I knew of. And so, here are some resources I’ve found and tweeted.'
 ---
-
-Though, naturally, the [Honorable Doctor Sir Lord General Hadley Wickham](http://hadley.nz/)'s [**Programming with dplyr**](http://dplyr.tidyverse.org/articles/programming.html) article is the _ne plus ultra_ of getting oneself aquainted with the latest and greatest in [tidyeval programming recipes](http://dplyr.tidyverse.org/articles/programming.html#programming-recipes), [quoting](http://dplyr.tidyverse.org/articles/programming.html#quoting), and [quasiquotation](http://dplyr.tidyverse.org/articles/programming.html#quasiquotation); there _are_ some other resources out there.
+Updated: `r Sys.Date()`  
+Though, naturally, the [Honorable Professor Doctor Sir Lord General Hadley Wickham](http://hadley.nz/)'s [**Programming with dplyr**](http://dplyr.tidyverse.org/articles/programming.html) article is the _ne plus ultra_ of getting oneself aquainted with the latest and greatest in [tidyeval programming recipes](http://dplyr.tidyverse.org/articles/programming.html#programming-recipes), [quoting](http://dplyr.tidyverse.org/articles/programming.html#quoting), and [quasiquotation](http://dplyr.tidyverse.org/articles/programming.html#quasiquotation); there _are_ some other resources out there.
 
 After posting a link to [Edwin Thoen](https://edwinth.github.io)'s ⭐️ [**Tidy evaluation, most common actions**](https://edwinth.github.io/blog/dplyr-recipes/), I was asked if there were other `tidyeval` tutorials I knew of. And so, here are some resources I've found and tweeted.[^1]
 
@@ -22,11 +22,18 @@ After posting a link to [Edwin Thoen](https://edwinth.github.io)'s ⭐️ [**Tid
 blogdown::shortcode("tweet", "901429535266267136")
 ```
 
-### [Lesser known `dplyr` 0.7* tricks](http://www.brodrigues.co/blog/2017-06-19-dplyr-0-70-tutorial/) by Bruno Rodrigues[^2]
+### [Lesser known `dplyr` 0.7* tricks](http://www.brodrigues.co/blog/2017-06-19-dplyr-0-70-tutorial/) [Why I find tidyeval useful](http://www.brodrigues.co/blog/2017-08-27-why_tidyeval/) by Bruno Rodrigues
 
 ```{r echo=FALSE}
 blogdown::shortcode('tweet', '881860624808128512')
 ```
+
+### [Why I find tidyeval useful](http://www.brodrigues.co/blog/2017-08-27-why_tidyeval/) by Bruno Rodrigues
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "902278898968170496")
+```
+
 
 ### [Making Sense of `dplyr` 0.6](http://www.json.blog/2017/05/making-sense-of-dplyr-0.6/?utm_content=bufferb2c45&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) by Jason Becker
 
@@ -53,10 +60,16 @@ blogdown::shortcode('tweet', '899341779962605568')
 ```
 
 
+### [Down the rabbit hole with tidy eval — Part 1](http://colinfay.me/tidyeval-1/) by Colin Fay
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "902214722572996612")
+```
+
+
 ### Ta-da 🎉
 
 If you've written and/or found more examples that you think would be helpful to have in here, by all means give me a shout! Actually, a tweet 🐦 ([\@dataandme](https://twitter.com/dataandme)) would probably be best...which, I know, is totally tragic.
 
 [^1]: Yes, I'm just leaving them as tweets, because they already have author names, and screenshots and...y'know what? If you don't want them in tweet form, go write your own post! (I'm kidding, of course 😉)
 
-[^2]: Bruno also wrote a second post, [**Why I find tidyeval useful**](http://www.brodrigues.co/blog/2017-08-27-why_tidyeval/), which is a good example of _when_ you might want to put your tidyeval skills to work.
