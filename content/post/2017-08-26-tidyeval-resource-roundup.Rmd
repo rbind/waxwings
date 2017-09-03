@@ -13,7 +13,7 @@ banner: 'banners/tidyeval_combo.png'
 images: ['banners/tidyeval_combo.png']
 description: 'After posting a link to Edwin Thoen’s ⭐️ "Tidy evaluation: most common actions," I was asked if there were other tidyeval tutorials I knew of. And so, here are some resources I’ve found and tweeted.'
 ---
-Updated: `r Sys.Date()`  
+_Updated: `r Sys.Date()`_  
 Though, naturally, the [Honorable Professor Doctor Sir Lord General Hadley Wickham](http://hadley.nz/)'s [**Programming with dplyr**](http://dplyr.tidyverse.org/articles/programming.html) article is the _ne plus ultra_ of getting oneself aquainted with the latest and greatest in [tidyeval programming recipes](http://dplyr.tidyverse.org/articles/programming.html#programming-recipes), [quoting](http://dplyr.tidyverse.org/articles/programming.html#quoting), and [quasiquotation](http://dplyr.tidyverse.org/articles/programming.html#quasiquotation); there _are_ some other resources out there.
 
 After posting a link to [Edwin Thoen](https://edwinth.github.io)'s ⭐️ [**Tidy evaluation, most common actions**](https://edwinth.github.io/blog/dplyr-recipes/), I was asked if there were other `tidyeval` tutorials I knew of. And so, here are some resources I've found and tweeted.[^1]
@@ -22,7 +22,7 @@ After posting a link to [Edwin Thoen](https://edwinth.github.io)'s ⭐️ [**Tid
 blogdown::shortcode("tweet", "901429535266267136")
 ```
 
-### [Lesser known `dplyr` 0.7* tricks](http://www.brodrigues.co/blog/2017-06-19-dplyr-0-70-tutorial/) [Why I find tidyeval useful](http://www.brodrigues.co/blog/2017-08-27-why_tidyeval/) by Bruno Rodrigues
+### [Lesser known `dplyr` 0.7* tricks](http://www.brodrigues.co/blog/2017-06-19-dplyr-0-70-tutorial/) by Bruno Rodrigues
 
 ```{r echo=FALSE}
 blogdown::shortcode('tweet', '881860624808128512')
@@ -33,7 +33,6 @@ blogdown::shortcode('tweet', '881860624808128512')
 ```{r echo=FALSE}
 blogdown::shortcode("tweet", "902278898968170496")
 ```
-
 
 ### [Making Sense of `dplyr` 0.6](http://www.json.blog/2017/05/making-sense-of-dplyr-0.6/?utm_content=bufferb2c45&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) by Jason Becker
 
