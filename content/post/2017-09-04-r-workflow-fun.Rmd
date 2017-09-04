@@ -1,0 +1,72 @@
+---
+title: R workflow fun
+author: Mara Averick
+date: '2017-09-04'
+slug: r-workflow-fun
+draft: TRUE
+categories: []
+tags:
+  - R
+  - resources
+description: "A roundup of some of the R and data-analysis workflow posts that have piqued my interest over the past year or so."
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(dev = 'png', dpi = 100, fig.retina = 2)
+```
+
+I was excited to see [**Declutter your R workflow with tidy tools**](https://peerj.com/preprints/3180/)[^RossWickhamRobinson], a preprint by Zev Ross, Hadley Wickham, and David Robinson, among the many excellent paper's in the [_Practical Data Science for Stats_](https://peerj.com/collections/50-practicaldatascistats/) PeerJ collection.[^1] Workflows, whether data-analysis-related or not, are never a one-size-fits-all matter of course. That said, there's lots to be learned from the mistakes and successes of others. So, here's a roundup of some of the workflow posts that have piqued my interest over the past year or so.[^2]
+
+### [Implementation of a basic reproducible data analysis workflow](http://blog.jom.link/implementation_basic_reproductible_workflow.html) by Joris Muller
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "846070756756914176")
+```
+
+### [New tools and workflows for data analysis](https://speakerdeck.com/jennybc/new-tools-and-workflows-for-data-analysis) by Jenny Bryan
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "790987803500904448")
+```
+
+### [A new data processing workflow for R](http://zevross.com/blog/2015/01/13/a-new-data-processing-workflow-for-r-dplyr-magrittr-tidyr-ggplot2/) by Zev Ross
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "813220041462284288")
+```
+
+### [Efficient R programming: Efficient workflow](https://csgillespie.github.io/efficientR/workflow.html) by Colin Gillespie & Robin Lovelace  
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "880897990763966464")
+```
+
+### [My set of packages for (daily) data analysis](https://strengejacke.wordpress.com/2017/06/19/my-set-of-packages-for-daily-data-analysis-rstats/) by Daniel Lüdecke
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "876911723449602048")
+```
+
+### [Teaching the data science process](https://medium.com/towards-data-science/teaching-the-data-science-process-f1e9d6f87ad5) by Balázs Kégl
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "860479697406316544")
+```
+
+### [Reproducible workflows in R](http://will-landau.com/2016/06/14/workflow/) by Will Landau
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "856916251196764162")
+```
+
+### [A Git Workflow Walkthrough Series](http://vallandingham.me/git-workflow.html) by Jim Vallandingham
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "756961349184421888")
+```
+
+[^1]: There are a lot of great resources in there, so I highly recommend giving them a read, or at least a skim, if you're truly pressed for time.
+
+[^RossWickhamRobinson]: Ross Z, Wickham H, Robinson D. (2017) Declutter your R workflow with tidy tools. _PeerJ Preprints_ 5:e3180v1 https://doi.org/10.7287/peerj.preprints.3180v1
+
+[^2]: So, really, just `workflow` related tweets from 🐦 [\@dataandme](https://twitter.com/dataandme) put here in a somewhat less ephemeral medium.
