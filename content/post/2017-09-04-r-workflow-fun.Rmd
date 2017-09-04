@@ -15,7 +15,9 @@ description: "A roundup of some of the R and data-analysis workflow posts that h
 knitr::opts_chunk$set(dev = 'png', dpi = 100, fig.retina = 2)
 ```
 
-I was excited to see [**Declutter your R workflow with tidy tools**](https://peerj.com/preprints/3180/)[^RossWickhamRobinson], a preprint by Zev Ross, Hadley Wickham, and David Robinson, among the many excellent paper's in the [_Practical Data Science for Stats_](https://peerj.com/collections/50-practicaldatascistats/) PeerJ collection.[^1] Workflows, whether data-analysis-related or not, are never a one-size-fits-all matter of course. That said, there's lots to be learned from the mistakes and successes of others. So, here's a roundup of some of the workflow posts that have piqued my interest over the past year or so.[^2]
+I was excited to see [**Declutter your R workflow with tidy tools**](https://peerj.com/preprints/3180/)[^RossWickhamRobinson], a preprint by Zev Ross, Hadley Wickham, and David Robinson, among the many excellent paper's in the [_Practical Data Science for Stats_](https://peerj.com/collections/50-practicaldatascistats/) PeerJ collection.[^1] Workflows, whether data-analysis-related or not, are never a one-size-fits-all matter of course. Among other things, the workflows here differ in scope (heck, [one of them](#a-git-workflow-walkthrough-series-by-jim-vallandingham) doesn't even use R). 
+
+That said, there's lots to be learned from the processes, mistakes, and hard-wrought wisdom `r emo::ji("owl")` of others. So, here's a roundup of some of the workflow posts that have piqued my interest over the past year or so.[^2] My only note of caution `r emo::ji("warning")` is to take the word `new` with a grain of salt— what was once `r emo::ji("new")` is now old hat.
 
 ### [Implementation of a basic reproducible data analysis workflow](http://blog.jom.link/implementation_basic_reproductible_workflow.html) by Joris Muller
 
@@ -59,7 +61,7 @@ blogdown::shortcode("tweet", "860479697406316544")
 blogdown::shortcode("tweet", "856916251196764162")
 ```
 
-### [A Git Workflow Walkthrough Series](http://vallandingham.me/git-workflow.html) by Jim Vallandingham
+### [A Git Workflow Walkthrough Series](http://vallandingham.me/git-workflow.html) by Jim Vallandingham 
 
 ```{r echo=FALSE}
 blogdown::shortcode("tweet", "756961349184421888")
