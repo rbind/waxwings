@@ -68,8 +68,17 @@ blogdown::shortcode("tweet", "856916251196764162")
 blogdown::shortcode("tweet", "756961349184421888")
 ```
 
+### [represtools: Reproducible research tools](http://pirategrunt.com/represtools/) by PirateGrunt[^PG]
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "905113823522238465")
+```
+
+
 [^1]: There are a lot of great resources in there, so I highly recommend giving them a read, or at least a skim, if you're truly pressed for time.
 
 [^RossWickhamRobinson]: Ross Z, Wickham H, Robinson D. (2017) Declutter your R workflow with tidy tools. _PeerJ Preprints_ 5:e3180v1 https://doi.org/10.7287/peerj.preprints.3180v1
 
 [^2]: So, really, just `workflow` related tweets from 🐦 [\@dataandme](https://twitter.com/dataandme) put here in a somewhat less ephemeral medium.
+
+[^PG]: I'm pretty sure that's not his given name, but I can't find another. So, [PirateGrunt](http://pirategrunt.com/) it is... `r emo::ji("skull")`
