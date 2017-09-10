@@ -1,0 +1,63 @@
+---
+title: "I can’t quit you. (Or: Mara makes a very stupid mistake.)"
+author: "Mara Averick"
+date: "2017-09-11"
+slug: i-can-t-quit-you-or-a-very-stupid-mistake
+categories: []
+tags:
+  - wild-card
+banner: "banners/word_quit.gif"
+images: ["banners/word_quit.gif"]
+description: "Expertise may mean having the confidence that you can google the right words to find your answers, but sometimes it's those very words that we're lacking. This is one such story."
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(dev = 'png', dpi = 100, fig.retina = 2)
+```
+
+> "expertise is having the confidence you can google the right words to find you answer." — Jason Becker
+
+```{r jsonbecker_expertise, echo=FALSE}
+blogdown::shortcode("tweet", "906541009273851905")
+```
+ 
+[Jason Becker](https://twitter.com/jsonbecker/)'s brilliant tweet `r emo::ji("bird")` was born of a thread that began with [Jesse Megan](https://twitter.com/kierisi/) reflecting on educational philosophies and trade-offs.
+
+```{r jesse_ed, echo=FALSE}
+blogdown::shortcode("tweet", "906511333071433729")
+```
+
+Jesse has been leading an ["R for Data Science" online learning community](https://medium.com/@kierisi/join-the-r-for-data-science-online-learning-community-842527222ab3) (in its second week of operation, as of this writing). And, amid the R4DS-community activity, and Jason's tweet, I got to thinking about the fact that this kind of expertise-- the kind where you _know the words_ to search for-- is not, in fact, insubstantial.
+
+Rather than opine on the nature of knowledge, allow me to offer a _"just so"_ story of sorts about a time when _I_ made a mistake that I couldn't Google my way out of.[^metoo]
+
+### Mara makes a very stupid mistake
+
+Long long ago, when I was young and naïve,[^vagrant] I was trying to learn _something_ on the computer that involved my using [Vagrant](https://en.wikipedia.org/wiki/Vagrant_(software)), a virtual dev environment software. I wasn't trying to do anything fancy; the goal was literally just to start running a Vagrant virtual machine, and then stop running it, but I hadn't done _anything_ at the command line for a very long time.
+
+It all seemed so simple. To get going, I just needed to run `vagrant up` in the right directory. You can see what this should look like below:[^mrpradp]
+
+![](https://i.imgur.com/UXJcfA3.gif)
+
+To _stop_ the virtual environment, you run `vagrant halt`. Easy enough, right? _Well..._ 
+
+I could **not** get it to work. I read and re-read the documentation, looked at answers on StackOverflow, went through the whole _thing on a computer isn't working right_ routine many of us know so well. As it turned out, the problem was that I was trying to "halt" vagrant from _within_ vagrant.
+
+It's a difficult thing to describe using words (_See? I'm circling back to my point!_), but I was, in effect, doing the vagrant-equivalent of trying to quit Microsoft Word by typing out the word `"quit"` (see visual aid below).
+
+![](https://i.imgur.com/NecJGg3.gif)
+
+Of course, if this analogy had been apparent to me at the time, none of this would have occurred. That's what makes the [curse of knowledge](https://en.wikipedia.org/wiki/Curse_of_knowledge) oh-so vexing: in order to _make_ this analogy, you have to understand what's going on, but it's only _because_ you _don't_ understand what's going on that you need this analogy at all.
+
+### Innocence lost
+
+I've been re-reading [**The Design of Everyday Things**](https://www.goodreads.com/book/show/840.The_Design_of_Everyday_Things) by [Donald A. Norman](https://en.wikipedia.org/wiki/Don_Norman), and I'll close with a passage that I think captures the spirit of this quite well.
+
+> "Innocence lost is not easily regained. The designer simply cannot predict the problems people will have, the misinterpretations that will arise, the errors that will get made." — Donald A. Norman, _The Design of Everyday Things_
+
+[^metoo]: _I know_, it's hard for me to imagine my making a mistake too. But, I swear, it really did happen. `r emo::ji("flushed")`
+
+[^vagrant]: OK, not that long ago. The story involves [Vagrant](https://en.wikipedia.org/wiki/Vagrant_(software)), which has, evidently, only existed since 2010.
+
+[^mrpradp]: This story takes place two laptops ago, so the image you're seeing is not mine! It's from ["Pivotal Cloud Foundry Laptop"](https://medium.com/code-tech/pivotal-cloud-foundry-in-laptop-5e5add6ef1e9) by Pradeep S ([\@mrpradp](https://twitter.com/mrpradp) on twitter).
+
