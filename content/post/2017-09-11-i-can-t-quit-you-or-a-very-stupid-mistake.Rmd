@@ -43,7 +43,7 @@ To _stop_ the virtual environment, you run `vagrant halt`. Easy enough, right? _
 
 The starting part went just fine. A couple `cd`s and I was in the `MyDataScienceToolbox` directory, typed and entered `vagrant up`, and watched the magic `r emo::ji("sparkles")` happen. 
 
-Stopping `r emo::ji("stop")`, however, did not go so well. Na matter how many times I ran `vagrant halt`, I could **not** get it to work. I read and re-read the documentation, looked at answers on StackOverflow, went through the whole _thing on a computer isn't working right_ routine many of us know so well.
+Stopping `r emo::ji("stop")`, however, did not go so well. No matter how many times I ran `vagrant halt`, I could **not** get it to work. I read and re-read the documentation, looked at answers on StackOverflow, went through the whole _thing on a computer isn't working right_ routine many of us know so well.
 
 As it turned out, the problem was that I was trying to "halt" vagrant from _within_ vagrant. It's a weird thing to describe using words (_See? I'm circling back to my point!_), but I was, in effect, doing the vagrant-equivalent of trying to quit Microsoft Word by typing out the word `"quit"` (see visual aid below).
 
