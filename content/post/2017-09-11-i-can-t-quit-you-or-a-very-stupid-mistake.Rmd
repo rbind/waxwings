@@ -35,15 +35,17 @@ Rather than opine on the nature of knowledge, allow me to offer a _"just so"_ st
 
 Long long ago, when I was young and naïve,[^vagrant] I was trying to learn _something_ on the computer that involved my using [Vagrant](https://en.wikipedia.org/wiki/Vagrant_(software)), a virtual dev environment software. I wasn't trying to do anything fancy; the goal was literally just to start running a Vagrant virtual machine, and then stop running it, but I hadn't done _anything_ at the command line for a very long time.
 
-It all seemed so simple. To get going, I just needed to run `vagrant up` in the right directory. You can see what this should look like below:[^mrpradp]
+It all seemed so simple. To get going, I just needed to run `vagrant up` in the right directory. You can see what this looks like, below:[^mrpradp]
 
 ![](https://i.imgur.com/UXJcfA3.gif)
 
 To _stop_ the virtual environment, you run `vagrant halt`. Easy enough, right? _Well..._ 
 
-I could **not** get it to work. I read and re-read the documentation, looked at answers on StackOverflow, went through the whole _thing on a computer isn't working right_ routine many of us know so well. As it turned out, the problem was that I was trying to "halt" vagrant from _within_ vagrant.
+The starting part went just fine. A couple `cd`s and I was in the `MyDataScienceToolbox` directory, typed and entered `vagrant up`, and watched the magic `r emo::ji("sparkles")` happen. 
 
-It's a difficult thing to describe using words (_See? I'm circling back to my point!_), but I was, in effect, doing the vagrant-equivalent of trying to quit Microsoft Word by typing out the word `"quit"` (see visual aid below).
+Stopping `r emo::ji("stop")`, however, did not go so well. Na matter how many times I ran `vagrant halt`, I could **not** get it to work. I read and re-read the documentation, looked at answers on StackOverflow, went through the whole _thing on a computer isn't working right_ routine many of us know so well.
+
+As it turned out, the problem was that I was trying to "halt" vagrant from _within_ vagrant. It's a weird thing to describe using words (_See? I'm circling back to my point!_), but I was, in effect, doing the vagrant-equivalent of trying to quit Microsoft Word by typing out the word `"quit"` (see visual aid below).
 
 ![](https://i.imgur.com/NecJGg3.gif)
 
