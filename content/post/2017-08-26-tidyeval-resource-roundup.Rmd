@@ -70,6 +70,11 @@ blogdown::shortcode("tweet", "902214722572996612")
 blogdown::shortcode("tweet", "906925770538455040")
 ```
 
+### [My First Steps into The World of Tidy Eval](www.onceupondata.com/2017/08/12/my-first-steps-into-the-world-of-tidyeval/) by Omayma
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "909126265923391488")
+```
+
 
 ### Ta-da 🎉
 
