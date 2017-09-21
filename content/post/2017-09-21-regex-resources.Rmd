@@ -46,7 +46,7 @@ blogdown::shortcode("tweet", "809596167449432066")
 blogdown::shortcode("tweet", "890755949744586753")
 ```
 
-### [qdapRegex](https://github.com/trinker/qdapRegex) by Tyler Rinker
+### [qdapRegex](https://github.com/trinker/qdapRegex) `r emo::ji("package")` by Tyler Rinker
 
 ```{r echo=FALSE}
 blogdown::shortcode("tweet", "874250442812907521")
