@@ -16,7 +16,7 @@ description: "At some point in your computing life, you're gonna need to get dow
 
 Regular Expressions, RegEx, regexps-- call them what you like, but no matter how you slice it, they're useful af. After all, data spelunking is all about patterns, and that's precisely what regexps are for: (wo)manhandling patterns in strings. Good Sirs Wickham and Grolemund, in their masterful tome, [r4ds](http://r4ds.had.co.nz/strings.html#matching-patterns-with-regular-expressions), describe them thusly:
 
- > They [regexps] take a little while to get your head around, but once you understand them, you’ll find them extremely useful.
+ > They [regexps] take a little while to get your head around, but once you understand them, you’ll find them extremely useful.[^r4dsregex]
  
 There are helpful string-related R packages `r emo::ji("package")`, [`stringr`](http://stringr.tidyverse.org/) (which is built on top of the more comprehensive [`stringi`](https://github.com/gagolews/stringi) package) comes to mind. But, at some point in your computing life, you're gonna need to get down with regular expressions.
 
@@ -62,4 +62,6 @@ blogdown::shortcode("tweet", "799251262344572928")
 #### Tada `r emo::ji("tada")`
 
 As always, by all means let me know if you've written something you think I should add: chirp my way  (`r emo::ji("bird")` [\@dataandme](https://twitter.com/dataandme)), comment-- you know the drill.
+
+[^r4dsregex]: Wickham, Hadley and Garrett Grolemund. 2016. _R for Data Science_. Sebastopol: O'Reilly Media. Web. <http://r4ds.had.co.nz/strings.html#matching-patterns-with-regular-expressions> 20 September, 2017. 
 
