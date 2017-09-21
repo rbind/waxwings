@@ -24,37 +24,37 @@ And so, here's a collection of some of the Regex-related links I've tweeted `r e
 
 ### [Basic Regular Expressions in R Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf) by Ian Kopacka
 
-```{r echo=FALSE}
+```{r regex_cheatsheet, echo=FALSE}
 blogdown::shortcode("tweet", "852869552191012865")
 ```
 
 ### [strings and regular expressions](http://perso.ens-lyon.fr/lise.vaudor/strings-et-expressions-regulieres/) by Lise Vaudor
 
-```{r echo=FALSE}
+```{r lvaudor_regexps, echo=FALSE}
 blogdown::shortcode("tweet", "904453200157302784")
 ```
 
 ### [Quick Guide to Regex in R](https://gormanalysis.com/quick-guide-to-regex-in-r) by Ben Gorman
 
-```{r echo=FALSE}
+```{r gorman_quick_guide, echo=FALSE}
 blogdown::shortcode("tweet", "809596167449432066")
 ```
 
 ### [An Introduction to stringr and Regular Expressions](https://rstudio-pubs-static.s3.amazonaws.com/180610_d3764c43f1e54692b7e84d21ec94772a.html#1) by Brian Espinoza
 
-```{r echo=FALSE}
+```{r intro_stringr_regex_slides, echo=FALSE}
 blogdown::shortcode("tweet", "890755949744586753")
 ```
 
 ### [qdapRegex](https://github.com/trinker/qdapRegex) `r emo::ji("package")` by Tyler Rinker
 
-```{r echo=FALSE}
+```{r qdapRegex, echo=FALSE}
 blogdown::shortcode("tweet", "874250442812907521")
 ```
 
 ### [RegexOne](https://regexone.com/) simple, interactive exercises
 
-```{r echo=FALSE}
+```{r regexone, echo=FALSE}
 blogdown::shortcode("tweet", "799251262344572928")
 ```
 
