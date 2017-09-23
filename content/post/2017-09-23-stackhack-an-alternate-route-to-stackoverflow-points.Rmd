@@ -1,0 +1,59 @@
+---
+title: "StackHack: an alternate route to 💯 StackOverflow points"
+author: Mara Averick
+date: '2017-09-23'
+slug: stackhack-an-alternate-route-to-stackoverflow-points
+categories: []
+tags:
+  - wild-card
+banner: "banners/se_sites.png"
+images: ["banners/se_sites.png"]
+description: "How you can up your Stack Overflow rep by answering questions for others about almost any topic you can think of. 🎰"
+---
+
+Over on the new [RStudio Community](https://community.rstudio.com/) site[^gosee], a useful thread arose re. asking questions `r emo::ji("question")` on this new site vs. [Stack Overflow](https://stackoverflow.com/): [**Choosing between this site and StackOverflow for posting a question**](https://community.rstudio.com/t/choosing-between-this-site-and-stackoverflow-for-posting-a-question/1151?u=mara). I won't bother trying to recap the nuances of the discussion here (since you can go read it directly; see `r emo::ji("link")` above), but I wanted to stash a bit of info here from one of my responses that might be helpful to new coders and/or users of Stack Overflow (SO).[^so]
+
+## Stack Exchange > Stack Overflow
+
+[Stack Exchange](https://stackexchange.com/sites#) (SE), which includes Stack Overflow, is a whole network of Q&A sites that cover various topics (below is just a snapshot of _some_ of them).
+
+![](https://i.imgur.com/dZp2BOU.png)
+
+Though the domains of discussion vary, they all have the same system of earning reputation points, and "privileges" in so doing.[^metase] The basis of the privilege system is (I'm sure) very well thought out, and oft-discussed, _but_ it also means that new users `r emo::ji("baby")``r emo::ji("technologist")` are fairly limited in what they can do when they first arrive.
+
+## The Association Bonus `r emo::ji("100")`
+
+A few years back, as a long-time lurker/beneficiary of SO, I decided to try and balance the scales `r emo::ji("scales")` of my Stack participation by answering questions in areas in which I felt more qualified than I did over on SO. For me, [Web Apps](https://webapps.stackexchange.com/) and [English Language & Usage](https://english.stackexchange.com/) were good picks, but I'm sure there's something for everyone in there.
+
+![](https://i.imgur.com/ORwkYOR.png)
+
+Lo and behold, when I hit 200 points in one of them, all of a sudden my reputation went up by 100 points in every SE community  of which I was a member, StackOverflow included. This is called the [**_Association Bonus_**](https://meta.stackexchange.com/a/141649/213022), and (as described by [Martijn Peters](https://meta.stackexchange.com/users/140890/martijn-pieters)), it's:
+
+ >  ...awarded because you have proven that you know your way around the basic features of any Stack Exchange website, and with those 100 extra points you can now comment, vote, flag and create bounties on all SE sites.
+
+Pretty cool! Right?[^notall]
+
+## Benefits Beyond Points
+
+As [I described](https://community.rstudio.com/t/choosing-between-this-site-and-stackoverflow-for-posting-a-question/1151/38?u=mara) in the RStudio Community thread, I think the benefits of doing this extend beyond being granted extra powers across the sites.
+
+ *  There's a lot to be learned about the mechanics of asking a good question by trying to answer others' questions (e.g. information specificity, examples, what approaches you've tried, etc.)
+ *  You can gain a bit of empathy for [Help Vampire](https://meta.stackexchange.com/q/19665/213022) slayers. This is not to say that I think you should adopt a negative attitude about answering questions from new, or repeated users ([this answer](https://meta.stackexchange.com/a/19673/213022) to that "Help Vampire" question describes productive ways to deal with low-quality questions on SO/SE). However, you start to understand how someone might grow cynical and/or wary of answering questions from new users after being burned a few times (i.e. never hearing back).
+ *  You can also get a sense of what "signals" that someone is an invested/engaged asker, aside from just points. (Particularly in the [Web Apps](https://webapps.stackexchange.com/) forum, there's a bit of an ineffable quality to questions that seem to be asked in lieu of using Google).
+
+### Fin `r emo::ji("tada")`
+
+There's much more to be said about how to ask good questions than I've even attempted to expound upon here. If you're an R user (which, given the fact that you're here, there's a good chance you are), I _highly_ recommend watching the recording of rOpenSci community call: [How to ask questions so they get answered! Possibly by yourself!](https://github.com/ropensci/commcalls/issues/14), which covers some of the history of R and SO (which is super interesting, `r emo::ji("cool")` stuff, [JD](https://twitter.com/cmastication)), as well as how to [`reprex`](http://reprex.tidyverse.org/) with [Jenny Bryan](https://twitter.com/jennybryan).
+
+```{r ropensci_commcall, echo=FALSE}
+blogdown::shortcode("vimeo", "208749032")
+```
+
+
+[^gosee]: Which is very cool and helpful, and you should definitely go check out! `r emo::ji("good")`
+
+[^so]: This is totally just a practical tip, and has nothing in the way of wisdom about other aspects of SO that can be both great, and intimidating-- just in case you were wondering about scope.
+
+[^metase]: I actually don't really know the nuances of how things work, but _meta_ Stack Exchange has an [FAQ](https://meta.stackexchange.com/questions/7931/faq-for-stack-exchange-sites) section that has a bunch of answers if you're want to learn more.
+
+[^notall]: Of course, not [_everyone_ thinks so](https://meta.stackexchange.com/questions/56506/award-account-association-bonus-automatically-upon-reaching-200-rep) (this is the internet, after all).
