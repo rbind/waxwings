@@ -1,5 +1,5 @@
 ---
-title: "StackHack: an alternate route to 💯 StackOverflow points"
+title: "StackHack: an alternate route to 💯 Stack Overflow points"
 author: Mara Averick
 date: '2017-09-23'
 slug: stackhack-an-alternate-route-to-stackoverflow-points
