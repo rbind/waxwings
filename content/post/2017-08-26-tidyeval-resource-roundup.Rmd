@@ -13,7 +13,7 @@ banner: "banners/tidyeval_combo.png"
 images: ["banners/tidyeval_combo.png"]
 description: 'Updated 📆 2017-09-16. After posting a link to Edwin Thoen’s ⭐️ "Tidy evaluation: most common actions," I was asked if there were other tidyeval tutorials I knew of. And so, here are some resources I’ve found and tweeted.'
 ---
-_Updated: 2017-09-16_  
+_Updated: 2017-09-25_  
 Though, naturally, the [Honorable Professor Doctor Sir Lord General Hadley Wickham](http://hadley.nz/)'s [**Programming with dplyr**](http://dplyr.tidyverse.org/articles/programming.html) article is the _ne plus ultra_ of getting oneself aquainted with the latest and greatest in [tidyeval programming recipes](http://dplyr.tidyverse.org/articles/programming.html#programming-recipes), [quoting](http://dplyr.tidyverse.org/articles/programming.html#quoting), and [quasiquotation](http://dplyr.tidyverse.org/articles/programming.html#quasiquotation); there _are_ some other resources out there.
 
 After posting a link to [Edwin Thoen](https://edwinth.github.io)'s ⭐️ [**Tidy evaluation, most common actions**](https://edwinth.github.io/blog/dplyr-recipes/), I was asked if there were other `tidyeval` tutorials I knew of. And so, here are some resources I've found and tweeted.[^1]
@@ -75,6 +75,11 @@ blogdown::shortcode("tweet", "906925770538455040")
 blogdown::shortcode("tweet", "909126265923391488")
 ```
 
+### [`dplyr 0.7.0`: tidyeval / programming with dplyr](https://github.com/rladies/meetup-presentations_boston/blob/master/Boston_20170817_tidyeval_ppt.pdf) by Marianna Foos
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "912025352666583040")
+```
 
 ### Ta-da 🎉
 
