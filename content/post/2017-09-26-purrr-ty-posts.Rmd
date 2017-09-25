@@ -1,0 +1,86 @@
+---
+title: "😸 purrr-ty posts"
+author: Mara Averick
+date: '2017-09-26'
+slug: purrr-ty-posts
+categories: []
+tags:
+  - purrr
+  - resources
+  - R
+banner: "banners/purrr_apply_cheatsheet_rstudio.png"
+images: ["banners/purrr_apply_cheatsheet_rstudio.png"]
+description: "Now that 😻 purrr has a shiny new cheat sheet, it seemed like a fitting tribute to give the package its own tweet roundup..."
+---
+
+### `r emo::ji("tada")``r emo::ji("cat")`&nbsp; purrr-tiest cheat sheet
+
+Purrr royal decree (ok, I'll stop with the `r emo::ji("cat")` &nbsp;puns now), the [`purrr`](http://purrr.tidyverse.org/) `r emo::ji("package")` &nbsp;now has its very own official [RStudio cheat sheet](https://www.rstudio.com/resources/cheatsheets/): [**_Apply Functions Cheat Sheet_**](https://github.com/rstudio/cheatsheets/blob/master/purrr.pdf)
+
+ >  The `purrr` package makes it easy to work with lists and functions. This cheatsheet will remind you how to manipulate lists with purrr as well as how to apply functions iteratively to each element of a list or vector. The back of the cheatsheet explains how to work with list-columns. With list columns, you can use a simple data frame to organize any collection of objects in R.
+
+So, I thought we'd celebrate with a bit of a `purrr` `r emo::ji("bird")` &nbsp;tweet roundup:
+
+### [purrr tutorial: lessons and examples](https://jennybc.github.io/purrr-tutorial/bk00_vectors-and-lists.html) by Jenny Bryan
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "901627584651382785")
+```
+
+### [Labeling Data with purrr](http://www.json.blog/2017/03/labeling-data-with-purrr/) by Jason Becker
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "840036799254790144")
+```
+
+### [Measuring Gobbledygook](https://juliasilge.com/blog/gobbledygook/) by Julia Silge
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "802210752060936192")
+```
+
+### [Use quick formula functions in `purrr::map` (+ base vs tidtyverse idiom comparisons/examples)](https://rud.is/b/2016/07/26/use-quick-formula-functions-in-purrrmap-base-vs-tidtyverse-idiom-comparisonsexamples/) by Bob Rudis
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "807348358746689540")
+```
+
+### [Make ggplot2 purrr](http://www.brodrigues.co/blog/2017-03-29-make-ggplot2-purrr/) by Bruno Rodrigues
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "847195919019839493")
+```
+
+### [Putting square pegs in round holes: Using list-cols in your dataframe](https://speakerdeck.com/jennybc/putting-square-pegs-in-round-holes-using-list-cols-in-your-dataframe) by Jenny Bryan
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "907063420515647490")
+```
+
+### [Managing many models with R](Managing many models with R) by Hadley Wickham
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "802150368784379904")
+```
+
+### [The Many-Faced Future](http://www.jottr.org/2017/06/the-many-faced-future.html) by Henrik Bengtsson
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "872136513844375553")
+```
+
+### [U.S. Drought Animations with the “Witch’s Brew” (purrr + broom + magick)](https://rud.is/b/2016/07/27/u-s-drought-animations-with-the-witchs-brew-purrr-broom-magick/) by Bob Rudis
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "758735295952990209")
+```
+
+### [purrr workshop](https://www.dropbox.com/sh/062xjv35izc2a92/AAAnC-nzToR1rPekDZipRJSLa?dl=0) by Charlotte Wickham
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "825041246850793473")
+```
+
+### `purrr`-fect?
+
+This is a far cry from an exhaustive collection. If you've written something you think belongs here, send me a tweet `r emo::ji("bird")` &nbsp;([\@dataandme](https://twitter.com/dataandme)), or leave a comment. Blogging isn't exactly the best format for updated lists, but I'm hoping to cook up a better method soon!
