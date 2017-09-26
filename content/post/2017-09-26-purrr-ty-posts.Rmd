@@ -81,6 +81,13 @@ blogdown::shortcode("tweet", "758735295952990209")
 blogdown::shortcode("tweet", "825041246850793473")
 ```
 
+### [Pur(r)ify Your Carets](http://rsangole.netlify.com/post/pur-r-ify-your-carets/) by Rahul Sangole
+
+```{r echo=FALSE}
+blogdown::shortcode("tweet", "912788254692388864")
+```
+
+
 ### `purrr`-fection?
 
 This is a far cry from an exhaustive collection. If you've written something you think belongs here, send me a tweet `r emo::ji("bird")` &nbsp;([\@dataandme](https://twitter.com/dataandme)), or leave a comment. Blogging isn't exactly the best format for updated lists, but I'm hoping to cook up a better method soon!
