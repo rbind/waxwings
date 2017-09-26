@@ -81,6 +81,6 @@ blogdown::shortcode("tweet", "758735295952990209")
 blogdown::shortcode("tweet", "825041246850793473")
 ```
 
-### `purrr`-fect?
+### `purrr`-fection?
 
 This is a far cry from an exhaustive collection. If you've written something you think belongs here, send me a tweet `r emo::ji("bird")` &nbsp;([\@dataandme](https://twitter.com/dataandme)), or leave a comment. Blogging isn't exactly the best format for updated lists, but I'm hoping to cook up a better method soon!
