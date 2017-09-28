@@ -106,7 +106,7 @@ theme = "hugo-icarus-theme"
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
-    recent_articles = false
+    recent_articles = true
     categories = false
     tags = false
-    tag_cloud = false
+    tag_cloud = true
