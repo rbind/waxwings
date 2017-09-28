@@ -1410,6 +1410,14 @@ ol.toc {
   display: table-cell;
   vertical-align: top;
 }
+/* Mara mod */
+.archive-article-thumbnail {
+    float: left;
+    margin-right: 10px;
+}
+.archive-article-header {
+  padding: 10px;
+}
 @media screen and (max-width: 559px) {
   .archive-article .archive-article-content,
   .archive-article .archive-article-thumbnail {
@@ -1451,8 +1459,8 @@ ol.toc {
 }
 .archive-article-title {
   display: block;
-  font-size: 1.6em;
-  line-height: 1.4em;
+  font-size: 1.2em;
+  line-height: 1.2em;
   margin-bottom: 12px;
 }
 @media screen and (max-width: 559px) {
@@ -1461,9 +1469,11 @@ ol.toc {
     font-size: 1.3em;
   }
 }
+/* Mara mod reduce date font size */
 .archive-article-date {
   display: block;
   margin-top: 8px;
+  font-size: 1em;
 }
 .layout-wrap-inner.list-categories ul {
   margin-left: 15px;
