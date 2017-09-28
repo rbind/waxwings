@@ -14,7 +14,7 @@ disqusShortname = "maraaverick"
 googleAnalytics = "UA-101515030-1"
 
 # Define the number of posts per page
-paginate = 10
+paginate = 7
 footnotereturnlinkcontents = "↩"
 
 theme = "hugo-icarus-theme"
