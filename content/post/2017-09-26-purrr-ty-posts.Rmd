@@ -13,6 +13,9 @@ images: ["banners/purrr_apply_cheatsheet_rstudio.png"]
 description: "Now that 😻 purrr has a shiny new cheat sheet, it seemed like a fitting tribute to give the package its own tweet roundup..."
 ---
 
+Updated: `r emo::ji("calendar")` 2017-09-29.
+
+
 ### `r emo::ji("tada")``r emo::ji("cat")`&nbsp; purrr-tiest cheat sheet
 
 Purrr royal decree (ok, I'll stop with the `r emo::ji("cat")` &nbsp;puns now), the [`purrr`](http://purrr.tidyverse.org/) `r emo::ji("package")` &nbsp;now has its very own official [RStudio cheat sheet](https://www.rstudio.com/resources/cheatsheets/): [**_Apply Functions Cheat Sheet_**](https://github.com/rstudio/cheatsheets/blob/master/purrr.pdf)
@@ -87,6 +90,11 @@ blogdown::shortcode("tweet", "825041246850793473")
 blogdown::shortcode("tweet", "912788254692388864")
 ```
 
+### [PURRRty PowerPoint with R](http://lenkiefer.com/2017/09/27/use-purrr/) by Len Kiefer
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "913750757173800960")
+```
 
 ### `purrr`-fection?
 
