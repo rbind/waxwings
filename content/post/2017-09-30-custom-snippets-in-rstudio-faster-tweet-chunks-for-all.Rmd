@@ -1,0 +1,71 @@
+---
+title: 'Custom snippets in RStudio: `r emo::ji_glue(":zap:")` faster tweet chunks for all'
+author: Mara Averick
+date: '2017-09-30'
+slug: custom-snippets-in-rstudio-faster-tweet-chunks-for-all
+categories: []
+tags:
+  - R
+  - R Markdown
+  - blogdown
+  - RStudio
+banner: "banners/twe_snippet.png"
+images: ["banners/twe_snippet.png"]
+description: "A snippet ✂️ for adding tweets in blogdown, and quick tips so you can add snippets of your own in RStudio."
+---
+
+### `r emo::ji("scissors")` Snippets in RStudio
+
+As Sean Lopp describes in his super helpful post, [**RStudio IDE Easy Tricks You Might've Missed**](https://rviews.rstudio.com/2016/11/11/easy-tricks-you-mightve-missed/) `r emo::ji("star")`:
+
+ >  Code snippets are a shortcut to insert common boilerplate code.
+
+You might also refer to them as _"text macros"_[^jjsnip]— either way, they're useful for speeding up the process of doing a thing in RStudio that you do frequently. In my case, this includes inserting "tweet chunks" in [`blogdown`](https://bookdown.org/yihui/blogdown/) posts using a Hugo shortcode.[^pssguy]
+
+#### `r emo::ji_glue(":memo:")` Adding a Markdown snippet
+
+The RStudio Support [**Code Snippets**](https://support.rstudio.com/hc/en-us/articles/204463668-Code-Snippets) post is a great step-by-step for adding snippets of your own. The gist of it for a _markdown_ snippet is as follows:
+
+ 1.  Open RStudio **Preferences**  
+ 2.  Go to the **Code** section  
+ 3.  Click the **Edit Snippets** button[^enable]  
+ 4.  Select **Markdown** 
+ 5.  Add your snippet and **Save** `r emo::ji("tada")`
+ 
+![](https://i.imgur.com/Qs1kK5h.gif)
+ 
+### `r emo::ji("bird")` `twe` blogdown snippet
+
+Now, for the actual snippet, and how to use it.
+
+<script src="https://gist.github.com/batpigandme/2de5f19971df7d9340e150ce45ffb5ea.js"></script>
+
+#### 1. Get the tweet id number from twitter 🐦
+
+![](https://i.imgur.com/J7NuCEh.png)
+
+#### 2. Go into your R Markdown document
+
+![](https://i.imgur.com/vomFvvQ.png)
+
+#### 3. Type t-w-e and then ⌨️ Shift-Tab
+
+![](https://i.imgur.com/is0kZOH.png)
+
+#### 4. Fill in `tweetid` (paste if copied)
+
+![](https://i.imgur.com/GMoaEuW.png)
+
+#### 5. Serve site 🎉
+
+![](https://i.imgur.com/gf1y5Sv.png)
+
+### Fin
+
+Go forth, embed tweets, and prosper! Hit me up [\@dataandme](https://twitter.com/dataandme), or comment if I got something wrong, or right, or if the spirit moves you to do so. `r emo::ji_glue(":sparkling_heart:")`
+
+[^jjsnip]: As does J.J. Allaire in the useful [Code Snippets](https://support.rstudio.com/hc/en-us/articles/204463668-Code-Snippets) entry of RStudio Support.
+
+[^pssguy]: For more examples of using shortcodes in blogdown, check out [Andrew Clark](https://twitter.com/pssguy)'s handy [Hugo Shortcodes](https://www.mytinyshinys.com/2017/09/12/hugo-shortcodes/) post.
+
+[^enable]: If the **Enable code snippets** radio button isn't checked, click that, too.
