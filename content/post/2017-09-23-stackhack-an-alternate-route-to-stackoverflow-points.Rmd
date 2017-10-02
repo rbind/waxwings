@@ -50,7 +50,7 @@ blogdown::shortcode("vimeo", "208749032")
 ```
 
 
-[^gosee]: Which is very cool and helpful, and you should definitely go check out! `r emo::ji("good")`
+[^gosee]: Which is very cool and helpful, and you should definitely go check out! `r emo::ji_glue(":boom:")`
 
 [^so]: This is totally just a practical tip, and has nothing in the way of wisdom about other aspects of SO that can be both great, and intimidating-- just in case you were wondering about scope.
 
