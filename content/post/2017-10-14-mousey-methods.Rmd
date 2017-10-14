@@ -1,0 +1,57 @@
+---
+title: '`r emo::ji_glue(":see_no_evil:")` mousey methods'
+author: Mara Averick
+date: '2017-10-14'
+slug: mousey-methods
+categories: []
+tags: []
+banner: "banners/r_version.png"
+images: ["banners/r_version.png"]
+description: "The worst way of doing things, while still getting them done; as told using pictures."
+---
+
+### _Why show us the wrong way?_
+
+I know, this seems like a perverse way of going aout things, but these are ways of getting information that will help others to help you. This means that there's a decent chance you're new to this whole endeavor, and may need some stop-gap, familiar methods before you begin to feel comfortable with best practices. 
+
+There are good reasons to steer clear of your `r emo::ji_glue(":computer:")` mouse.[^workspace] Clicking is slow, and there are faster ways to retrieve this information using code. That said...
+
+## _What version of RStudio am I using?_
+
+From within RStudio go to the **Rstudio** menu and select **About RStudio**.
+
+![](https://i.imgur.com/QSrLR89.png)
+
+When the **About RStudio** window opens, the version of RStudio that you're using will be written right below the logo (see below).
+
+![](https://i.imgur.com/yNAC79c.png)
+
+
+## _What version of R am I using?_
+
+Open RStudio and go to the **Console** pane. If you scroll up to the top, the version of **R** that you are using is in the very first line printed in your console.
+
+![](https://i.imgur.com/wmIcLLJ.png)
+
+## _What version of a package am I using?_
+
+In the **Viewer** pane, click on the **Packages** tab. The packages you have loaded will have check marks to the left of their names, and, in the far right column, you'll see the package **versions**.
+
+![](https://i.imgur.com/7qtU60l.png)
+
+## _What mac OS am I on?_
+
+From the apple icon in the upper-left corner of your screen, open **About This Mac**.
+
+![](https://i.imgur.com/52AD91M.png)
+
+The version of your operating system (OS) will be listed right below its name (see below).
+
+![](https://i.imgur.com/WTfU2q7.png)
+
+
+
+
+
+
+[^workspace]: See Jenny Bryan's ["R basics, workspace and working directory, RStudio projects"](http://stat545.com/block002_hello-r-workspace-wd-project.html) for some reasons why clicking around isn't the best way to go when it comes to reproducibility.
