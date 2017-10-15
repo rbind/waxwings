@@ -11,9 +11,11 @@ tags:
   - tidyverse
 banner: "banners/tidyeval_combo.png"
 images: ["banners/tidyeval_combo.png"]
-description: 'Updated 📆 2017-09-25. After posting a link to Edwin Thoen’s ⭐️ "Tidy evaluation: most common actions," I was asked if there were other tidyeval tutorials I knew of. And so, here are some resources I’ve found and tweeted.'
+description: 'Updated 📆 2017-10-15. After posting a link to Edwin Thoen’s ⭐️ "Tidy evaluation: most common actions," I was asked if there were other tidyeval tutorials I knew of. And so, here are some resources I’ve found and tweeted.'
 ---
-_Updated: 2017-09-25_  
+
+_Updated: 2017-10-15_  
+
 Though, naturally, the [Honorable Professor Doctor Sir Lord General Hadley Wickham](http://hadley.nz/)'s [**Programming with dplyr**](http://dplyr.tidyverse.org/articles/programming.html) article is the _ne plus ultra_ of getting oneself aquainted with the latest and greatest in [tidyeval programming recipes](http://dplyr.tidyverse.org/articles/programming.html#programming-recipes), [quoting](http://dplyr.tidyverse.org/articles/programming.html#quoting), and [quasiquotation](http://dplyr.tidyverse.org/articles/programming.html#quasiquotation); there _are_ some other resources out there.
 
 After posting a link to [Edwin Thoen](https://edwinth.github.io)'s ⭐️ [**Tidy evaluation, most common actions**](https://edwinth.github.io/blog/dplyr-recipes/), I was asked if there were other `tidyeval` tutorials I knew of. And so, here are some resources I've found and tweeted.[^1]
@@ -79,6 +81,14 @@ blogdown::shortcode("tweet", "909126265923391488")
 
 ```{r echo=FALSE}
 blogdown::shortcode("tweet", "912025352666583040")
+```
+
+### `r emo::ji_glue(":film_projector:")` [Tidy Evaluation](https://schd.ws/hosted_files/user2017/43/tidyeval-user.pdf) by Lionel Henry and Hadley Wickham
+
+_n.b. these are likely not as up-to-date as [**Programming with dplyr**](http://dplyr.tidyverse.org/articles/programming.html), but I like the visuals— so, they're here_
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "919311107357069316")
 ```
 
 ### Ta-da 🎉
