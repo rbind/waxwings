@@ -14,7 +14,7 @@ description: 'The worst way of doing things, while still getting them done, feat
 
 ### _Why show us the wrong way?_
 
-I know, this seems like a perverse way of going aout things, but these are ways of getting information that will help others to help you. This means that there's a decent chance you're new to this whole endeavor, and may need some stop-gap, familiar methods before you begin to feel comfortable with best practices. 
+I know, this seems like a perverse manner of going about things, but these are ways of getting information that will help others to help you. This means that there's a decent chance you're new to this whole endeavor, and may need some stop-gap, familiar methods before you begin to feel comfortable with best practices. 
 
 There are good reasons to steer clear of your `r emo::ji_glue(":computer:")` mouse.[^workspace] Clicking is slow, and there are faster ways to retrieve this information using code. That said...
 
