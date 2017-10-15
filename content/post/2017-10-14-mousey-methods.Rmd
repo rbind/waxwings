@@ -4,10 +4,12 @@ author: Mara Averick
 date: '2017-10-14'
 slug: mousey-methods
 categories: []
-tags: []
+tags:
+  - R
+  - rstudio
 banner: "banners/r_version.png"
 images: ["banners/r_version.png"]
-description: "The worst way of doing things, while still getting them done; as told using pictures."
+description: 'The worst way of doing things, while still getting them done, featuring your `r emo::ji_glue(":computer_mouse:")`; as told using pictures.'
 ---
 
 ### _Why show us the wrong way?_
@@ -50,8 +52,13 @@ The version of your operating system (OS) will be listed right below its name (s
 ![](https://i.imgur.com/WTfU2q7.png)
 
 
+## _What version of [*insert OS here*] am I on?!_
 
+`r emo::ji_glue(":flushed:")` Oh, umm...I have no idea. If you're on Windows, Microsoft Support has a little guide here: [Which Windows operating system am I running?](https://support.microsoft.com/en-us/help/13443/windows-which-operating-system). If you're running an open-source Linux distribution (or whatever), you're way cooler than I am `r emo::ji_glue(":sunglasses:")`, and I highly doubt you'll need this guide.
 
+## _What about the right way of doing things?!_
+
+That's out of the scope of this post! But, feel free to wander over to the [**Help**](https://www.tidyverse.org/help/) section of the tidyverse site for a head start (or go straight to the [`reprex`](http://reprex.tidyverse.org/) docs if you're feeling bold). 
 
 
 [^workspace]: See Jenny Bryan's ["R basics, workspace and working directory, RStudio projects"](http://stat545.com/block002_hello-r-workspace-wd-project.html) for some reasons why clicking around isn't the best way to go when it comes to reproducibility.
