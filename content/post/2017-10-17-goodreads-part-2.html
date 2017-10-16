@@ -1,0 +1,269 @@
+---
+title: 'Goodreads 👍📚 Part 2: rvesting descriptions'
+author: Mara Averick
+date: '2017-10-17'
+draft: TRUE
+slug: goodreads-part-2
+categories: []
+tags:
+  - R
+banner: "banners/mara_shelves_goodreads_genres.png"
+images: ["banners/mara_shelves_goodreads_genres.png"]
+description: "Scraping descriptions with rvest, and starting to explore my read book descriptions with the tidytext package."
+---
+
+
+
+<div id="preamble" class="section level3">
+<h3>Preamble</h3>
+<p>Much of the code herein has been adapted from the excellent post <a href="http://giorasimchoni.com/2017/09/24/2017-09-24-where-my-girls-at/">“Where my girls at? Scraping Goodreads and using ML to estimate how many children’s books have a cetnral female character”</a> by <a href="https://twitter.com/GioraSimchoni">Giora Simchoni</a>, which I highly recommend.</p>
+<p>I’ll also make reference to <a href="https://maraaverick.rbind.io/2017/08/goodreads-part-i-rgoodreads/">my earlier post</a> using my Goodreads data, should you want to check that out.</p>
+<div id="why-arent-you-using-the-api" class="section level4">
+<h4>😱 Why aren’t you using the API?!</h4>
+<p><em>Calm down!</em> Yes, I know there is a perfectly lovely <a href="https://www.goodreads.com/api">Goodreads API</a>– and, by <em>“perfectly lovely”</em> I mean for getting pretty much any data <em>other</em> than book descriptions (which, as you will soon discover, are the objects of my desire).</p>
+</div>
+</div>
+<div id="regular-amble" class="section level2">
+<h2>Regular-amble</h2>
+<p>When I came upon Giora’s post I experienced that weird sort of non-relief that occurs when you no longer have a good excuse to put off a project you’ve been wanting to do, but have been too lazy to actually execute.</p>
+<p>Giora uses a one two punch of the <a href="https://github.com/hadley/rvest"><code>rvest</code></a> and <a href="http://purrr.tidyverse.org/"><code>purrr</code></a> packages to scrape descriptions of children’s books included on a Goodreads list (<a href="https://www.goodreads.com/list/show/226.Favorite_books_from_my_childhood">“Favorite books from my childhood”</a>) and get them into tibbles. This is something I’ve been threatening to do for my own collection of <a href="https://www.goodreads.com/review/list/1923002?shelf=read">read books</a> on Goodreads, so I figured an adaptation wouldn’t be too much trouble.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<p>Since lists (the object of Giora’s analysis) and shelves are different (no one votes on whether or not a book should be on my <code>read</code> shelf— I either read it, or I didn’t, so <code>nVoters</code> wouldn’t be a variable for me), I expected there to be a few necessary changes in the code. However, I initially struggled more than I had expected…</p>
+<div id="my-rookie-mistake" class="section level3">
+<h3>My rookie mistake 😳</h3>
+<p>In many (most?) <code>rvest</code> tutorials, you’ll learn about a Chrome bookmarklet called <a href="http://selectorgadget.com/"><strong>SelectorGadget</strong></a> (heck, it even has its own <a href="https://cran.r-project.org/web/packages/rvest/vignettes/selectorgadget.html">eponymous vignette</a> by <a href="https://twitter.com/hadleywickham">Hadley Wickham</a> in the <code>rvest</code> docs). It’s basically a tool that helps you identify the CSS or XPath selectors for finding certain elements of a webpage you’re trying to scrape.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
+<p>Though I won’t give you a play-by-play of my fruitless attempts, it basically came down to the fact that I was trying to figure things out while <em>logged in</em> to my account.</p>
+<p><img src="https://i.imgur.com/Bo6sLIE.png" /> <br /></p>
+<p>There <em>are</em> ways to scrape sites with R while logged in.<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> However, it turned out that <em>not</em> being logged in was to my advantage as:</p>
+<p><strong>1. There’s more data that shows up on the page when you’re not logged in</strong> (see below) and;<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></p>
+<p><img src="https://i.imgur.com/yHxYZgl.png" /> <br /></p>
+<p><strong>2. Pagination actually works the way it’s supposed to</strong> (which means you can get 30 entries at a time, rather than dealing with the annoying infinite-scroll interface over and over).</p>
+<p><img src="https://i.imgur.com/toPjFh8.png" /> <br /></p>
+</div>
+<div id="back-on-course-to-scrape" class="section level3">
+<h3>Back on course to scrape 😌</h3>
+<p>Once I got my selectorGadget situation sorted, the code was, as expected, easily adaptable. With the <a href="https://www.tidyverse.org/"><code>tidyverse</code></a>, <a href="http://stringr.tidyverse.org/"><code>stringr</code></a>, and <code>rvest</code> packages, I could construct a scraper, and clean some things up. Then, using <code>purrr</code>’s <code>map_dfr</code> bind the rows from each page together into a single data frame (or tibble, rather).</p>
+<div id="oh-one-more-thing" class="section level4">
+<h4>Oh, one more thing! ☝️</h4>
+<p>I also made a bit of a last-minute decision to scrape the <strong>GENRES</strong> from the book pages.</p>
+<p><img src="https://i.imgur.com/yVwqduQ.png" /> <br /></p>
+<p>Curating your own library (and its “shelves”) is not as easy as one might think. In addition to the fact that my shelves are patently absurd (see <a href="https://www.goodreads.com/review/list/1923002?shelf=codename-duchess"><strong>Codename Duchess</strong></a> for my Archer-related reviews, and or <a href="https://www.goodreads.com/review/list/1923002-mara?shelf=baby-shower-gift-guide"><strong>Baby Shower Gift Guide</strong></a> for books I think would make good baby shower gifts— y’know, ones like <a href="https://www.goodreads.com/review/show/723069879?book_show_action=false&amp;from_review_page=1">The Boys from Brazil</a>, and <a href="https://www.goodreads.com/review/show/846607689?book_show_action=false&amp;from_review_page=1">The Midwich Cuckoos</a>) I don’t always know ahead of time that I will end up reading a shelf-worthy number of books about a given topic until after the fact.</p>
+</div>
+</div>
+<div id="ok-now-we-can-rvest" class="section level3">
+<h3>OK, <em>now</em> we can <code>rvest</code></h3>
+<p>The code should be pretty self-explanatory. If you want to do this for your own books, you’d just switch out the <code>startURL</code> so that it points to <em>your</em> shelves, as opposed to mine.<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a></p>
+<pre class="r"><code>library(tidyverse)
+library(stringr)
+library(rvest)
+
+startUrl &lt;- &quot;https://www.goodreads.com/review/list/1923002-mara&quot;
+
+
+# function to get book descriptions
+getBookDescription &lt;- function(bookLink) {
+  url &lt;- str_c(&quot;https://www.goodreads.com&quot;, bookLink)
+  read_html(url) %&gt;%
+    html_node(&quot;#descriptionContainer&quot;) %&gt;%
+    html_text() %&gt;%
+    trimws()
+}
+
+# function to get book genres
+get_genres &lt;- function(bookLink){
+  url &lt;- str_c(&quot;https://www.goodreads.com&quot;, bookLink)
+  read_html(url) %&gt;%
+    html_nodes(&quot;.left .bookPageGenreLink&quot;) %&gt;%
+    html_text(trim = TRUE)
+}
+
+# function to get books
+getBooks &lt;- function(i) {
+  cat(i, &quot;\n&quot;)
+  url &lt;- str_c(startUrl, &quot;?page=&quot;, i, &quot;&amp;shelf=read&quot;)
+
+  html &lt;- read_html(url)
+
+  title &lt;- html %&gt;%
+    html_nodes(&quot;.title a&quot;) %&gt;%
+    html_text(trim = TRUE) #%&gt;%
+  #discard(!str_detect(., &quot;[A-Z0-9]&quot;))
+
+  author &lt;- html %&gt;%
+    html_nodes(&quot;.author a&quot;) %&gt;%
+    html_text(trim = TRUE) %&gt;%
+    discard(str_detect(., &quot;^\\(&quot;))
+
+  bookLinks &lt;- html %&gt;%
+    html_nodes(&quot;a&quot;) %&gt;%
+    html_attr(&quot;href&quot;) %&gt;%
+    discard(!str_detect(., &quot;^/book/show&quot;)) %&gt;%
+    na.omit() %&gt;%
+    unique()
+
+  bookDescription &lt;- bookLinks %&gt;%
+    map_chr(getBookDescription)
+
+  bookGenre &lt;- bookLinks %&gt;%
+    map(get_genres)
+
+  return(tibble(
+    title = title,
+    author = author,
+    book_description = bookDescription,
+    book_genres = bookGenre
+  ))
+}
+
+# get books (30 per page, 1266 books -&gt; 43 pages)
+goodreads &lt;- c(1:43) %&gt;%
+  map_dfr(getBooks)
+
+# save the output
+write_csv(goodreads, path = here(&quot;output&quot;, &quot;goodreads_read.csv&quot;))</code></pre>
+</div>
+</div>
+<div id="exploring-books-ive-read" class="section level2">
+<h2>Exploring books I’ve read</h2>
+<div id="cleaning-descriptions" class="section level3">
+<h3>Cleaning descriptions</h3>
+<pre class="r"><code>clean_book_descs &lt;- read_books_data %&gt;%
+  mutate(clean_desc = str_replace_all(book_description, &quot;[^a-zA-Z\\s]&quot;, &quot; &quot;)) %&gt;%
+  mutate(clean_desc = str_trim(clean_desc, side = &quot;both&quot;)) %&gt;%
+  select(-book_genres)</code></pre>
+</div>
+</div>
+<div id="tidytext-time" class="section level2">
+<h2><code>tidytext</code> time</h2>
+<p>Now it’s time to use the excellent <a href="https://github.com/juliasilge/tidytext"><code>tidytext</code></a> 📦 by Julia Silge and David Robinson (which you can learn all about in their book, <a href="http://tidytextmining.com/">Text Mining with R</a>) to explore what’s in these descriptions.</p>
+<div id="unnest_tokens" class="section level4">
+<h4><code>unnest_tokens</code></h4>
+<p>The descriptions we’ve cleaned will be <strong>unnested</strong> into individual tokens (in this case, words), and we can get rid of the pre-cleaning book descriptions for now (especially since we still have <code>book_id</code>s at the ready, should we want to get more info aout a particular book).</p>
+<pre class="r"><code>library(tidytext)
+
+descs_unnested &lt;- clean_book_descs %&gt;%
+  unnest_tokens(word, clean_desc) %&gt;%
+  select(-book_description)</code></pre>
+<p>Let’s also take a look at the word stems using the <code>SnowballC</code> package.</p>
+<pre class="r"><code>library(SnowballC)
+
+descs_unnested &lt;- descs_unnested %&gt;%
+  mutate(word_stem = wordStem(word, language=&quot;english&quot;))</code></pre>
+</div>
+<div id="stop_words" class="section level4">
+<h4><code>stop_words</code> ✋</h4>
+<p>Now we’ll get rid of stop words (using the dataset built into <code>tidytext</code>), and count word frequencies.</p>
+<pre class="r"><code>data(&quot;stop_words&quot;)
+
+tidy_books &lt;- descs_unnested %&gt;%
+  anti_join(stop_words, by = &quot;word&quot;)
+
+tidy_book_words &lt;- tidy_books %&gt;%
+  count(word, sort = TRUE)
+
+tidy_book_words</code></pre>
+<pre><code>## # A tibble: 21,172 x 2
+##        word     n
+##       &lt;chr&gt; &lt;int&gt;
+##  1    world   981
+##  2    story   767
+##  3     life   765
+##  4     book   666
+##  5  history   499
+##  6     time   479
+##  7      war   454
+##  8   people   429
+##  9   author   406
+## 10 american   404
+## # ... with 21,162 more rows</code></pre>
+<p>The top words make sense. I <em>do</em> read a lot of books about life, stories, the world, history, time, and people. The book descriptions often begin with editorial praise, e.g.</p>
+<blockquote>
+<p><em>From the New York Times best-selling author of…</em></p>
+</blockquote>
+<p>So, it’s not surprising that words like “book” and “author” would make it into the top ten, as well.</p>
+<p>We could also look at these aggregates by word <em>stem</em>.</p>
+<pre class="r"><code>tidy_book_word_stems &lt;- tidy_books %&gt;%
+  count(word_stem, sort = TRUE)
+
+tidy_book_word_stems</code></pre>
+<pre><code>## # A tibble: 14,319 x 2
+##    word_stem     n
+##        &lt;chr&gt; &lt;int&gt;
+##  1     world  1001
+##  2     stori   967
+##  3      time   860
+##  4      book   815
+##  5      life   767
+##  6   histori   509
+##  7    author   495
+##  8       war   488
+##  9  american   486
+## 10      live   475
+## # ... with 14,309 more rows</code></pre>
+<p>Though the word stems themselves are not easy to read, we’ve reduced the number of unique words by grouping together words with the same stem. There are 21172 unique words, and 14319 unique word stems. The counts for word stems are higher than for words, since multiple words have the same stems, e.g. world and worlds, story and stories, etc.</p>
+</div>
+<div id="get_sentiments-with-afinn" class="section level4">
+<h4><code>get_sentiments</code> 😄 😠 😭 with AFINN</h4>
+<p>I won’t go into the details here (for those, check out the <a href="http://tidytextmining.com/sentiment.html">Sentiment analysis with tidy data</a> section of Julia and David’s book), but let’s take a look at the sentiments associated with the words from my read book descriptions. I’ll use the <code>AFINN</code> lexicon, which:</p>
+<blockquote>
+<p>“…assigns words with a score that runs between -5 and 5, with negative scores indicating negative sentiment and positive scores indicating positive sentiment” (Silge &amp; Robinson 2017, p.14)</p>
+</blockquote>
+<p>It is important to note, however, that this is a very much a subset of the words used in the book descriptions, and that the “censored” data may have a disproportionate impact in one direction or another.</p>
+<pre class="r"><code>data(sentiments)
+
+word_sentiments &lt;- tidy_book_words %&gt;%
+  inner_join(get_sentiments(&quot;afinn&quot;), by = &quot;word&quot;)
+
+word_sentiments</code></pre>
+<pre><code>## # A tibble: 1,513 x 3
+##        word     n score
+##       &lt;chr&gt; &lt;int&gt; &lt;int&gt;
+##  1      war   454    -2
+##  2     love   298     3
+##  3   murder   234    -2
+##  4    crime   221    -3
+##  5    death   216    -2
+##  6     true   202     2
+##  7 powerful   181     2
+##  8     dead   163    -3
+##  9  winning   153     4
+## 10    award   151     3
+## # ... with 1,503 more rows</code></pre>
+<p>I was a little surprised when I first saw some of these. For <code>kill</code> and <code>crime</code>, the AFINN score is -3, but <code>murder</code> is only a -2. The word <code>winning</code> merits a positive 4, but <code>war</code> only gets a negative 2!</p>
+<p>You can learn more about AFINN <a href="http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010">here</a>, and I’m not knocking it. It’s not like <em>I’ve</em> gone through 2,476 words and phrases and rated them for valence! However, it’s always good to look at your data and see what’s going on.</p>
+<p>In fact, let’s take a look at all of the AFINN sentiment scores from the sentiments dataset.</p>
+<pre class="r"><code>library(hrbrthemes)  # because I like pretty things
+
+sentiments %&gt;%
+  filter(!is.na(score)) %&gt;%
+  group_by(score) %&gt;%
+  ggplot(aes(score)) +
+  geom_bar() +
+  labs(title = &quot;AFINN sentiment score distribution&quot;, xlab = &quot;AFINN score&quot;, ylab = &quot;count&quot;) +
+  theme_ipsum_rc()</code></pre>
+<p><img src="/post/2017-10-17-goodreads-part-2_files/figure-html/afinn_sentiments-1.png" width="700" /></p>
+<p>So, yeah, looks like there’s a whole lot of -2 going on. That’s not to say it’s incorrect— just worth noting out of curiosity.</p>
+<p>Now let’s take a quick gander at the distribution of AFINN scores in the words that appeared both in the descriptions of the books I read, and in the AFINN lexicon. To be fair, we’re not really comparing 🍎s to 🍎s here. The AFINN Lexicon says nothing with respect to the frequency of the words it scores.</p>
+<pre class="r"><code>word_sentiments %&gt;%
+  group_by(score) %&gt;%
+  summarise(score_tot = sum(n)) %&gt;%
+  ggplot(aes(x = score, y = score_tot)) +
+  geom_bar(stat = &quot;identity&quot;) +
+  labs(title = &quot;Book description word sentiment distribution&quot;, x = &quot;AFINN score&quot;, y = &quot;count total&quot;) +
+  theme_ipsum_rc()</code></pre>
+<p><img src="/post/2017-10-17-goodreads-part-2_files/figure-html/desc_word_afinn_dist-1.png" width="700" /></p>
+</div>
+</div>
+<div id="take-a-breather" class="section level2">
+<h2>Take a breather! 😤</h2>
+<p>There’s much more to be unpacked, but I’m told that human attention spans aren’t what they used to be. So, until next time 👋</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><em>Spoiler alert:</em> It really wasn’t.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>If you actually want to learn more about it, check out the aforementioned <a href="https://cran.r-project.org/web/packages/rvest/vignettes/selectorgadget.html">SelectorGadget vignette</a>, and/or a series of great tutorials from UseR2016 <a href="https://github.com/ropensci/user2016-tutorial">Extracting data from the web APIs and beyond</a> by Karthik Ram, Garrett Grolemund and Scott Chamberlain, if you want a more thorough R/webscraping education.<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>There are some good answers about this on Stack Overflow using <a href="https://stackoverflow.com/a/38760066/785190">rvest</a> alone, or with other packages such as <a href="https://stackoverflow.com/a/40275000/785190">RSelenium</a>.<a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p>Sorry, this doesn’t exactly match up with the read books in this and/or my previous Goodreads post, as I’ve finished a few more between when I first started writing this and now. 😜<a href="#fnref4">↩</a></p></li>
+<li id="fn5"><p>Because this process take a while, the code here is shown (<code>echo = TRUE</code>, if you’re familiar with R Markdown chunks), but not actually run (<code>eval = FALSE</code> in Rmd terms).<a href="#fnref5">↩</a></p></li>
+</ol>
+</div>
