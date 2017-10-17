@@ -2,14 +2,15 @@
 title: 'Goodreads `r emo::ji_glue(":thumbsup:")``r emo::ji_glue(":books:")` Part 2: rvesting descriptions'
 author: Mara Averick
 date: '2017-10-17'
-draft: TRUE
 slug: goodreads-part-2
 categories: []
 tags:
   - R
+  - rvest
+  - tidytext
 banner: "banners/mara_shelves_goodreads_genres.png"
 images: ["banners/mara_shelves_goodreads_genres.png"]
-description: "Scraping descriptions with rvest, and starting to explore my read book descriptions with the tidytext package."
+description: "Scraping descriptions with rvest, and starting to explore my read-book descriptions with the tidytext package."
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, dev = 'png', dpi = 100, fig.retina = 2, message = FALSE)
@@ -268,7 +269,10 @@ word_sentiments %>%
   summarise(score_tot = sum(n)) %>%
   ggplot(aes(x = score, y = score_tot)) +
   geom_bar(stat = "identity") +
-  labs(title = "Book description word sentiment distribution", x = "AFINN score", y = "count total") +
+  labs(title = "Book-description word sentiment distribution",
+       x = "AFINN score",
+       y = "count total",
+       caption = "Source: Mara's Goodreads export 2017-10-12") +
   theme_ipsum_rc()
 ```
 

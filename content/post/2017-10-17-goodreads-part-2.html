@@ -2,14 +2,15 @@
 title: 'Goodreads 👍📚 Part 2: rvesting descriptions'
 author: Mara Averick
 date: '2017-10-17'
-draft: TRUE
 slug: goodreads-part-2
 categories: []
 tags:
   - R
+  - rvest
+  - tidytext
 banner: "banners/mara_shelves_goodreads_genres.png"
 images: ["banners/mara_shelves_goodreads_genres.png"]
-description: "Scraping descriptions with rvest, and starting to explore my read book descriptions with the tidytext package."
+description: "Scraping descriptions with rvest, and starting to explore my read-book descriptions with the tidytext package."
 ---
 
 
@@ -248,7 +249,10 @@ sentiments %&gt;%
   summarise(score_tot = sum(n)) %&gt;%
   ggplot(aes(x = score, y = score_tot)) +
   geom_bar(stat = &quot;identity&quot;) +
-  labs(title = &quot;Book description word sentiment distribution&quot;, x = &quot;AFINN score&quot;, y = &quot;count total&quot;) +
+  labs(title = &quot;Book-description word sentiment distribution&quot;,
+       x = &quot;AFINN score&quot;,
+       y = &quot;count total&quot;,
+       caption = &quot;Source: Mara&#39;s Goodreads export 2017-10-12&quot;) +
   theme_ipsum_rc()</code></pre>
 <p><img src="/post/2017-10-17-goodreads-part-2_files/figure-html/desc_word_afinn_dist-1.png" width="700" /></p>
 </div>
