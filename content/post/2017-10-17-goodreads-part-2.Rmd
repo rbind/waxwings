@@ -255,7 +255,9 @@ sentiments %>%
   group_by(score) %>%
   ggplot(aes(score)) +
   geom_bar() +
-  labs(title = "AFINN sentiment score distribution", xlab = "AFINN score", ylab = "count") +
+  labs(title = "AFINN sentiment score distribution",
+       xlab = "AFINN score",
+       ylab = "count") +
   theme_ipsum_rc()
 ```
 

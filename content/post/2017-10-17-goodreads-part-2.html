@@ -239,7 +239,9 @@ sentiments %&gt;%
   group_by(score) %&gt;%
   ggplot(aes(score)) +
   geom_bar() +
-  labs(title = &quot;AFINN sentiment score distribution&quot;, xlab = &quot;AFINN score&quot;, ylab = &quot;count&quot;) +
+  labs(title = &quot;AFINN sentiment score distribution&quot;,
+       xlab = &quot;AFINN score&quot;,
+       ylab = &quot;count&quot;) +
   theme_ipsum_rc()</code></pre>
 <p><img src="/post/2017-10-17-goodreads-part-2_files/figure-html/afinn_sentiments-1.png" width="700" /></p>
 <p>So, yeah, looks like there’s a whole lot of -2 going on. That’s not to say it’s incorrect— just worth noting out of curiosity.</p>
