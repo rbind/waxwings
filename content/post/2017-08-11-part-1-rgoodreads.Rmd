@@ -163,7 +163,9 @@ read_books %>%
   theme_ipsum_rc()
 ```
 
-It's not quite as bad as I'd feared 🙀. But, in the next part, we'll take a closer look at whether or not my quest for (faux) reading-normalcy has been a success.
+It's not quite as bad as I'd feared 🙀. But, in the next part, we'll take a closer look at whether or not my quest for (faux) reading-normalcy has been a success. **Update:*
+
+* Or not, but there's some other fun stuff in there: ['Goodreads `r emo::ji_glue(":thumbsup:")``r emo::ji_glue(":books:")` Part 2: rvesting descriptions'](https://maraaverick.rbind.io/2017/10/goodreads-part-2/)
 
 [^normal]: Yes, I know that a 5-point Likert scale is an ordinal variable and, thus, cannot be normally distributed (after all, it's not continuous), but that doesn't make me yearn for it any less.
 
