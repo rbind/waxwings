@@ -138,6 +138,10 @@ code {
   font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
   background-color: #f8f8f8;
 }
+/* Mara mod */
+a code {
+    font-weight: bold;
+}
 .outer {
   max-width: 1320px;
   margin: 0 auto;
