@@ -1,0 +1,88 @@
+---
+title: Updating your version of Hugo for blogdown on Netlify
+author: Mara Averick
+date: '2017-10-20'
+slug: updating-blogdown-hugo-version-netlify
+categories: []
+tags:
+  - blogdown
+  - R Markdown
+  - Hugo
+banner: "banners/icarus_hugo_version.png"
+images: ["banners/icarus_hugo_version.png"]
+description: 'A `r emo::ji_glue(":zap:")` quick, pictorial run-through for the blogdown, Hugo, Netlify stack.'
+---
+
+### _Fair warning_ `r emo::ji_glue(":warning:")`
+
+All of the information that follows is indeed in [**_blogdown: Creating Websites with R Markdown_**](https://bookdown.org/yihui/blogdown/) by [Yihui Xie](https://yihui.name/), [Amber Thomas](https://proquestionasker.github.io/), and [Alison Presmanes Hill](https://apreshill.rbind.io/). But, since this is the second time I got a bit lost in this process, I'm writing it up for my own (and anyone else's incidental) edification.[^jenny]
+
+Plus, just look at all the failed deploys that happen when I mess it up...it renders my Netlify deploy panel hideous! `r emo::ji_glue(":see_no_evil:")`
+
+![](https://i.imgur.com/EtZDky6.png)
+
+### _What version(s) of Hugo do I have?_
+
+First off, if you have an existing blogdown site that you're working on in RStudio, you can simply run the following code to find out what your current version of Hugo is.
+
+```{r hugo_v}
+blogdown::hugo_version()
+```
+
+In addition to being able to find out your Hugo version from the **Console** (see below)...
+
+![](https://i.imgur.com/1ieLcgG.png)
+
+...you can also use RStudio's **Terminal** to get the Hugo version, plus a few more details, by running `hugo version`.
+
+![](https://i.imgur.com/b5nTTCh.png)
+
+If you're a Mac user, and have installed Hugo using its [`homebrew` formula](http://brewformulas.org/Hugo),[^installation] you can also check out what versions of Hugo you have by navigating to your `Cellar/hugo` directory (from the Terminal in RStudio, or whatever terminal you use— in my case, this was iTerm2).
+
+![](https://i.imgur.com/f1Me58W.png)
+
+### _What version of Hugo do I need?_
+
+To be quite honest, I'm not 100% sure. It may depend on your theme. I use a slightly modified version of the [Icarus theme](https://themes.gohugo.io/hugo-icarus/). Which, in its `config.toml` file, lists `min_version = 0.20`.
+
+![](https://i.imgur.com/4m1WFti.png)
+
+If you choose your theme from the [**Hugo Themes**](https://themes.gohugo.io/) site, you can also find it in the theme metadata listed on the theme page. They seem to vary quite a bit ([Academic](https://themes.gohugo.io/academic/) requires 0.27; [Goa](https://themes.gohugo.io/hugo-goa/) 0.16; etc.), so be sure to take a gander.
+
+![](https://i.imgur.com/vP0JNMu.png)
+
+As discussed in section [**1.1.1 Update**](https://bookdown.org/yihui/blogdown/installation.html#update) of the blogdown book, you can use `blogdown::update_hugo` to update Hugo from R.
+
+### _How do I make this happen in my Netlify build?_
+
+Now here's the part that tripped me up (despite the fact that it's completely and utterly described in blogdown `r emo::ji_glue(":book:")` [**3.1 Netlify**](https://bookdown.org/yihui/blogdown/netlify.html)). When you go to [Netlify](https://www.netlify.com/) you'll navigate to **`Sites`** and then open whichever site you're working on. From there you can either go to **`Deploys`** `>>` **`Deploy Settings`** or **`Settings`** `>>` **`Build & deploy`** (they both take you to the same place).
+
+When I made my first Netlify/Hugo site, you could simply change the version of Hugo in the **Build command** field of Deploy settings. 
+
+![](https://i.imgur.com/L8oIhIb.png)
+
+This is still true _if_ your build version of Hugo is 0.19 or lower. However, as Yihui, Amber and Alison eloquently describe:
+
+ >  To specify a Hugo version greater or equal to 0.20, you need to create an environment variable `HUGO_VERSION` on Netlify.
+ 
+So, in effect, this means that you will: 
+
+ 1.  Edit your **Build command** to say simply **`hugo`**
+ 2.  Open **Edit variables** in the **Build environmental variables** pane
+ 3.  Add a **New variable**, set the key to **`HUGO_VERSION`**, and the value for your desired Hugo version.
+ 
+ ![](https://i.imgur.com/LntU5VV.gif)
+
+
+#### Further Resources?
+
+There's a helpful piece on the Netlify blog: [**Netlify Plus Hugo 2.0 and Beyond**](https://www.netlify.com/blog/2017/04/11/netlify-plus-hugo-0.20-and-beyond/), if you want to take a peek there. 
+
+I also did a roundup of some more blogdown resources in an earlier post: [**Keeping up with blogdown `r emo::ji_glue(":star2:")`**](https://maraaverick.rbind.io/2017/10/keeping-up-with-blogdown/)— so, y'know, that's there too.
+
+For questions, comments, snide remarks, and the like, tweet me ([\@dataandme](https://twitter.com/dataandme)) `r emo::ji("bird")`!
+
+
+[^jenny]: Inspired/liberated by the great [Jenny Bryan](https://twitter.com/JennyBryan)'s [Accessing R Source](https://github.com/jennybc/access-r-source) repo description which reads: _"I am sick of Googling this. I am writing it down this time."_
+
+[^installation]: For more on this, see the [**Installation**](https://bookdown.org/yihui/blogdown/installation.html) section of the blogdown book. 
