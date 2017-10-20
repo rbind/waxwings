@@ -55,7 +55,7 @@ As discussed in section [**1.1.1 Update**](https://bookdown.org/yihui/blogdown/i
 
 ### _How do I make this happen in my Netlify build?_
 
-Now here's the part that tripped me up (despite the fact that it's completely and utterly described in blogdown `r emo::ji_glue(":book:")` [**3.1 Netlify**](https://bookdown.org/yihui/blogdown/netlify.html)). When you go to [Netlify](https://www.netlify.com/) you'll navigate to **`Sites`** and then open whichever site you're working on. From there you can either go to **`Deploys`** `>>` **`Deploy Settings`** or **`Settings`** `>>` **`Build & deploy`** (they both take you to the same place).
+Now here's the part that tripped me up (despite the fact that it's completely and utterly described in blogdown `r emo::ji_glue(":book:")` [**3.1 Netlify**](https://bookdown.org/yihui/blogdown/netlify.html)). When you go to [Netlify](https://www.netlify.com/) you'll navigate to `Sites` and then open whichever site you're working on. From there you can either go to `Deploys` `>>` `Deploy Settings` or `Settings` `>>` `Build & deploy` (they both take you to the same place).
 
 When I made my first Netlify/Hugo site, you could simply change the version of Hugo in the **Build command** field of Deploy settings. 
 
@@ -67,11 +67,11 @@ This is still true _if_ your build version of Hugo is 0.19 or lower. However, as
  
 So, in effect, this means that you will: 
 
- 1.  Edit your **Build command** to say simply **`hugo`**
+ 1.  Edit your **Build command** to say simply `hugo`
  2.  Open **Edit variables** in the **Build environmental variables** pane
- 3.  Add a **New variable**, set the key to **`HUGO_VERSION`**, and the value for your desired Hugo version.
+ 3.  Add a **New variable**, set the key to `HUGO_VERSION`, and the value for your desired Hugo version.
  
- ![](https://i.imgur.com/LntU5VV.gif)
+ ![](https://i.imgur.com/Gzhr5Pg.gif)
 
 
 #### Further Resources?

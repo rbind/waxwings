@@ -61,7 +61,7 @@ description: 'A ⚡️ quick, pictorial run-through for the blogdown, Hugo, Netl
 </div>
 <div id="how-do-i-make-this-happen-in-my-netlify-build" class="section level3">
 <h3><em>How do I make this happen in my Netlify build?</em></h3>
-<p>Now here’s the part that tripped me up (despite the fact that it’s completely and utterly described in blogdown 📖 <a href="https://bookdown.org/yihui/blogdown/netlify.html"><strong>3.1 Netlify</strong></a>). When you go to <a href="https://www.netlify.com/">Netlify</a> you’ll navigate to <strong><code>Sites</code></strong> and then open whichever site you’re working on. From there you can either go to <strong><code>Deploys</code></strong> <code>&gt;&gt;</code> <strong><code>Deploy Settings</code></strong> or <strong><code>Settings</code></strong> <code>&gt;&gt;</code> <strong><code>Build &amp; deploy</code></strong> (they both take you to the same place).</p>
+<p>Now here’s the part that tripped me up (despite the fact that it’s completely and utterly described in blogdown 📖 <a href="https://bookdown.org/yihui/blogdown/netlify.html"><strong>3.1 Netlify</strong></a>). When you go to <a href="https://www.netlify.com/">Netlify</a> you’ll navigate to <code>Sites</code> and then open whichever site you’re working on. From there you can either go to <code>Deploys</code> <code>&gt;&gt;</code> <code>Deploy Settings</code> or <code>Settings</code> <code>&gt;&gt;</code> <code>Build &amp; deploy</code> (they both take you to the same place).</p>
 <p>When I made my first Netlify/Hugo site, you could simply change the version of Hugo in the <strong>Build command</strong> field of Deploy settings.</p>
 <div class="figure">
 <img src="https://i.imgur.com/L8oIhIb.png" />
@@ -73,12 +73,12 @@ description: 'A ⚡️ quick, pictorial run-through for the blogdown, Hugo, Netl
 </blockquote>
 <p>So, in effect, this means that you will:</p>
 <ol style="list-style-type: decimal">
-<li>Edit your <strong>Build command</strong> to say simply <strong><code>hugo</code></strong></li>
+<li>Edit your <strong>Build command</strong> to say simply <code>hugo</code></li>
 <li>Open <strong>Edit variables</strong> in the <strong>Build environmental variables</strong> pane</li>
-<li>Add a <strong>New variable</strong>, set the key to <strong><code>HUGO_VERSION</code></strong>, and the value for your desired Hugo version.</li>
+<li>Add a <strong>New variable</strong>, set the key to <code>HUGO_VERSION</code>, and the value for your desired Hugo version.</li>
 </ol>
 <div class="figure">
-<img src="https://i.imgur.com/LntU5VV.gif" />
+<img src="https://i.imgur.com/Gzhr5Pg.gif" />
 
 </div>
 <div id="further-resources" class="section level4">
