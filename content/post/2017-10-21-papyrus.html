@@ -1,0 +1,59 @@
+---
+title: 'Papyrus 📜'
+author: Mara Averick
+date: '2017-10-21'
+slug: papyrus
+categories: []
+tags:
+  - ggplot2
+banner: "banners/papyrus_rain.gif"
+images: ["banners/papyrus_rain.gif"]
+description: 'I came upon a post by Andrew Heiss, "Working with R, Cairo graphics, custom fonts, and ggplot," and couldn’t help but notice that the featured font was one I’d seen before...'
+---
+
+
+
+<p>I came upon a post by <a href="https://twitter.com/andrewheiss">Andrew Heiss</a>, <a href="https://www.andrewheiss.com/pelican/blog/2017/09/27/working-with-r-cairo-graphics-custom-fonts-and-ggplot/">Working with R, Cairo graphics, custom fonts, and ggplot</a>, and couldn’t help but notice that the featured font was one I’d seen before…</p>
+<p><br /> <img src="https://i.imgur.com/rguhe3a.gif" /> <br /></p>
+<p>I thought I could forget about it— move on with my life. Maybe I could just load the tidyverse, recreate Andrew’s plot, and be done with the whole thing.</p>
+<pre class="r"><code>library(tidyverse)
+
+# Create sample data
+set.seed(1234)  # This makes R run the same random draw
+df &lt;- data_frame(x = rnorm(100),
+                 y = rnorm(100))
+
+# Create plot
+p &lt;- ggplot(df, aes(x = x, y = y)) +
+  geom_point() +
+  labs(title = &quot;This is a title&quot;,
+       subtitle = &quot;This is a subtitle&quot;) +
+  annotate(&quot;text&quot;, x = 0, y = 0, label = &quot;This is some text&quot;,
+           family = &quot;Papyrus&quot;, color = &quot;darkred&quot;, size = 8) +
+  theme_light(base_family = &quot;Comic Sans MS&quot;)
+p</code></pre>
+<p><img src="/post/2017-10-21-papyrus_files/figure-html/orig_plot-1.png" width="672" /></p>
+<p>But no— that was too easy. His font choice mocked me, still.</p>
+<p><img src="https://i.imgur.com/65xRpzK.gif" /> <br /></p>
+<p>So I did what I had to do. I pulled the <a href="http://www.boxofficemojo.com/movies/?page=weekly&amp;id=avatar.htm&amp;sort=weeknum&amp;order=ASC&amp;p=.htm">appropriate data</a> data from <a href="http://www.boxofficemojo.com/">Box Office Mojo</a>, and made it all nice and R-friendly using Miles McBain’s <a href="https://github.com/MilesMcBain/datapasta"><code>datapasta</code></a> package/addin.</p>
+<pre class="r"><code># abbreviated version shown for aesthetic reasons
+data &lt;- tibble::tribble(
+            ~Date, ~Rank,  ~Weekly.Gross, ~X..Change, ~Theaters, ~Change,      ~Avg.,  ~Gross.to.Date, ~Week,
+       &quot;Aug 6–12&quot;,   73L,      &quot;$10,511&quot;,  &quot;-48.40%&quot;,         1,     -1L,  &quot;$10,511&quot;,  &quot;$749,766,139&quot;,   34L,
+   &quot;Jul 30–Aug 5&quot;,   58L,      &quot;$20,353&quot;,  &quot;-18.90%&quot;,         2,     -1L,  &quot;$10,177&quot;,  &quot;$749,755,628&quot;,   33L,
+      &quot;Jul 23–29&quot;,   55L,      &quot;$25,099&quot;,     &quot;0.03&quot;,         3,     -1L,   &quot;$8,366&quot;,  &quot;$749,735,275&quot;,   32L,
+      &quot;Jul 16–22&quot;,   54L,      &quot;$24,371&quot;,  &quot;-62.70%&quot;,         4,     -5L,   &quot;$6,093&quot;,  &quot;$749,710,176&quot;,   31L,
+       &quot;Jul 9–15&quot;,   47L,      &quot;$65,367&quot;,     &quot;0.25&quot;,         9,      0L,   &quot;$7,263&quot;,  &quot;$749,685,805&quot;,   30L
+)</code></pre>
+<p><br /> <img src="https://i.imgur.com/NVyluuJ.gif" /> <br /></p>
+<pre class="r"><code>data %&gt;%
+  ggplot(aes(x = Week, y = Theaters)) +
+  geom_point() +
+  annotate(&quot;text&quot;, x = 17, y = 1500, label = &quot;AVATAR&quot;,
+           family = &quot;Papyrus&quot;, color = &quot;skyblue2&quot;, size = 24) +
+  theme_minimal(base_family = &quot;sans&quot;)</code></pre>
+<p><img src="/post/2017-10-21-papyrus_files/figure-html/avatarplot-1.png" width="672" /></p>
+<div id="at-least-one-person-understands" class="section level4">
+<h4>At least one person understands…</h4>
+{{% youtube jVhlJNJopOQ %}}
+</div>

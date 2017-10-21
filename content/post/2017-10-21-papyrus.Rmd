@@ -1,0 +1,121 @@
+---
+title: 'Papyrus `r emo::ji_glue(":scroll:")`'
+author: Mara Averick
+date: '2017-10-21'
+slug: papyrus
+categories: []
+tags:
+  - ggplot2
+banner: "banners/papyrus_rain.gif"
+images: ["banners/papyrus_rain.gif"]
+description: 'I came upon a post by Andrew Heiss, "Working with R, Cairo graphics, custom fonts, and ggplot," and couldn’t help but notice that the featured font was one I’d seen before...'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.retina = 2)
+```
+
+I came upon a post by [Andrew Heiss](https://twitter.com/andrewheiss), [Working with R, Cairo graphics, custom fonts, and ggplot](https://www.andrewheiss.com/pelican/blog/2017/09/27/working-with-r-cairo-graphics-custom-fonts-and-ggplot/), and couldn't help but notice that the featured font was one I'd seen before...
+
+<br />
+![](https://i.imgur.com/rguhe3a.gif)
+<br />
+
+I thought I could forget about it— move on with my life. Maybe I could just load the tidyverse, recreate Andrew's plot, and be done with the whole thing.
+
+```{r orig_plot, message=FALSE, warning=FALSE}
+library(tidyverse)
+
+# Create sample data
+set.seed(1234)  # This makes R run the same random draw
+df <- data_frame(x = rnorm(100),
+                 y = rnorm(100))
+
+# Create plot
+p <- ggplot(df, aes(x = x, y = y)) +
+  geom_point() +
+  labs(title = "This is a title",
+       subtitle = "This is a subtitle") +
+  annotate("text", x = 0, y = 0, label = "This is some text",
+           family = "Papyrus", color = "darkred", size = 8) +
+  theme_light(base_family = "Comic Sans MS")
+p
+```
+
+But no— that was too easy. His font choice mocked me, still.
+
+![](https://i.imgur.com/65xRpzK.gif)
+<br />
+
+So I did what I had to do. I pulled the [appropriate data](http://www.boxofficemojo.com/movies/?page=weekly&id=avatar.htm&sort=weeknum&order=ASC&p=.htm) data from [Box Office Mojo](http://www.boxofficemojo.com/), and made it all nice and R-friendly using Miles McBain's [`datapasta`](https://github.com/MilesMcBain/datapasta) package/addin.
+
+```{r datapasta_tibble, include=FALSE}
+data <- tibble::tribble(
+            ~Date, ~Rank,  ~Weekly.Gross, ~X..Change, ~Theaters, ~Change,      ~Avg.,  ~Gross.to.Date, ~Week,
+       "Aug 6–12",   73L,      "$10,511",  "-48.40%",         1,     -1L,  "$10,511",  "$749,766,139",   34L,
+   "Jul 30–Aug 5",   58L,      "$20,353",  "-18.90%",         2,     -1L,  "$10,177",  "$749,755,628",   33L,
+      "Jul 23–29",   55L,      "$25,099",     "0.03",         3,     -1L,   "$8,366",  "$749,735,275",   32L,
+      "Jul 16–22",   54L,      "$24,371",  "-62.70%",         4,     -5L,   "$6,093",  "$749,710,176",   31L,
+       "Jul 9–15",   47L,      "$65,367",     "0.25",         9,      0L,   "$7,263",  "$749,685,805",   30L,
+        "Jul 2–8",   54L,      "$52,280",  "-32.20%",         9,     -6L,   "$5,809",  "$749,620,438",   29L,
+   "Jun 25–Jul 1",   51L,      "$77,156",  "-23.80%",        15,      1L,   "$5,144",  "$749,568,158",   28L,
+      "Jun 18–24",   45L,     "$101,233",  "-26.50%",        14,    -12L,   "$7,231",  "$749,491,002",   27L,
+      "Jun 11–17",   35L,     "$137,737",    "0.088",        26,    -20L,   "$5,298",  "$749,389,769",   26L,
+       "Jun 4–10",   37L,     "$126,634",  "-35.60%",        46,    -38L,   "$2,753",  "$749,252,032",   25L,
+   "May 28–Jun 3",   33L,     "$196,539",  "-33.50%",        84,    -77L,   "$2,340",  "$749,125,398",   24L,
+      "May 21–27",   30L,     "$295,699",  "-40.90%",       161,   -118L,   "$1,837",  "$748,928,859",   23L,
+      "May 14–20",   21L,     "$499,961",  "-18.30%",       279,    -49L,   "$1,792",  "$748,633,160",   22L,
+       "May 7–13",   17L,     "$611,869",  "-29.00%",       328,    -59L,   "$1,865",  "$748,133,199",   21L,
+   "Apr 30–May 6",   18L,     "$861,973",  "-29.00%",       387,    -34L,   "$2,227",  "$747,521,330",   20L,
+      "Apr 23–29",   15L,   "$1,214,424",  "-14.70%",       421,    -79L,   "$2,885",  "$746,659,357",   19L,
+      "Apr 16–22",   13L,   "$1,424,480",    "0.211",       500,     46L,   "$2,849",  "$745,444,933",   18L,
+       "Apr 9–15",   11L,   "$1,176,131",  "-21.20%",       454,    -57L,   "$2,591",  "$744,020,453",   17L,
+        "Apr 2–8",   13L,   "$1,491,883",  "-49.60%",       511,   -303L,   "$2,920",  "$742,844,322",   16L,
+   "Mar 26–Apr 1",   12L,   "$2,959,385",  "-46.30%",       814,   -422L,   "$3,636",  "$741,352,439",   15L,
+      "Mar 19–25",    8L,   "$5,512,102",  "-39.70%",      1236,   -482L,   "$4,460",  "$738,393,054",   14L,
+      "Mar 12–18",    7L,   "$9,136,930",  "-18.80%",      1718,   -445L,   "$5,318",  "$732,880,952",   13L,
+       "Mar 5–11",    5L,  "$11,254,680",  "-42.50%",      2163,   -293L,   "$5,203",  "$723,744,022",   12L,
+   "Feb 26–Mar 4",    4L,  "$19,584,548",   "-7.50%",      2456,   -125L,   "$7,974",  "$712,489,342",   11L,
+      "Feb 19–25",    2L,  "$21,183,640",  "-37.90%",      2581,   -104L,   "$8,208",  "$692,904,794",   10L,
+      "Feb 12–18",    4L,  "$34,115,501",    "0.097",      2685,   -315L,  "$12,706",  "$671,721,154",    9L,
+       "Feb 5–11",    2L,  "$31,112,330",  "-26.00%",      3000,    -74L,  "$10,371",  "$637,605,653",    8L,
+   "Jan 29–Feb 4",    1L,  "$42,020,936",  "-11.90%",      3074,    -67L,  "$13,670",  "$606,493,323",    7L,
+      "Jan 22–28",    1L,  "$47,674,969",  "-28.10%",      3141,   -144L,  "$15,178",  "$564,472,387",    6L,
+      "Jan 15–21",    1L,  "$66,330,413",   "-5.10%",      3285,   -137L,  "$20,192",  "$516,797,418",    5L,
+       "Jan 8–14",    1L,  "$69,926,708",  "-27.80%",      3422,    -39L,  "$20,434",  "$450,467,005",    4L,
+        "Jan 1–7",    1L,  "$96,916,087",  "-33.90%",      3461,      5L,  "$28,002",  "$380,540,297",    3L
+  )
+```
+
+```{r echo=TRUE, eval=FALSE}
+# abbreviated version shown for aesthetic reasons
+data <- tibble::tribble(
+            ~Date, ~Rank,  ~Weekly.Gross, ~X..Change, ~Theaters, ~Change,      ~Avg.,  ~Gross.to.Date, ~Week,
+       "Aug 6–12",   73L,      "$10,511",  "-48.40%",         1,     -1L,  "$10,511",  "$749,766,139",   34L,
+   "Jul 30–Aug 5",   58L,      "$20,353",  "-18.90%",         2,     -1L,  "$10,177",  "$749,755,628",   33L,
+      "Jul 23–29",   55L,      "$25,099",     "0.03",         3,     -1L,   "$8,366",  "$749,735,275",   32L,
+      "Jul 16–22",   54L,      "$24,371",  "-62.70%",         4,     -5L,   "$6,093",  "$749,710,176",   31L,
+       "Jul 9–15",   47L,      "$65,367",     "0.25",         9,      0L,   "$7,263",  "$749,685,805",   30L
+)
+```
+
+
+<br />
+![](https://i.imgur.com/NVyluuJ.gif)
+<br />
+
+```{r avatarplot}
+data %>%
+  ggplot(aes(x = Week, y = Theaters)) +
+  geom_point() +
+  annotate("text", x = 17, y = 1500, label = "AVATAR",
+           family = "Papyrus", color = "skyblue2", size = 24) +
+  theme_minimal(base_family = "sans")
+```
+
+#### At least one person understands...
+
+```{r papyrus_vid, echo = FALSE}
+blogdown::shortcode("youtube", "jVhlJNJopOQ")
+```
+
