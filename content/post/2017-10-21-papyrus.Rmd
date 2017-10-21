@@ -47,7 +47,7 @@ But no— that was too easy. His font choice mocked me, still.
 ![](https://i.imgur.com/65xRpzK.gif)
 <br />
 
-So I did what I had to do. I pulled the [appropriate data](http://www.boxofficemojo.com/movies/?page=weekly&id=avatar.htm&sort=weeknum&order=ASC&p=.htm) data from [Box Office Mojo](http://www.boxofficemojo.com/), and made it all nice and R-friendly using Miles McBain's [`datapasta`](https://github.com/MilesMcBain/datapasta) package/addin.
+So I did what I had to do. I pulled the [appropriate data](http://www.boxofficemojo.com/movies/?page=weekly&id=avatar.htm&sort=weeknum&order=ASC&p=.htm) from [Box Office Mojo](http://www.boxofficemojo.com/), and made it all nice and R-friendly using Miles McBain's [`datapasta`](https://github.com/MilesMcBain/datapasta) package/add-in.
 
 ```{r datapasta_tibble, include=FALSE}
 data <- tibble::tribble(
