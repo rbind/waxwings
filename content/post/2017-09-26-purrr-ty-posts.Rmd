@@ -13,7 +13,7 @@ images: ["banners/purrr_apply_cheatsheet_rstudio.png"]
 description: "Now that 😻 purrr has a shiny new cheat sheet, it seemed like a fitting tribute to give the package its own tweet roundup..."
 ---
 
-Updated: `r emo::ji("calendar")` 2017-09-29.
+Updated: `r emo::ji("calendar")` 2017-10-22.
 
 
 ### `r emo::ji("tada")``r emo::ji("cat")`&nbsp; purrr-tiest cheat sheet
@@ -91,6 +91,8 @@ blogdown::shortcode("tweet", "912788254692388864")
 ```
 
 ### [PURRRty PowerPoint with R](http://lenkiefer.com/2017/09/27/use-purrr/) by Len Kiefer
+
+There's also [Purrrtier PowerPoint with R](http://lenkiefer.com/2017/10/21/purrrtier-powerpoint-with-r/), which covers the use of [`rvg`](https://github.com/davidgohel/rvg) for vector graphics.
 
 ```{r, echo = FALSE}
 blogdown::shortcode("tweet", "913750757173800960")
