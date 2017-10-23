@@ -1,0 +1,64 @@
+---
+title: 'Tidyverse-ification'
+subtitle: 'Translating `r emo::ji_glue(":package:")` functions with help from the RStudio Community'
+author: Mara Averick
+date: '2017-10-23'
+slug: tidyverse-ification
+categories: []
+tags:
+  - R
+  - RStudio
+  - tidyverse
+  - dplyr
+  - purrr
+banner: ""
+images: [""]
+description: 'Translating various R `r emo::ji_glue(":package:")` functions (old and new) with help from the RStudio Community.'
+---
+
+In the weeks since Strategos Fleet Commander Hadley Wickham[^titular] [announced](https://blog.rstudio.com/2017/09/14/rstudio-community/) the `r emo::ji_glue(":new:")` [RStudio Community](https://community.rstudio.com/) site, its become a pretty happening place. `r emo::ji_glue(":nerdy:")`
+
+One benefit I didn't expect, but absolutely love `r emo::ji_glue(":heart_eyes:")` is the discovery of older resources that, despite not being hot off the presses, can still be incredibly useful.
+
+## [Switching from base R to tidyverse](https://community.rstudio.com/t/switching-from-base-r-to-tidyverse/1704)
+
+This thread (`r emo::ji_glue(":link:")` above) was started by [Rajesh Korde](http://www.significantdigits.org/), who recently wrote a `r emo::ji_glue(":star2:")` [blog post](http://www.significantdigits.org/2017/10/switching-from-base-r-to-tidyverse/) by the same name. The post gives what is, effectively, a translation table (see excerpt, below)
+
+![](https://i.imgur.com/QroCnG1.png)
+
+However, this wasn't from the only useful post unearthed in this stream of Q&A.
+
+### [hipsteR: re-educating people who learned R before it was cool](http://kbroman.org/hipsteR/) by Karl Broman
+
+Recommended by [Edward Visel](https://community.rstudio.com/t/switching-from-base-r-to-tidyverse/1704/9?u=mara), Karl (an "early adopter," and veteran user of both S and S-plus) describes this post as being:
+
+ > ...a tutorial for people like me, or people who were taught by people like me.  
+
+![](https://i.imgur.com/NCCrwj6.png)
+
+### [plyr to dplyr](https://jimhester.github.io/plyrToDplyr/) by Jim Hester
+
+Written when _"dplyr [was] still in the early stages"_, Jim calls this one:
+
+ > ...a simple demonstration of how to convert existing plyr code to use the dplyr package.
+
+I can't get enough of the side-by-side layout `r emo::ji_glue(":heart_eyes_cat:")`, so I think it's worth ogling even if `ddply()` looks like nothing more than a simple typo to you.
+
+![](https://i.imgur.com/MEyKui6.png)
+
+And, speaking of useful side-by-sides...
+
+### [purrr tutorial: Relationship to base and plyr functions](https://jennybc.github.io/purrr-tutorial/bk01_base-functions.html) by Jenny Bryan
+
+I'm pretty obsessed with this entire [purrr tutorial](https://jennybc.github.io/purrr-tutorial/), but this is a super-extra-special-awesome bit `r emo::ji_glue(":star:")`! Seriously, as Jenny herself notes:
+
+ > Regardless of your preference [base or tidyverse], hopefully the side-by-side examples below are a helpful tour of different ways to iterate. Even if you prefer purrr/tidyverse in some settings, you might want base methods when you don’t want any dependencies.
+
+![](https://i.imgur.com/CzagllA.png)
+
+## `r emo::ji_glue(":raised_hands:")` All done
+
+That's all for now. There's lots more good stuff in the [tidyverse channel](https://community.rstudio.com/c/tidyverse), and on the [RStudio Community](https://community.rstudio.com/) site as a whole. So, go check it out! If I messed anything up here, tweet `r emo::ji("bird")` &nbsp;([\@dataandme](https://twitter.com/dataandme)), or leave a comment.
+
+
+[^titular]: _No_, this is _not_ a demotion from "Honourable Doctor Sir Lord General!" I'm making up these honourific stacks, so I get to declare this a lateral move. I'm pretty sure [Philip II of Macedon](https://en.wikipedia.org/wiki/Philip_II_of_Macedon) isn't about to pop his nose-less head in to say otherwise.
