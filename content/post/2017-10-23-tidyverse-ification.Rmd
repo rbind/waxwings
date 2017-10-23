@@ -11,8 +11,8 @@ tags:
   - tidyverse
   - dplyr
   - purrr
-banner: ""
-images: [""]
+banner: "banners/readcsv_tidify.gif"
+images: ["banners/readcsv_tidify.gif"]
 description: 'Translating various R `r emo::ji_glue(":package:")` functions (old and new) with help from the RStudio Community.'
 ---
 
