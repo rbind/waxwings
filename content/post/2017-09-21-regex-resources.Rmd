@@ -9,6 +9,7 @@ tags:
   - RegEx
   - resources
   - stringr
+  - roundups
 banner: "banners/regex_tweets.jpg"
 images: ["banners/regex_tweets.jpg"]
 description: "At some point in your computing life, you're gonna need to get down with regular expressions. So, here's a roundup of some Regex-related resources (R-specific or otherwise) I've found handy."

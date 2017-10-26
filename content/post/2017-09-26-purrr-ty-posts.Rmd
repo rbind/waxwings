@@ -8,6 +8,7 @@ tags:
   - purrr
   - resources
   - R
+  - roundups
 banner: "banners/purrr_apply_cheatsheet_rstudio.png"
 images: ["banners/purrr_apply_cheatsheet_rstudio.png"]
 description: "Now that 😻 purrr has a shiny new cheat sheet, it seemed like a fitting tribute to give the package its own tweet roundup..."
