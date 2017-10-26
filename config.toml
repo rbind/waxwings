@@ -61,6 +61,10 @@ theme = "hugo-icarus-theme"
     label  = "Home"
     link   = "/"
 
+[[params.menu]]
+    before = false
+    label = "Roundups"
+    link = "/tags/roundups/"
 # Enter a link for the follow button on the left
 [params.profile]
     follow_button = "https://twitter.com/dataandme"
