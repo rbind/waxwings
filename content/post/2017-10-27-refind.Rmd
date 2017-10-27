@@ -1,0 +1,52 @@
+---
+title: 'Refind `r emo::ji_glue(":mag_right:")``r emo::ji_glue(":recycle:")`'
+author: Mara Averick
+date: '2017-10-27'
+slug: refind
+categories: []
+tags:
+  - wild-card
+banner: 'banners/refind_banner-min.png'
+images: ['banners/refind_banner-min.png']
+description: 'This isn’t much in the way of a post, but (as tweeted earlier `r emo::ji_glue(":bird:")`), I’ve been digging refind of late...'
+---
+
+It's not much in the way of a post, but (as tweeted earlier `r emo::ji_glue(":point_down:")`), I've been digging [refind](https://refind.com/dataandme?invite=833f3aa88b) of late.[^1]
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "918091767244869633")
+```
+
+Yes, it's just another bookmarking tool— or discovery engine, or whatever it is the kids are calling things these days... The point is, it takes all the links from my tweets `r emo::ji_glue(":bird:")`, and puts them in a much more browsable format. You also get to avoid my side comments and emoji-annotation, which is `r emo::ji_glue(":thumbsup:")` or `r emo::ji_glue(":thumbsdown:")`, depending on whom you ask.
+
+See? All the cards in the banner started out as tweets:
+
+#### [A tidy text analysis of Rick and Morty](http://tamaszilagyi.com/blog/a-tidy-text-analysis-of-rick-and-morty/) by Tamas Szilagyi
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "917737120105680896")
+```
+
+#### [RStudio v1.1 Released](https://blog.rstudio.com/2017/10/09/rstudio-v1.1-released/) by Jonathan McPherson
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "917485189563117569")
+```
+
+#### [How I built a scraper to measure activity of MPs](http://www.maartenlambrechts.com/2016/10/03/how-i-built-a-scraper-to-measure-activity-of-mps.html) by Maarten Lambrechts
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "917461179211112448")
+```
+
+#### [An extensive tutorial of D3partitionR 0.2](https://antoineguillot.wordpress.com/2016/11/20/an-extensive-tutorial-of-d3partitionr-0-2/) by Antoine Guillot
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "917374619132354561")
+```
+
+Ah, the magic of Web APIs! `r emo::ji_glue(":sparkles:")` 
+
+So, here's your formal [invitation](https://refind.com/dataandme?invite=833f3aa88b) `r emo::ji_glue(":scroll:")`, should you care to join in on the fun!
+
+[^1]: Scout's honor `r emo::ji_glue(":hand:")`, I'm not in it for the billion imaginary coins, or whatever it is the claim to be giving away.
