@@ -15,7 +15,7 @@ images: ["banners/regex_tweets.jpg"]
 description: "At some point in your computing life, you're gonna need to get down with regular expressions. So, here's a roundup of some Regex-related resources (R-specific or otherwise) I've found handy."
 ---
 
-Updated: `r emo::ji("calendar")` 2017-09-29.
+Updated: `r emo::ji("calendar")` 2017-10-27.
 
 Regular Expressions, RegEx, regexps-- call them what you like, but no matter how you slice it, they're useful af. After all, data spelunking is all about patterns, and that's precisely what regexps are for: (wo)manhandling patterns in strings. Good Sirs Wickham and Grolemund, in their masterful tome, [r4ds](http://r4ds.had.co.nz/strings.html#matching-patterns-with-regular-expressions), describe them thusly:
 
@@ -67,7 +67,11 @@ blogdown::shortcode("tweet", "799251262344572928")
 blogdown::shortcode("tweet", "913875288605577216")
 ```
 
+### [Awesome new `stringr` cheat sheet](https://www.rstudio.com/resources/cheatsheets/) from RStudio
 
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "923969983708835842")
+```
 
 #### Tada `r emo::ji("tada")`
 
