@@ -1,0 +1,35 @@
+---
+title: 'leaRning out loud: `r emo::ji_glue(":film_projector:")` slides from EARL Boston'
+author: Mara Averick
+date: '2017-11-05'
+slug: learning-out-loud-slides-from-earl-boston
+categories: []
+tags:
+  - events
+  - slides
+banner: "banners/earl_intro_slide.png"
+images: ["banners/earl_intro_slide.png"]
+description: 'I gave a talk at EARL Boston, and managed not to die! `r emo::ji_glue(":dizzy_face:")` Here are the slides from said non-fatal event for your enjoyment...'
+---
+
+`r emo::ji_glue(":tada:")` I gave a talk at [EARL Boston](https://earlconf.com/boston/), and somehow managed not to die! `r emo::ji_glue(":dizzy_face:")`
+
+Couldn't make it? Here are the slides from the aforementioned, non-fatal event for your enjoyment. They likely won't make too much sense on their own, and I plan on doing a proper write-up at some point. But, until that time comes...
+
+```{r, echo = FALSE}
+blogdown::shortcode("speakerdeck", "738f4e63f3794cd48d5c05c103ac5a6f")
+```
+
+You can also catch a high(er)-resolution version of these same slides at: `r emo::ji_glue(" :link:")` <https://bit.ly/mara-earl>.
+
+Questions? Comments? Snide remarks? Chirp my way `r emo::ji("bird")` [\@dataandme](https://twitter.com/dataandme).
+
+
+#### Post Script
+
+For the `r emo::ji_glue(":camera:")` POIDH crowd, here's proof positive (or some very excellent Photoshop work) from Angela Li (aka [\@CivicAngela](https://twitter.com/CivicAngela)).
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "926440586609135618")
+```
+
