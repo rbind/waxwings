@@ -1,0 +1,48 @@
+---
+title: 'R-blog `r emo::ji_glue(":memo:")` tips from an inveterate tweeter thereof'
+author: Mara Averick
+date: '2017-11-10'
+slug: r-blog-tips-from-an-inveterate-tweeter-thereof
+categories: []
+tags:
+  - blogdown
+  - R
+banner: "banners/put_a_bird_on_it.jpg"
+images: ["banners/put_a_bird_on_it.jpg"]
+description: 'Arbitrary things that I selfishly love `r emo::ji_glue(":sparkling_heart:")` to see in other people’s blog posts.'
+---
+
+### Preemptive peccavi
+
+I am being selfish. The following items are tips, only insofar as they are to my liking. 
+What's more, the material isn't even original. I wrote these up in response to a [thread](https://community.rstudio.com/t/tips-tricks-for-blogdown/2573?u=mara) on the RStudio Community site.[^claim] So, consider yourselves warned. `r emo::ji_glue(":skull_and_crossbones:")`
+
+
+### 1. Put a bird on it. `r emo::ji_glue(":bird:")`
+Actually, not just a bird (_damn my dedication to TV show references_), I'd recommend having your twitter handle (if you're on there) visible in writing. As someone who tweets posts that others write, it's just _easier_ if I can see the actual handle...yes, I _am_ actually that lazy.
+
+![](https://i.imgur.com/1jDnUBr.gif)
+
+### 2. Packages. `r emo::ji_glue(":package:")`
+Even if you're not writing a post _about_ a particular package, it's super helpful to see examples of how people are using a given package. Plus, this gives your post relevance beyond just the novelty of fresh material.
+
+![](https://i.imgur.com/xfNVMDm.gif)
+
+### 3. Syntax highlighting!  `r emo::ji_glue(":crayon:")`
+Just do it. Life is better when things are colourful. Plus, but it's really not hard— I didn't even have to do anything special with my blogdown theme to get it working. This is covered in the blogdown book[^blogdown] as both a [theme parameter](https://bookdown.org/yihui/blogdown/themes.html#the-default-theme) and a [custom template](https://bookdown.org/yihui/blogdown/templates.html#how-to).
+
+![](https://i.imgur.com/b55smoP.gif)
+
+### 4. Socialize.  `r emo::ji_glue(":dancers:")`
+Not as do or die, but, as you can see on forums, twitter, and elsewhere, getting the metadata right makes a big difference in terms of visual "browseability." The how and why of this are well described `r emo::ji_glue(":raised_hands:")` by Xavier (`r emo::ji_glue(":bird:")` [\@xvrdm](https://twitter.com/xvrdm)) in his aptly-named post, [**"Socialize your blogdown"**](https://xvrdm.github.io/2017/10/23/socialize-your-blogdown/). Heck, he even made the super cool graphic, below.
+
+![](https://i.imgur.com/H8pTgVH.png)
+
+
+### `r emo::ji_glue(":tada:")` Fin!
+There are definitely more tips out there (probably even some that _aren't_ just the product of one human's idiosyncratic desires). No matter how niche your topic is, someone on the internet cares! There's really no way to go wrong, though when comes to blogging what you're learning, as it'll help solidify things for _you_! _See?_ Now you can be selfish too!
+
+
+[^claim]: I even claim that I'll flesh these out in a blog post over there, and, as you can see, that was kind of a lie. Basically, I'm the worst `r emo::ji_glue(":smiling_imp:")`...
+
+[^blogdown]: [**_blogdown: Creating Websites with R Markdown_**](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas, and Alison Presmanes Hill
