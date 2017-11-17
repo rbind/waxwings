@@ -29,7 +29,7 @@ Even if you're not writing a post _about_ a particular package, it's super helpf
 ![](https://i.imgur.com/xfNVMDm.gif)
 
 ### 3. Syntax highlighting!  `r emo::ji_glue(":crayon:")`
-Just do it. Life is better when things are colourful. Plus, but it's really not hard— I didn't even have to do anything special with my blogdown theme to get it working. This is covered in the blogdown book[^blogdown] as both a [theme parameter](https://bookdown.org/yihui/blogdown/themes.html#the-default-theme) and a [custom template](https://bookdown.org/yihui/blogdown/templates.html#how-to).
+Just do it. Life is better when things are colourful. Plus, it's really not hard— I didn't even have to do anything special with my blogdown theme to get it working. This is covered in the blogdown book[^blogdown] as both a [theme parameter](https://bookdown.org/yihui/blogdown/themes.html#the-default-theme) and a [custom template](https://bookdown.org/yihui/blogdown/templates.html#how-to).
 
 ![](https://i.imgur.com/b55smoP.gif)
 
