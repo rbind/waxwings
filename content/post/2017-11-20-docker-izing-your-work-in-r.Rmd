@@ -1,0 +1,73 @@
+---
+title: 'Docker-izing your work in R `r emo::ji_glue(":whale:")`'
+author: Mara Averick
+date: '2017-11-20'
+draft: TRUE
+slug: docker-izing-your-work-in-r
+categories: []
+tags:
+  - R
+  - rOpenSci
+  - roundups
+banner: "banners/nyan_docker_whale_gfycat.gif"
+images: ["banners/nyan_docker_whale_gfycat.gif"]
+description: 'A roundup of helpful guides to containerizing packages, docs, projects, and more by using Docker with R. `r emo::ji_glue(":package:")`'
+---
+
+I am decidedly a novice when it comes to any and all things Docker (which, 
+incidentally, is why I've been reading these posts). But, since it's helpful for 
+_me_ to have all of these resources together in one place, I thought I'd share 
+the love around.[^nyanwhale]
+
+### [R Docker turorial for reproducible research.](http://ropenscilabs.github.io/r-docker-tutorial/) via rOpenSci Labs
+
+This is actually a series of *6* lessons put together at the 
+rOpenSci unconf in 2016.
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "930633713876127744")
+```
+
+
+### [Enough Docker to be Dangerous](http://seankross.com/2017/09/17/Enough-Docker-to-be-Dangerous.html) by Sean Kross
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "911774443885797377")
+```
+
+### [liftr](https://liftr.me/) `r emo::ji_glue(":package:")` by Nan Xiao
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "919548925287297024")
+```
+
+> liftr aims to solve the problem of _persistent reproducible reporting_. 
+> To achieve this goal, it extends the R Markdown metadata format, 
+> and uses Docker to containerize and render R Markdown documents.
+
+### [Docker for R Package Development](http://www.jimhester.com/2017/10/13/docker/) by Jim Hester
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "918910727070601217")
+```
+
+### [An R-docker hello world example](https://www.symbolix.com.au/blog-main/r-docker-hello) via symbolix
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "910938183386484738")
+```
+
+### [How to get started with data science in containers](http://blog.kaggle.com/2016/02/05/how-to-get-started-with-data-science-in-containers/) by Jamie Hall
+
+This post isn't R-specific, but that doesn't mean it's not useful!
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "696057282325561344")
+```
+
+## Fin `r emo::ji_glue(":tada:")`
+
+Additions? Questions? Comments? Snide remarks? Feel free to tweet me [\@dataandme](https://twitter.com/dataandme) `r emo::ji("bird")`, and/or comment below!
+
+[^nyanwhale]: Speaking of sharing love: cred for [Nyan Whale](https://gfycat.com/gifs/detail/PerfectHarshHoatzin) (i.e. the banner gif `r emo::ji_glue(":rainbow: :whale:")`) goes to [Andrew Kennedy](https://www.youtube.com/watch?v=2c_rmqme6rc)!
+
