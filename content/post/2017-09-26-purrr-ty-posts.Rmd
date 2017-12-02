@@ -14,7 +14,7 @@ images: ["banners/purrr_apply_cheatsheet_rstudio.png"]
 description: "Now that 😻 purrr has a shiny new cheat sheet, it seemed like a fitting tribute to give the package its own tweet roundup..."
 ---
 
-Updated: `r emo::ji("calendar")` 2017-11-26.
+Updated: `r emo::ji("calendar")` 2017-12-01.
 
 
 ### `r emo::ji("tada")``r emo::ji("cat")`&nbsp; purrr-tiest cheat sheet
@@ -103,6 +103,12 @@ blogdown::shortcode("tweet", "913750757173800960")
 
 ```{r, echo = FALSE}
 blogdown::shortcode("tweet", "934619979680567296")
+```
+
+Now with part two: [**A Crazy Little Thing Called {purrr} - Part 2 : Text Wrangling**](http://colinfay.me/purrr-text-wrangling/)
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "936358492499251202")
 ```
 
 
