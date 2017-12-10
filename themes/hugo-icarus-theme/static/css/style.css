@@ -1061,7 +1061,7 @@ a.article-title:hover {
   cursor: pointer;
   margin-left: 20px;
 }
-.article-share-link .fa-share {
+.article-share-link .fas fa-share {
   margin-right: 5px;
 }
 #article-nav {
