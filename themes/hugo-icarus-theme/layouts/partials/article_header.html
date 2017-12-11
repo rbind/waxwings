@@ -8,7 +8,7 @@
 
         {{ if not .Params.nodateline }}
         <div class="article-date">
-            <i class="fa fa-calendar"></i>
+            <i class="far fa-calendar"></i>
             <time datetime="{{ .Date }}" itemprop="datePublished">{{ .Date.Format .Site.Params.date_format }}</time>
             &middot;
             {{ .WordCount }}
@@ -22,7 +22,7 @@
             {{ $categoriesLen := len .Params.categories }}
             {{ if gt $categoriesLen 0 }}
             <div class="article-category">
-                <i class="fa fa-folder"></i>
+                <i class="far fa-folder"></i>
                 {{ range $k, $v := .Params.categories }}
                 {{ $url := printf "categories/%s" (. | urlize | lower) }}
                 <a class="article-category-link" href="{{ $url | absURL }}">{{ . }}</a>
