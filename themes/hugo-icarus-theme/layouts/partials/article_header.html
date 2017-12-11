@@ -36,7 +36,7 @@
             {{ $tagsLen := len .Params.tags }}
             {{ if gt $tagsLen 0 }}
             <div class="article-category">
-                <i class="fa fa-tags"></i>
+                <i class="fas fa-tags"></i>
                 {{ range $k, $v := .Params.tags }}
                 {{ $url := printf "tags/%s" (. | urlize | lower) }}
                 <a class="article-category-link" href="{{ $url | absURL }}">{{ . }}</a>
