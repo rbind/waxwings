@@ -1,0 +1,185 @@
+---
+title: '2017 - A `r emo::ji_glue(":bird::heart:")` year in review'
+author: Mara Averick
+date: '2017-12-20'
+slug: 2017-a-year-in-review
+categories: []
+tags:
+  - R
+  - resources
+banner: "banners/2017_tweet_year.png"
+images: ["banners/2017_tweet_year.png"]
+description: 'Some twitter-follower favourites from each  `r emo::ji_glue(":calendar:")` month of 2017, featuring: R, Python, visualization, interactives, and other assorted items of interest along the way...'
+---
+
+I have no words of wisdom when it comes to summing up 2017. `r emo::ji_glue(":speak_no_evil:")` So, I guess I'll let some algorithm do the talking.[^1] `r emo::ji_glue(":robot::speech_balloon:")` Behold `r emo::ji_glue(":raised_hands:")`: two _Top Tweets_ for each month (according to [Twitter analytics](https://analytics.twitter.com)), some more R-related than others.
+
+## January `r emo::ji_glue(":confetti_ball:")`
+
+### [RStudio IDE Easy Tricks You Might've Missed](https://rviews.rstudio.com/2016/11/11/easy-tricks-you-mightve-missed/) by Sean Lopp
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "823366906551865344")
+```
+
+### [Data Visualisation Does Political Things](https://static1.squarespace.com/static/55ca3eafe4b05bb65abd54ff/t/574865601bbee06999548a9b/1464362348307/387+Boehnert.pdf) by Joanna Boehnert 
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "816732438005219328")
+```
+
+## February `r emo::ji_glue(":snowflake:")`
+
+### [Data Transformation Cheat Sheet](https://www.rstudio.com/resources/cheatsheets/) via RStudio
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "835977000720470017")
+```
+
+### [Probability Cheatsheet v2.0](http://www.wzchen.com/probability-cheatsheet) by Joe Blitzstein and William Chen
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "829053628719706113")
+```
+
+## March `r emo::ji_glue(":wind_face:")`
+
+### [DiagrammeR](https://rich-iannone.github.io/DiagrammeR/) by Richard Iannone
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "843534070873296897")
+```
+
+### [NHL shots analysis using Plotly shapes](https://moderndata.plot.ly/nhl-shots-analysis-using-plotly-shapes/)  by Pravendra Singh
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "837388642448474114")
+```
+
+## April `r emo::ji_glue(":umbrella:")`
+
+### [A Compendium of Clean Graphs in R Version 2.0](http://shinyapps.org/apps/RGraphCompendium/index.php) by Eric-Jan Wagenmakers and Quentin F. Gronau
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "847994181800923136")
+```
+
+### [Conditional probability: A Visual explanation](http://setosa.io/conditional/) by Victor Powell
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "851182192772435968")
+```
+
+## May `r emo::ji_glue(":cherry_blossom:")`
+
+### [Apply Functions Cheat Sheet](https://www.rstudio.com/resources/cheatsheets/) via RStudio
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "859952990173757441")
+```
+
+### [Every Color Of Cardigan Mister Rogers Wore From 1979-2001](https://www.theawl.com/2017/05/every-color-of-cardigan-mister-rogers-wore-from-1979-2001/) by Owen Phillips
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "866640293852057602")
+```
+
+## June `r emo::ji_glue(":graduation_cap:")`
+
+### [skimr: A frictionless, pipeable approach to dealing with summary statistics](https://github.com/ropenscilabs/skimr) via rOpenSci
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "870686970841776129")
+```
+
+### [29 common beginner Python errors on one page](https://pythonforbiologists.com/29-common-beginner-errors-on-one-page/) via Python for Biologists
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "873650237994348545")
+```
+
+## July `r emo::ji_glue(":sunglasses:")`
+
+### [Introducing learnr](https://blog.rstudio.com/2017/07/11/introducing-learnr/) by Garrett Grolemund
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "884884260963921920")
+```
+
+### [You Say Data, I Say System](https://hackernoon.com/you-say-data-i-say-system-54e84aa7a421) by Jer Thorp
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "886217300705239040")
+```
+
+## August `r emo::ji_glue(":sweat_smile:")`
+
+### [Basic Regular Expressions in R Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf) by Ian Kopacka
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "893905958107308033")
+```
+
+### [Visualization Analysis & Design](http://www.cs.ubc.ca/~tmm/talks.html) by Tamara Munzer
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "901878507357302784")
+```
+
+## September `r emo::ji_glue(":fallen_leaf:")`
+
+### [Network visualization with R](http://kateto.net/network-visualization) by Katya Ognyanova
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "904691129488113664")
+```
+
+### [Data Import Cheat Sheet](https://www.rstudio.com/resources/cheatsheets/) via RStudio
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "904389043986817026")
+```
+
+## October `r emo::ji_glue(":jack_o_lantern:")`
+
+### [Introduction to gghighlight](https://yutani.rbind.io/post/2017-10-06-gghighlight/) by Hiroaki Yutani
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "917435038186266624")
+```
+
+### [You draw the chart: How has life changed in 60 years?](http://www.bbc.com/news/uk-41685693) by Wesley Stephenson
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "923535196246499328")
+```
+
+## November `r emo::ji_glue(":turkey:")`
+
+### [Working with Play-by-Play Sports Data: Using SQL & R](http://curleylab.psych.columbia.edu/playbyplay/) by James Curley
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "926857078400053249")
+```
+
+### [tidyverse 1.2.0](https://www.tidyverse.org/articles/2017/11/tidyverse_1.2.0/)
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "928276461991223296")
+```
+
+## December `r emo::ji_glue(":christmas_tree:")`
+
+### [Visualizing text data with ggplot2](https://github.com/ColinFay/conf/blob/master/2017-11-budapest/fay_colin_text_data_ggplot2.pdf) by Colin Fay
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "938468603539705856")
+```
+
+### [Data Visualization for Social Science: A practical introduction with R and ggplot2](http://socviz.co/index.html) by Kieran Healy
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "938968652040241152")
+```
+
+[^1]: With some mild editorializing to include at least a _few_ useful things along the way.
