@@ -51,6 +51,11 @@ blogdown::shortcode("tweet", "816119147830591488")
 blogdown::shortcode("tweet", "876787157070950401")
 ```
 
+And a more recent variation on her talk:
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "941005303516102656")
+```
 
 ### [Making Websites with R Markdown: A Sneak Peek of blogdown](https://slides.yihui.name/2017-rstudio-conf-blogdown-Yihui-Xie.html#1) by Yihui Xie
 
