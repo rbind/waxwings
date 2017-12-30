@@ -1,0 +1,60 @@
+---
+title: 'Git guides'
+author: Mara Averick
+date: '2017-12-30'
+slug: git-guides
+categories: []
+tags:
+  - git
+  - github
+  - roundups
+  - resources
+banner: "banners/merge_rebase_south_park_gonna_have_a_bad_time.gif"
+images: ["banners/merge_rebase_south_park_gonna_have_a_bad_time.gif"]
+description: 'Sometimes I think I have a handle on merges, and rebasing, and interactive, forced fast-forwards (not a real thing, that I know of). Inevitably, I prove myself wrong, finding exciting new ways of turning my Git history into `r emo::ji_glue(":wastebasket:")``r emo::ji_glue(":fire:")`.'
+---
+
+A completely selfish collection of resources (in addition to the [GitHub Guides](https://guides.github.com/), which are excellent) to turn to when I inevitably
+get myself into Git trouble...
+
+### [Git pretty](http://justinhileman.info/article/git-pretty/) by Justin Hileman
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "943542068290424833")
+```
+
+### [Excuse me, do you have a moment to talk about version control?](https://peerj.com/preprints/3159/) by Jenny Bryan
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "904526716223279104")
+```
+
+### [A Quick Introduction to Version Control with Git and GitHub](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668) by John Blischak, Emily Davenport, & Greg Wilson
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "862740607516762112")
+```
+
+### [Oh shit, git!](http://ohshitgit.com/) by Katie Sylor-Miller
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "906502997093572613")
+```
+
+### [Happy Git and GitHub for the useR](http://happygitwithr.com/) by Jenny Bryan & the STAT 545 TAs
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "788726896578195456")
+```
+
+### [Git Branching graphic](https://imgur.com/gallery/YG8In8X/) by Dev Bootcamp
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "794187918579564544")
+```
+
+### For my amusement `r emo::ji_glue(":deer:")`
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "946475631881216000")
+```
