@@ -1,0 +1,27 @@
+---
+title: 'Hammertime `r emo::ji_glue(":heavy_multiplication_x:")` tibbletime'
+author: Mara Averick
+date: '2018-01-05'
+slug: hammertime-tibbletime
+categories: []
+tags:
+  - R
+  - ggplot2
+  - tibbletime
+  - magick
+banner: "banners/hammertibbletime.gif"
+images: ["banners/banners/hammertibbletime.gif"]
+description: '`r emo::ji_glue(":hammer:")``r emo::ji_glue(":alarm_clock:")` A mashup of a tibbletime tutorial with some [image]magick…'
+---
+
+A very silly bit of R fun, featuring `r emo::ji_glue(":package:")`: [tibbletime](https://business-science.github.io/tibbletime/), 
+[tidyquant](https://business-science.github.io/tidyquant/index.html), and 
+[magick](https://github.com/ropensci/magick) packages (as well as an awesome 
+gif of MC Hammer by someone named bert).
+
+The code itself (see [RPub here](http://rpubs.com/maraaverick/hammertibbletime)) 
+is a  combination of [**Tidy time series Analysis with tibbletime**](http://www.business-science.io/code-tools/2017/10/26/demo_week_tibbletime.html) 
+by [Matt Dancho](https://twitter.com/mdancho84), and [**How to Add a Logo to ggplot by Magick**](http://danielphadley.com/ggplot-Logo/) by 
+[Daniel P. Hadley](https://twitter.com/danielphadley).
+
+![](https://i.imgur.com/wnNp7uh.gif)
