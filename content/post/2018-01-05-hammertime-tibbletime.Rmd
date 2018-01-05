@@ -11,7 +11,7 @@ tags:
   - magick
 banner: "banners/hammertibbletime.gif"
 images: ["banners/banners/hammertibbletime.gif"]
-description: '`r emo::ji_glue(":hammer:")``r emo::ji_glue(":alarm_clock:")` A mashup of a tibbletime tutorial with some [image]magick…'
+description: '`r emo::ji_glue(":hammer:")``r emo::ji_glue(":alarm_clock:")` A mashup of a tibbletime tutorial with some [image]magick… Beware, silly gifs on charts in store.'
 ---
 
 A very silly bit of R fun, featuring `r emo::ji_glue(":package:")`: [tibbletime](https://business-science.github.io/tibbletime/), 
@@ -22,6 +22,20 @@ gif of MC Hammer by someone named bert).
 The code itself (see [RPub here](http://rpubs.com/maraaverick/hammertibbletime)) 
 is a  combination of [**Tidy time series Analysis with tibbletime**](http://www.business-science.io/code-tools/2017/10/26/demo_week_tibbletime.html) 
 by [Matt Dancho](https://twitter.com/mdancho84), and [**How to Add a Logo to ggplot by Magick**](http://danielphadley.com/ggplot-Logo/) by 
-[Daniel P. Hadley](https://twitter.com/danielphadley).
+[Daniel P. Hadley](https://twitter.com/danielphadley) (in which you'll learn how to make a very awesome Vincent-Vega version of an `mtcars` scatter-plot, below).
 
+![](https://i.imgur.com/6AFKC9m.gif)
+
+If you're not horrified by the affront to data visualization, you might also
+enjoy the Archer-character charts I made based on Daniel's tutorial a few months
+back (complete with code `r emo::ji_glue(":arrow_right:")` 
+[Arch dossiers repo](https://github.com/batpigandme/arch_dossiers)).
+
+![](https://i.imgur.com/iqgdsCf.gif)
+
+Aww, heck, here's another!
+
+![](https://i.imgur.com/kab2bSY.gif)
+
+### Now `r emo::ji_glue(":stop_sign:")` STOP: tibbletime
 ![](https://i.imgur.com/wnNp7uh.gif)
