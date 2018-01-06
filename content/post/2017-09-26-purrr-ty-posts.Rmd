@@ -14,7 +14,7 @@ images: ["banners/purrr_apply_cheatsheet_rstudio.png"]
 description: "Now that 😻 purrr has a shiny new cheat sheet, it seemed like a fitting tribute to give the package its own tweet roundup..."
 ---
 
-Updated: `r emo::ji("calendar")` 2017-12-01.
+Updated: `r emo::ji("calendar")` 2018-01-06.
 
 
 ### `r emo::ji("tada")``r emo::ji("cat")`&nbsp; purrr-tiest cheat sheet
@@ -53,6 +53,18 @@ blogdown::shortcode("tweet", "807348358746689540")
 
 ```{r echo=FALSE}
 blogdown::shortcode("tweet", "847195919019839493")
+```
+
+### [It's lists all the way down](http://www.brodrigues.co/blog/2018-01-03-lists_all_the_way/) by Bruno Rodrigues
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "948977872974368768")
+```
+
+There's also [**It's lists all the way down, part 2: We need to go deeper**](http://www.brodrigues.co/blog/2018-01-05-lists_all_the_way2/).
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "949642221745332224")
 ```
 
 ### [Putting square pegs in round holes: Using list-cols in your dataframe](https://speakerdeck.com/jennybc/putting-square-pegs-in-round-holes-using-list-cols-in-your-dataframe) by Jenny Bryan
@@ -111,6 +123,31 @@ Now with part two: [**A Crazy Little Thing Called {purrr} - Part 2 : Text Wrangl
 blogdown::shortcode("tweet", "936358492499251202")
 ```
 
+Part three (which, apparently, I neglected to tweet): [**A Crazy Little Thing Called {purrr} - Part 3 : Setting NA**](http://colinfay.me/purrr-set-na/)
+
+Part four: [**A Crazy Little Thing Called {purrr} - Part 4: mappers**](http://colinfay.me/purrr-mappers/)
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "940780583705366528")
+```
+
+Part five: [**A Crazy Little Thing Called {purrr} - Part 5: code optimization**](http://colinfay.me/purrr-code-optim/)
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "944568785540997120")
+```
+
+And part six: [**A Crazy Little Thing Called {purrr} - Part 6 : doing statistics**](http://colinfay.me/purrr-statistics/)
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "946467289892884480")
+```
+
+### [Reproducible Shiny App Development with Modules](https://www.blog.cultureofinsight.com/2018/01/reproducible-shiny-app-development-with-modules/) by Paul Campbell
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "949404399058776069")
+```
 
 ### `purrr`-fection?
 
