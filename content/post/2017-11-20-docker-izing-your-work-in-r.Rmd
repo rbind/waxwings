@@ -1,5 +1,5 @@
 ---
-title: 'Docker-izing your work in R `r emo::ji_glue(":whale:")`'
+title: 'Docker-izing your work in R `r emo::ji("whale")`'
 author: Mara Averick
 date: '2017-11-20'
 slug: docker-izing-your-work-in-r
@@ -10,8 +10,12 @@ tags:
   - roundups
 banner: "banners/nyan_docker_whale_gfycat.gif"
 images: ["banners/nyan_docker_whale_gfycat.gif"]
-description: 'A roundup of helpful guides to containerizing packages, docs, projects, and more by using Docker with R. `r emo::ji_glue(":package:")`'
+description: 'A roundup of helpful guides to containerizing packages, docs, projects, and more by using Docker with R. `r emo::ji("package")`'
 ---
+
+```{r include=FALSE}
+library(emo)
+```
 
 I am decidedly a novice when it comes to any and all things Docker (which, 
 incidentally, is why I've been reading these posts). But, since it's helpful for 
@@ -34,7 +38,7 @@ blogdown::shortcode("tweet", "930633713876127744")
 blogdown::shortcode("tweet", "911774443885797377")
 ```
 
-### [liftr](https://liftr.me/) `r emo::ji_glue(":package:")` by Nan Xiao
+### [liftr](https://liftr.me/) `r emo::ji("package")` by Nan Xiao
 
 ```{r, echo = FALSE}
 blogdown::shortcode("tweet", "919548925287297024")
@@ -64,9 +68,15 @@ This post isn't R-specific, but that doesn't mean it's not useful!
 blogdown::shortcode("tweet", "696057282325561344")
 ```
 
-## Fin `r emo::ji_glue(":tada:")`
+### [Dockerized Shiny App development](http://tamaszilagyi.com/blog/dockerized-shiny-app-development/) by Tamas Szilagyi
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "954353292221575168")
+```
+
+## Fin `r emo::ji("tada")`
 
 Additions? Questions? Comments? Snide remarks? Feel free to tweet me [\@dataandme](https://twitter.com/dataandme) `r emo::ji("bird")`, and/or comment below!
 
-[^nyanwhale]: Speaking of sharing love: cred for [Nyan Whale](https://gfycat.com/gifs/detail/PerfectHarshHoatzin) (i.e. the banner gif `r emo::ji_glue(":rainbow: :whale:")`) goes to [Andrew Kennedy](https://www.youtube.com/watch?v=2c_rmqme6rc)!
+[^nyanwhale]: Speaking of sharing love: cred for [Nyan Whale](https://gfycat.com/gifs/detail/PerfectHarshHoatzin) (i.e. the banner gif `r emo::ji("rainbow")`) goes to [Andrew Kennedy](https://www.youtube.com/watch?v=2c_rmqme6rc)!
 
