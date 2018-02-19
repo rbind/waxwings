@@ -120,6 +120,8 @@ body {
   background: #f5f8f9;
   font: 14px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
+  /* Mara mod */
+  font-family: "HKGroteskRegular";
 }
 a {
   color: #38b7ea;
