@@ -1,8 +1,7 @@
 ---
-title: 'ggraph all grown up `r emo::ji("giraffe")`'
+title: 'ggraph all grown up `r emo::ji("balloon")``r emo::ji("giraffe")`'
 author: Mara Averick
 date: '2018-02-23'
-draft: TRUE
 slug: ggraph-all-grown-up
 categories: []
 tags:
@@ -11,8 +10,8 @@ tags:
   - data viz
   - ggraph
   - roundups
-banner: "banners/data-imaginist.gif"
-images: ["banners/data-imaginist.gif"]
+banner: "banners/giraffe_grown_up.gif"
+images: ["banners/giraffe_grown_up.gif"]
 description: 'A CRANniversary `r emo::ji("cake")` roundup of some of my favourite posts featuring ggraph, the network visualization `r emo::ji("package")` by Thomas Lin Pedersen.'
 ---
 
@@ -30,7 +29,7 @@ blogdown::shortcode("tweet", "777130491287928832")
 
 ### [Data Driven Logo Design with ggraph and gtable](https://www.data-imaginist.com/2016/data-driven-logo/)
 
-_Source of the animated logo serving as the banner for this post._
+_A place for ggraph announcements `r emo::ji("star2")` to call home._
 
 ```{r, echo = FALSE}
 blogdown::shortcode("tweet", "785301087578419200")
