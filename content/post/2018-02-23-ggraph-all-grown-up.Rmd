@@ -1,0 +1,93 @@
+---
+title: 'ggraph all grown up `r emo::ji("giraffe")`'
+author: Mara Averick
+date: '2018-02-23'
+draft: TRUE
+slug: ggraph-all-grown-up
+categories: []
+tags:
+  - R
+  - visualization
+  - data viz
+  - ggraph
+  - roundups
+banner: "banners/data-imaginist.gif"
+images: ["banners/data-imaginist.gif"]
+description: 'A CRANniversary `r emo::ji("cake")` roundup of some of my favourite posts featuring ggraph, the network visualization `r emo::ji("package")` by Thomas Lin Pedersen.'
+---
+
+Thomas Lin Pedersen (known aliases: [\@thomasp85](https://twitter.com/thomasp85), [data imaginist](https://www.data-imaginist.com/)) has quite an array of [cool packages](https://github.com/thomasp85), all of which you should check out. However, in celebration its **CRANniversary** `r emo::ji("balloon")` I thought [**ggraph**](https://github.com/thomasp85/ggraph) deserved a roundup post of its own.[^1]
+
+## Dispatches from a proud papa `r emo::ji("dad")`
+
+### [ggraph: A grammar of graphics for relational data](https://github.com/thomasp85/ggraph)
+
+_The repo from whence it sprang..._
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "777130491287928832")
+```
+
+### [Data Driven Logo Design with ggraph and gtable](https://www.data-imaginist.com/2016/data-driven-logo/)
+
+_Source of the animated logo serving as the banner for this post._
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "785301087578419200")
+```
+
+### [Announcing ggraph: A grammar of graphics for relational data](https://www.data-imaginist.com/2017/announcing-ggraph/)
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "835188089911922688")
+```
+
+### [Introduction to ggraph: Layouts](https://www.data-imaginist.com/2017/ggraph-introduction-layouts/)
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "830068094227902464")
+```
+
+### [Introduction to ggraph: Nodes](https://www.data-imaginist.com/2017/ggraph-introduction-nodes/)
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "950927436396613632")
+```
+
+### [Introduction to ggraph: Edges](https://www.data-imaginist.com/2017/ggraph-introduction-edges/)
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "832677509258846213")
+```
+
+## Applied posts from fellow fans `r emo::ji("memo")`
+
+### [A Gentle Introduction to Network Visualisation](http://colinfay.me/back-budapest/) by Colin Fay
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "932696587398275072")
+```
+
+### [How to create correlation network plots with corrr and ggraph](https://drsimonj.svbtle.com/how-to-create-correlation-network-plots-with-corrr-and-ggraph) by Simon Jackson
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "836577246945099776")
+```
+
+### [Plotting trees from Random Forest models with ggraph](https://shiring.github.io/machine_learning/2017/03/16/rf_plot_ggraph) by Shirin Glander
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "842722809709256704")
+```
+
+### [Holy ifelse() statements Batman!](http://austinwehrwein.com/data-visualization/plotting-batman-villains-ggraph/) by Austin Wehrwein
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "952903820945870849")
+```
+
+## Tada! `r emo::ji_glue(":tada:")`
+
+As always, I'm sure there are many more posts out there I've missed. If there's something you'd like to see added, send me a tweet `r emo::ji("bird")` &nbsp;([\@dataandme](https://twitter.com/dataandme)).
+
+[^1]: And by "post" I do, of course, really mean collection of tweets.
