@@ -121,7 +121,7 @@ body {
   font: 14px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
   /* Mara mod */
-  font-family: "HKGroteskRegular";
+  font-family: "Source Sans Pro", sans-serif;
 }
 a {
   color: #38b7ea;
