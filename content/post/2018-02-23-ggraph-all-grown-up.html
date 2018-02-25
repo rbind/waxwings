@@ -1,78 +1,74 @@
 ---
-title: 'ggraph all grown up 🎈🦒'
+title: 'Sourcetree rebase'
 author: Mara Averick
-date: '2018-02-23'
+date: '2018-02-25'
 slug: ggraph-all-grown-up
 categories: []
 tags:
-  - R
-  - visualization
-  - data viz
-  - ggraph
-  - roundups
-banner: "banners/giraffe_grown_up.gif"
-images: ["banners/giraffe_grown_up.gif"]
-description: 'A CRANniversary 🍰 roundup of some of my favourite posts featuring ggraph, the network visualization 📦 by Thomas Lin Pedersen.'
+  - Git
+  - GitHub
+banner: "banners/usethis_project.png"
+images: ["banners/usethis_project.png"]
+description: 'How to rebase your GitHub fork from upstream using Sourcetree. 🎄'
 ---
 
 
 
-<p>Thomas Lin Pedersen (known aliases: <a href="https://twitter.com/thomasp85">@thomasp85</a>, <a href="https://www.data-imaginist.com/">data imaginist</a>) has quite an array of <a href="https://github.com/thomasp85">cool packages</a>, all of which you should check out. However, in celebration its <strong>CRANniversary</strong> 🎈 I thought <a href="https://github.com/thomasp85/ggraph"><strong>ggraph</strong></a> deserved a roundup post of its own.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
-<div id="dispatches-from-a-proud-papa" class="section level2">
-<h2>Dispatches from a proud papa 👨</h2>
-<div id="ggraph-a-grammar-of-graphics-for-relational-data" class="section level3">
-<h3><a href="https://github.com/thomasp85/ggraph">ggraph: A grammar of graphics for relational data</a></h3>
-<p><em>The repo from whence it sprang…</em></p>
-{{% tweet "777130491287928832" %}}
+<p>Ever the acolyte of Jenny Bryan when it comes to all things workflow, I try to
+follow <a href="http://happygitwithr.com/">Happy Git and GitHub for the useR</a> as much as
+possible.</p>
+<p>I’ve never been especially <em>good</em> at Git, per se, but <a href="http://%20happygitwithr.com/shell.html">the shell</a> met my needs for a long time…a long time, that
+is, before I started working with a team that <em>really</em> uses GitHub for version
+control.</p>
+<p>So, I decided to give <a href="https://www.sourcetreeapp.com/">Sourcetree</a> a whirl.
+Though I’m definitely still wont to bork a repo now and again, I think the
+experiment has largely been a success.</p>
+<p>Since I’m still in the early-ish stages of getting into a rhythm, I figured I’d
+write out the part that’s been trickiest for me to grok — keeping forks in sync
+with their “upstream” counterparts.</p>
+<div id="the-setup" class="section level3">
+<h3>The Setup</h3>
+<p>For getting a Git client set up, take a gander at the <a href="http://happygitwithr.com/git-client.html"><strong>Install a Git client</strong></a> section of Jenny’s book. For
+Sourcetree specifics, the documentation, <a href="https://confluence.atlassian.com/get-started-with-sourcetree/install-and-set-up-sourcetree-847359043.html">“Install and set up Sourcetree”</a> really can’t be beat.</p>
+<p>OK, so now you’ve got some local repos connected to Sourcetree. It should look
+something like this:</p>
+<p><img src="https://i.imgur.com/B7DeUfX.png" /></p>
 </div>
-<div id="data-driven-logo-design-with-ggraph-and-gtable" class="section level3">
-<h3><a href="https://www.data-imaginist.com/2016/data-driven-logo/">Data Driven Logo Design with ggraph and gtable</a></h3>
-<p><em>A place for ggraph announcements 🌟 to call home.</em></p>
-{{% tweet "785301087578419200" %}}
+<div id="choose-and-open-your-project." class="section level3">
+<h3>Choose and open your project.</h3>
+<p>For this example, I was updating the <a href="https://github.com/r-lib/usethis">usethis</a> package.</p>
+<p>You can change what branch you’re on once you’ve opened up the repo’s interface, but I <em>do</em> want to point out that you can already tell I’m on <em>master</em> from the index, since the name of the working branch is displayed on the right in the index.</p>
+<p><img src="https://i.imgur.com/AAcWCeY.png" /></p>
+<p>To open that project, you simply double click the desired repo.</p>
+<p>Once open, you can see where <em>your</em> fork of the repo is (<code>origin/master</code>), and where <em>their</em> repo is (<code>upstream/master</code>).</p>
+<p><img src="https://i.imgur.com/7FCfMsY.png" /></p>
 </div>
-<div id="announcing-ggraph-a-grammar-of-graphics-for-relational-data" class="section level3">
-<h3><a href="https://www.data-imaginist.com/2017/announcing-ggraph/">Announcing ggraph: A grammar of graphics for relational data</a></h3>
-{{% tweet "835188089911922688" %}}
+<div id="fetch-from-all-remotes." class="section level3">
+<h3>Fetch from all remotes.</h3>
+<p>If you don’t already have an “upstream” remote, you can set one up by clicking <em>New Remote…</em> in the <strong>Remotes</strong> menu.</p>
+<p><img src="https://i.imgur.com/210s6wo.png" /></p>
+<p><img src="https://i.imgur.com/I5Gd5Vw.png" /></p>
+<p>To sync things up, you’ll want to fetch from all remotes.</p>
+<p><img src="https://i.imgur.com/CjW3iOU.png" /></p>
 </div>
-<div id="introduction-to-ggraph-layouts" class="section level3">
-<h3><a href="https://www.data-imaginist.com/2017/ggraph-introduction-layouts/">Introduction to ggraph: Layouts</a></h3>
-{{% tweet "830068094227902464" %}}
+<div id="merge-andor-rebase-the-fetched-commits." class="section level3">
+<h3>Merge and/or rebase the fetched commits.</h3>
+<p>After fetching, it’s time to either <code>merge</code> or <code>rebase</code>, depending on your needs. There’s a really nice explanation of the differences between the two in the <a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing"><strong>Merging vs. Rebasing</strong></a> tutorial by Atlassian, which I recommend checking out if these words are foreign to you.</p>
+<p>In this case I want to rebase, but first I need to choose the proper branch from which to do so, which is <code>upstream/master</code>.</p>
+<p><img src="https://i.imgur.com/q5yi3kZ.png" /></p>
+<p>After selecting the right branch, you can go ahead and click <strong>OK</strong>.</p>
+<p><img src="https://i.imgur.com/l5HjVBG.png" /></p>
 </div>
-<div id="introduction-to-ggraph-nodes" class="section level3">
-<h3><a href="https://www.data-imaginist.com/2017/ggraph-introduction-nodes/">Introduction to ggraph: Nodes</a></h3>
-{{% tweet "950927436396613632" %}}
+<div id="push-your-changes-to-master." class="section level3">
+<h3>Push your changes to master.</h3>
+<p>When this has completed, your local working copy should be up-to-date with <code>upstream/master</code>. However, <em>your</em> remote (<code>origin/master</code>) is still behind. This is because you have yet to push the changes.</p>
+<p><img src="https://i.imgur.com/Z6zimts.png" /></p>
+<p>After you click <strong>Push</strong>, double check that you are pushing to the correct fork and branch before clicking <strong>OK</strong>.</p>
+<p><img src="https://i.imgur.com/BkRX9Wk.png" /></p>
+<p><img src="https://i.imgur.com/oO74caX.png" /></p>
 </div>
-<div id="introduction-to-ggraph-edges" class="section level3">
-<h3><a href="https://www.data-imaginist.com/2017/ggraph-introduction-edges/">Introduction to ggraph: Edges</a></h3>
-{{% tweet "832677509258846213" %}}
-</div>
-</div>
-<div id="applied-posts-from-fellow-fans" class="section level2">
-<h2>Applied posts from fellow fans 📝</h2>
-<div id="a-gentle-introduction-to-network-visualisation-by-colin-fay" class="section level3">
-<h3><a href="http://colinfay.me/back-budapest/">A Gentle Introduction to Network Visualisation</a> by Colin Fay</h3>
-{{% tweet "932696587398275072" %}}
-</div>
-<div id="how-to-create-correlation-network-plots-with-corrr-and-ggraph-by-simon-jackson" class="section level3">
-<h3><a href="https://drsimonj.svbtle.com/how-to-create-correlation-network-plots-with-corrr-and-ggraph">How to create correlation network plots with corrr and ggraph</a> by Simon Jackson</h3>
-{{% tweet "836577246945099776" %}}
-</div>
-<div id="plotting-trees-from-random-forest-models-with-ggraph-by-shirin-glander" class="section level3">
-<h3><a href="https://shiring.github.io/machine_learning/2017/03/16/rf_plot_ggraph">Plotting trees from Random Forest models with ggraph</a> by Shirin Glander</h3>
-{{% tweet "842722809709256704" %}}
-</div>
-<div id="holy-ifelse-statements-batman-by-austin-wehrwein" class="section level3">
-<h3><a href="http://austinwehrwein.com/data-visualization/plotting-batman-villains-ggraph/">Holy ifelse() statements Batman!</a> by Austin Wehrwein</h3>
-{{% tweet "952903820945870849" %}}
-</div>
-</div>
-<div id="tada" class="section level2">
-<h2>Tada! 🎉</h2>
-<p>As always, I’m sure there are many more posts out there I’ve missed. If there’s something you’d like to see added, send me a tweet 🐦  (<a href="https://twitter.com/dataandme">@dataandme</a>).</p>
-</div>
-<div class="footnotes">
-<hr />
-<ol>
-<li id="fn1"><p>And by “post” I do, of course, really mean collection of tweets.<a href="#fnref1" class="footnote-back">↩</a></p></li>
-</ol>
+<div id="and-now-youre-synchronised" class="section level3">
+<h3>And now you’re synchronised! 🎉</h3>
+<p>If all went according to plan, your fork should now be caught up with upstream, in which case you’re good to go!</p>
+<p><img src="https://i.imgur.com/hxH3mLP.png" /></p>
 </div>
