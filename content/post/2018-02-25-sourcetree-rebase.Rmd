@@ -2,7 +2,7 @@
 title: 'Sourcetree fetch rebase'
 author: Mara Averick
 date: '2018-02-25'
-slug: ggraph-all-grown-up
+slug: source-tree-fetch-rebase
 categories: []
 tags:
   - Git
