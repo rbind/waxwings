@@ -1,5 +1,5 @@
 ---
-title: 'Sourcetree rebase'
+title: 'Sourcetree fetch rebase'
 author: Mara Averick
 date: '2018-02-25'
 slug: ggraph-all-grown-up
@@ -9,7 +9,7 @@ tags:
   - GitHub
 banner: "banners/usethis_project.png"
 images: ["banners/usethis_project.png"]
-description: 'How to rebase your GitHub fork from upstream using Sourcetree. `r emo::ji("tree")`'
+description: 'How to rebase your GitHub fork from upstream with fetch using Sourcetree. `r emo::ji("tree")`'
 ---
 
 ```{r setup, include=FALSE}
@@ -57,7 +57,7 @@ Once open, you can see where _your_ fork of the repo is (`origin/master`), and w
 
 ![](https://i.imgur.com/7FCfMsY.png)
 
-### Fetch from all remotes.
+### Fetch from all remotes.[^pull]
 
 If you don't already have an "upstream" remote, you can set one up by clicking _New Remote..._ in the **Remotes** menu.
 
@@ -98,3 +98,5 @@ After you click **Push**, double check that you are pushing to the correct fork 
 If all went according to plan, your fork should now be caught up with upstream, in which case you're good to go!
 
 ![](https://i.imgur.com/hxH3mLP.png)
+
+[^pull]: _Jenny Bryan wisdom_: If you are on master locally **_and_** have not made any commits there that are unique to you, just pull master from upstream into it. That is the simplest. This reinforces/rewards the habit of never commiting directly to master on a repo that someone else largely controls. If you do that, you will always be able to pull straight into master. Then you can update your feature branches by merging master into them or rebasing them on master.

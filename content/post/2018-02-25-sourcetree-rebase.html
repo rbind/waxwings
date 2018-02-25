@@ -1,5 +1,5 @@
 ---
-title: 'Sourcetree rebase'
+title: 'Sourcetree fetch rebase'
 author: Mara Averick
 date: '2018-02-25'
 slug: ggraph-all-grown-up
@@ -9,7 +9,7 @@ tags:
   - GitHub
 banner: "banners/usethis_project.png"
 images: ["banners/usethis_project.png"]
-description: 'How to rebase your GitHub fork from upstream using Sourcetree. 🎋'
+description: 'How to rebase your GitHub fork from upstream with fetch using Sourcetree. 🌲'
 ---
 
 
@@ -43,8 +43,8 @@ something like this:</p>
 <p>Once open, you can see where <em>your</em> fork of the repo is (<code>origin/master</code>), and where <em>their</em> repo is (<code>upstream/master</code>).</p>
 <p><img src="https://i.imgur.com/7FCfMsY.png" /></p>
 </div>
-<div id="fetch-from-all-remotes." class="section level3">
-<h3>Fetch from all remotes.</h3>
+<div id="fetch-from-all-remotes.pull" class="section level3">
+<h3>Fetch from all remotes.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></h3>
 <p>If you don’t already have an “upstream” remote, you can set one up by clicking <em>New Remote…</em> in the <strong>Remotes</strong> menu.</p>
 <p><img src="https://i.imgur.com/210s6wo.png" /></p>
 <p><img src="https://i.imgur.com/I5Gd5Vw.png" /></p>
@@ -71,4 +71,10 @@ something like this:</p>
 <h3>And now you’re synchronised! 🎉</h3>
 <p>If all went according to plan, your fork should now be caught up with upstream, in which case you’re good to go!</p>
 <p><img src="https://i.imgur.com/hxH3mLP.png" /></p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><em>Jenny Bryan wisdom</em>: If you are on master locally <strong><em>and</em></strong> have not made any commits there that are unique to you, just pull master from upstream into it. That is the simplest. This reinforces/rewards the habit of never commiting directly to master on a repo that someone else largely controls. If you do that, you will always be able to pull straight into master. Then you can update your feature branches by merging master into them or rebasing them on master.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
 </div>
