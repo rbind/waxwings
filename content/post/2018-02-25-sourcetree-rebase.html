@@ -1,0 +1,74 @@
+---
+title: 'Sourcetree rebase'
+author: Mara Averick
+date: '2018-02-25'
+slug: ggraph-all-grown-up
+categories: []
+tags:
+  - Git
+  - GitHub
+banner: "banners/usethis_project.png"
+images: ["banners/usethis_project.png"]
+description: 'How to rebase your GitHub fork from upstream using Sourcetree. 🎋'
+---
+
+
+
+<p>Ever the acolyte of Jenny Bryan when it comes to all things workflow, I try to
+follow <a href="http://happygitwithr.com/">Happy Git and GitHub for the useR</a> as much as
+possible.</p>
+<p>I’ve never been especially <em>good</em> at Git, per se, but <a href="http://%20happygitwithr.com/shell.html">the shell</a> met my needs for a long time…a long time, that
+is, before I started working with a team that <em>really</em> uses GitHub for version
+control.</p>
+<p>So, I decided to give <a href="https://www.sourcetreeapp.com/">Sourcetree</a> a whirl.
+Though I’m definitely still wont to bork a repo now and again, I think the
+experiment has largely been a success.</p>
+<p>Since I’m still in the early-ish stages of getting into a rhythm, I figured I’d
+write out the part that’s been trickiest for me to grok — keeping forks in sync
+with their “upstream” counterparts.</p>
+<div id="the-setup" class="section level3">
+<h3>The Setup</h3>
+<p>For getting a Git client set up, take a gander at the <a href="http://happygitwithr.com/git-client.html"><strong>Install a Git client</strong></a> section of Jenny’s book. For
+Sourcetree specifics, the documentation, <a href="https://confluence.atlassian.com/get-started-with-sourcetree/install-and-set-up-sourcetree-847359043.html">“Install and set up Sourcetree”</a> really can’t be beat.</p>
+<p>OK, so now you’ve got some local repos connected to Sourcetree. It should look
+something like this:</p>
+<p><img src="https://i.imgur.com/B7DeUfX.png" /></p>
+</div>
+<div id="choose-and-open-your-project." class="section level3">
+<h3>Choose and open your project.</h3>
+<p>For this example, I was updating the <a href="https://github.com/r-lib/usethis">usethis</a> package.</p>
+<p>You can change what branch you’re on once you’ve opened up the repo’s interface, but I <em>do</em> want to point out that you can already tell I’m on <em>master</em> from the index, since the name of the working branch is displayed on the right in the index.</p>
+<p><img src="https://i.imgur.com/AAcWCeY.png" /></p>
+<p>To open that project, you simply double click the desired repo.</p>
+<p>Once open, you can see where <em>your</em> fork of the repo is (<code>origin/master</code>), and where <em>their</em> repo is (<code>upstream/master</code>).</p>
+<p><img src="https://i.imgur.com/7FCfMsY.png" /></p>
+</div>
+<div id="fetch-from-all-remotes." class="section level3">
+<h3>Fetch from all remotes.</h3>
+<p>If you don’t already have an “upstream” remote, you can set one up by clicking <em>New Remote…</em> in the <strong>Remotes</strong> menu.</p>
+<p><img src="https://i.imgur.com/210s6wo.png" /></p>
+<p><img src="https://i.imgur.com/I5Gd5Vw.png" /></p>
+<p>To sync things up, you’ll want to fetch from all remotes.</p>
+<p><img src="https://i.imgur.com/CjW3iOU.png" /></p>
+</div>
+<div id="merge-andor-rebase-the-fetched-commits." class="section level3">
+<h3>Merge and/or rebase the fetched commits.</h3>
+<p>After fetching, it’s time to either <code>merge</code> or <code>rebase</code>, depending on your needs. There’s a really nice explanation of the differences between the two in the <a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing"><strong>Merging vs. Rebasing</strong></a> tutorial by Atlassian, which I recommend checking out if these words are foreign to you.</p>
+<p>In this case I want to rebase, but first I need to choose the proper branch from which to do so, which is <code>upstream/master</code>.</p>
+<p><img src="https://i.imgur.com/q5yi3kZ.png" /></p>
+<p>After selecting the right branch, you can go ahead and click <strong>OK</strong>.</p>
+<p><img src="https://i.imgur.com/l5HjVBG.png" /></p>
+</div>
+<div id="push-your-changes-to-master." class="section level3">
+<h3>Push your changes to master.</h3>
+<p>When this has completed, your local working copy should be up-to-date with <code>upstream/master</code>. However, <em>your</em> remote (<code>origin/master</code>) is still behind. This is because you have yet to push the changes.</p>
+<p><img src="https://i.imgur.com/Z6zimts.png" /></p>
+<p>After you click <strong>Push</strong>, double check that you are pushing to the correct fork and branch before clicking <strong>OK</strong>.</p>
+<p><img src="https://i.imgur.com/BkRX9Wk.png" /></p>
+<p><img src="https://i.imgur.com/oO74caX.png" /></p>
+</div>
+<div id="and-now-youre-synchronised" class="section level3">
+<h3>And now you’re synchronised! 🎉</h3>
+<p>If all went according to plan, your fork should now be caught up with upstream, in which case you’re good to go!</p>
+<p><img src="https://i.imgur.com/hxH3mLP.png" /></p>
+</div>

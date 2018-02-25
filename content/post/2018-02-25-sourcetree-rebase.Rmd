@@ -1,0 +1,100 @@
+---
+title: 'Sourcetree rebase'
+author: Mara Averick
+date: '2018-02-25'
+slug: ggraph-all-grown-up
+categories: []
+tags:
+  - Git
+  - GitHub
+banner: "banners/usethis_project.png"
+images: ["banners/usethis_project.png"]
+description: 'How to rebase your GitHub fork from upstream using Sourcetree. `r emo::ji("tree")`'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Ever the acolyte of Jenny Bryan when it comes to all things workflow, I try to
+follow [Happy Git and GitHub for the useR](http://happygitwithr.com/) as much as
+possible.
+
+I've never been especially _good_ at Git, per se, but [the shell](http://
+happygitwithr.com/shell.html) met my needs for a long time...a long time, that
+is, before I started working with a team that _really_ uses GitHub for version
+control.
+
+So, I decided to give [Sourcetree](https://www.sourcetreeapp.com/) a whirl.
+Though I'm definitely still wont to bork a repo now and again, I think the
+experiment has largely been a success.
+
+Since I'm still in the early-ish stages of getting into a rhythm, I figured I'd
+write out the part that's been trickiest for me to grok — keeping forks in sync
+with their "upstream" counterparts.
+
+### The Setup
+
+For getting a Git client set up, take a gander at the [**Install a Git client**](http://happygitwithr.com/git-client.html) section of Jenny's book. For
+Sourcetree specifics, the documentation, ["Install and set up Sourcetree"](https://confluence.atlassian.com/get-started-with-sourcetree/install-and-set-up-sourcetree-847359043.html) really can't be beat.
+
+OK, so now you've got some local repos connected to Sourcetree. It should look
+something like this:
+
+![](https://i.imgur.com/B7DeUfX.png)
+
+### Choose and open your project.
+
+For this example, I was updating the [usethis](https://github.com/r-lib/usethis) package. 
+
+You can change what branch you're on once you've opened up the repo's interface, but I _do_ want to point out that you can already tell I'm on _master_ from the index, since the name of the working branch is displayed on the right in the index.
+
+![](https://i.imgur.com/AAcWCeY.png)
+
+To open that project, you simply double click the desired repo.
+
+Once open, you can see where _your_ fork of the repo is (`origin/master`), and where _their_ repo is (`upstream/master`).
+
+![](https://i.imgur.com/7FCfMsY.png)
+
+### Fetch from all remotes.
+
+If you don't already have an "upstream" remote, you can set one up by clicking _New Remote..._ in the **Remotes** menu.
+
+![](https://i.imgur.com/210s6wo.png)
+
+![](https://i.imgur.com/I5Gd5Vw.png)
+
+To sync things up, you'll want to fetch from all remotes.
+
+![](https://i.imgur.com/CjW3iOU.png)
+
+### Merge and/or rebase the fetched commits.
+
+After fetching, it's time to either `merge` or `rebase`, depending on your needs. There's a really nice explanation of the differences between the two in the [**Merging vs. Rebasing**](https://www.atlassian.com/git/tutorials/merging-vs-rebasing) tutorial by Atlassian, which I recommend checking out if these words are foreign to you.
+
+In this case I want to rebase, but first I need to choose the proper branch from which to do so, which is `upstream/master`.
+
+![](https://i.imgur.com/q5yi3kZ.png)
+
+After selecting the right branch, you can go ahead and click **OK**.
+
+![](https://i.imgur.com/l5HjVBG.png)
+
+### Push your changes to master.
+
+When this has completed, your local working copy should be up-to-date with `upstream/master`. However, _your_ remote (`origin/master`) is still behind. This is because you have yet to push the changes.
+
+![](https://i.imgur.com/Z6zimts.png)
+
+After you click **Push**, double check that you are pushing to the correct fork and branch before clicking **OK**.
+
+![](https://i.imgur.com/BkRX9Wk.png)
+
+![](https://i.imgur.com/oO74caX.png)
+
+### And now you're synchronised! `r emo::ji("tada")`
+
+If all went according to plan, your fork should now be caught up with upstream, in which case you're good to go!
+
+![](https://i.imgur.com/hxH3mLP.png)
