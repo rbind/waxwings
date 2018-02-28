@@ -14,7 +14,7 @@ description: 'Arbitrary things that I selfishly love `r emo::ji_glue(":sparkling
 
 ### Preemptive peccavi
 
-I am being selfish. The following items are tips, only insofar as they are to my liking. 
+This post is selfish. The following items are tips, only insofar as they are to my liking. 
 What's more, the material isn't even original. I wrote these up in response to a [thread](https://community.rstudio.com/t/tips-tricks-for-blogdown/2573?u=mara) on the RStudio Community site.[^claim] So, consider yourselves warned. `r emo::ji_glue(":skull_and_crossbones:")`
 
 
