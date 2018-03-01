@@ -102,6 +102,12 @@ blogdown::shortcode("tweet", "935344760029671424")
 blogdown::shortcode("tweet", "966799020281692161")
 ```
 
+### [filter with context](https://purrple.cat/blog/2017/06/28/filter-with-context/) by Romain François
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "968973417197309954")
+```
+
 ## `r emo::ji_glue(":film_projector:")` [Tidy Evaluation](https://schd.ws/hosted_files/user2017/43/tidyeval-user.pdf) by Lionel Henry and Hadley Wickham
 
 _n.b. these are likely not as up-to-date as [**Programming with dplyr**](http://dplyr.tidyverse.org/articles/programming.html), but I like the visuals— so, they're here_
