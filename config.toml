@@ -101,7 +101,7 @@ theme = "hugo-icarus-theme"
     googleplus      = ""
     facebook        = ""
     facebook_admin  = ""
-    twitter_domain  = ""
+    twitter_domain  = "dataandme"
     goodreads       = "batpigandme"
 
 # options for highlight.js (version, additional languages, and theme)
