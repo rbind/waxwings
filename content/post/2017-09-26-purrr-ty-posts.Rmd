@@ -14,7 +14,7 @@ images: ["banners/purrr_apply_cheatsheet_rstudio.png"]
 description: "Now that 😻 purrr has a shiny new cheat sheet, it seemed like a fitting tribute to give the package its own tweet roundup..."
 ---
 
-Updated: `r emo::ji("calendar")` 2018-02-16.
+Updated: `r emo::ji("calendar")` 2018-03-20.
 
 
 ### `r emo::ji("tada")``r emo::ji("cat")`&nbsp; purrr-tiest cheat sheet
@@ -35,6 +35,12 @@ blogdown::shortcode("tweet", "963537570654310400")
 
 ```{r echo=FALSE}
 blogdown::shortcode("tweet", "901627584651382785")
+```
+
+### [Introduction to purrr](https://github.com/jenniferthompson/RLadiesIntroToPurrr) by Jennifer Thompson
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "976206011538268161")
 ```
 
 ### [Labeling Data with purrr](http://www.json.blog/2017/03/labeling-data-with-purrr/) by Jason Becker
