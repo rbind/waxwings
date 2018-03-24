@@ -1,7 +1,4 @@
 <footer class="article-footer">
-      <a href="https://twitter.com/home?{{ (querify "status" (print .Title " " .Permalink " via @" .Site.Params.social.twitter )) | safeURL }}" target="_blank">
-        <i class="fab fa-twitter" title="Share via Twitter"></i>
-      </a>
     <a data-url="{{ .Permalink }}" data-id="{{ .UniqueID }}" class="article-share-link">
         <i class="fas fa-share"></i>
         {{with .Site.Data.l10n.articles.share}}{{.}}{{end}}
