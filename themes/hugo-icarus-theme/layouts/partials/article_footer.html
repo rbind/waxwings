@@ -44,7 +44,7 @@
                     '<div id="' + id + '" class="article-share-box">',
                         '<input class="article-share-input" value="' + url + '">',
                         '<div class="article-share-links">',
-                            'https://twitter.com/home?{{ (querify "status" (print .Title " " .Permalink " via @" .Site.Params.social.twitter )) | safeURL }}></a>',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fab fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
                             '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fab fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
                             '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fab fa-pinterest-p article-share-pinterest" target="_blank" title="Pinterest"></a>',
                             '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fab fa-google article-share-google" target="_blank" title="Google+"></a>',
