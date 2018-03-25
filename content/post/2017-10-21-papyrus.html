@@ -14,7 +14,9 @@ description: 'I came upon a post by Andrew Heiss, "Working with R, Cairo graphic
 
 
 <p>I came upon a post by <a href="https://twitter.com/andrewheiss">Andrew Heiss</a>, <a href="https://www.andrewheiss.com/pelican/blog/2017/09/27/working-with-r-cairo-graphics-custom-fonts-and-ggplot/">Working with R, Cairo graphics, custom fonts, and ggplot</a>, and couldn’t help but notice that the featured font was one I’d seen before…</p>
-<p><br /> <img src="https://i.imgur.com/rguhe3a.gif" /> <br /></p>
+<p><br />
+<img src="https://i.imgur.com/rguhe3a.gif" />
+<br /></p>
 <p>I thought I could forget about it— move on with my life. Maybe I could just load the tidyverse, recreate Andrew’s plot, and be done with the whole thing.</p>
 <pre class="r"><code>library(tidyverse)
 
@@ -34,7 +36,8 @@ p &lt;- ggplot(df, aes(x = x, y = y)) +
 p</code></pre>
 <p><img src="/post/2017-10-21-papyrus_files/figure-html/orig_plot-1.png" width="672" /></p>
 <p>But no— that was too easy. His font choice mocked me, still.</p>
-<p><img src="https://i.imgur.com/65xRpzK.gif" /> <br /></p>
+<p><img src="https://i.imgur.com/65xRpzK.gif" />
+<br /></p>
 <p>So I did what I had to do. I pulled the <a href="http://www.boxofficemojo.com/movies/?page=weekly&amp;id=avatar.htm&amp;sort=weeknum&amp;order=ASC&amp;p=.htm">appropriate data</a> from <a href="http://www.boxofficemojo.com/">Box Office Mojo</a>, and made it all nice and R-friendly using Miles McBain’s <a href="https://github.com/MilesMcBain/datapasta"><code>datapasta</code></a> package/add-in.</p>
 <pre class="r"><code># abbreviated version shown for aesthetic reasons
 data &lt;- tibble::tribble(
@@ -45,7 +48,9 @@ data &lt;- tibble::tribble(
       &quot;Jul 16–22&quot;,   54L,      &quot;$24,371&quot;,  &quot;-62.70%&quot;,         4,     -5L,   &quot;$6,093&quot;,  &quot;$749,710,176&quot;,   31L,
        &quot;Jul 9–15&quot;,   47L,      &quot;$65,367&quot;,     &quot;0.25&quot;,         9,      0L,   &quot;$7,263&quot;,  &quot;$749,685,805&quot;,   30L
 )</code></pre>
-<p><br /> <img src="https://i.imgur.com/NVyluuJ.gif" /> <br /></p>
+<p><br />
+<img src="https://i.imgur.com/NVyluuJ.gif" />
+<br /></p>
 <pre class="r"><code>data %&gt;%
   ggplot(aes(x = Week, y = Theaters)) +
   geom_point() +
@@ -55,5 +60,5 @@ data &lt;- tibble::tribble(
 <p><img src="/post/2017-10-21-papyrus_files/figure-html/avatarplot-1.png" width="672" /></p>
 <div id="at-least-one-person-understands" class="section level4">
 <h4>At least one person understands…</h4>
-{{% youtube jVhlJNJopOQ %}}
+{{% youtube "jVhlJNJopOQ" %}}
 </div>

@@ -10,63 +10,42 @@ tags:
   - Hugo
 banner: "banners/icarus_hugo_version.png"
 images: ["banners/icarus_hugo_version.png"]
-description: 'A ⚡️ quick, pictorial run-through for the blogdown, Hugo, Netlify stack.'
+description: 'A ⚡ quick, pictorial run-through for the blogdown, Hugo, Netlify stack.'
 ---
 
 
 
 <div id="fair-warning" class="section level3">
 <h3><em>Fair warning</em> ⚠️</h3>
-<p>All of the information that follows is indeed in <a href="https://bookdown.org/yihui/blogdown/"><strong><em>blogdown: Creating Websites with R Markdown</em></strong></a> by <a href="https://yihui.name/">Yihui Xie</a>, <a href="https://proquestionasker.github.io/">Amber Thomas</a>, and <a href="https://apreshill.rbind.io/">Alison Presmanes Hill</a>. But, since this is the second time I got a bit lost in this process, I’m writing it up for my own (and anyone else’s incidental) edification.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<p>All of the information that follows is indeed in <a href="https://bookdown.org/yihui/blogdown/"><strong><em>blogdown: Creating Websites with R Markdown</em></strong></a> by <a href="https://yihui.name/">Yihui Xie</a>, <a href="https://proquestionasker.github.io/">Amber Thomas</a>, and <a href="https://apreshill.rbind.io/">Alison Presmanes Hill</a>. But, since this is the second time I got a bit lost in this process, I’m writing it up for my own (and anyone else’s incidental) edification.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 <p>Plus, just look at all the failed deploys that happen when I mess it up…it renders my Netlify deploy panel hideous! 🙈</p>
-<div class="figure">
-<img src="https://i.imgur.com/EtZDky6.png" />
-
-</div>
+<p><img src="https://i.imgur.com/EtZDky6.png" /></p>
 </div>
 <div id="what-versions-of-hugo-do-i-have" class="section level3">
 <h3><em>What version(s) of Hugo do I have?</em></h3>
 <p>First off, if you have an existing blogdown site that you’re working on in RStudio, you can simply run the following code to find out what your current version of Hugo is.</p>
 <pre class="r"><code>blogdown::hugo_version()</code></pre>
-<pre><code>## [1] &#39;0.30.2&#39;</code></pre>
+<pre><code>## [1] &#39;0.37.1&#39;</code></pre>
 <p>In addition to being able to find out your Hugo version from the <strong>Console</strong> (see below)…</p>
-<div class="figure">
-<img src="https://i.imgur.com/1ieLcgG.png" />
-
-</div>
+<p><img src="https://i.imgur.com/1ieLcgG.png" /></p>
 <p>…you can also use RStudio’s <strong>Terminal</strong> to get the Hugo version, plus a few more details, by running <code>hugo version</code>.</p>
-<div class="figure">
-<img src="https://i.imgur.com/b5nTTCh.png" />
-
-</div>
-<p>If you’re a Mac user, and have installed Hugo using its <a href="http://brewformulas.org/Hugo"><code>homebrew</code> formula</a>,<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> you can also check out what versions of Hugo you have by navigating to your <code>Cellar/hugo</code> directory (from the Terminal in RStudio, or whatever terminal you use— in my case, this was iTerm2).</p>
-<div class="figure">
-<img src="https://i.imgur.com/f1Me58W.png" />
-
-</div>
+<p><img src="https://i.imgur.com/b5nTTCh.png" /></p>
+<p>If you’re a Mac user, and have installed Hugo using its <a href="http://brewformulas.org/Hugo"><code>homebrew</code> formula</a>,<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> you can also check out what versions of Hugo you have by navigating to your <code>Cellar/hugo</code> directory (from the Terminal in RStudio, or whatever terminal you use— in my case, this was iTerm2).</p>
+<p><img src="https://i.imgur.com/f1Me58W.png" /></p>
 </div>
 <div id="what-version-of-hugo-do-i-need" class="section level3">
 <h3><em>What version of Hugo do I need?</em></h3>
 <p>To be quite honest, I’m not 100% sure. It may depend on your theme. I use a slightly modified version of the <a href="https://themes.gohugo.io/hugo-icarus/">Icarus theme</a>. Which, in its <code>config.toml</code> file, lists <code>min_version = 0.20</code>.</p>
-<div class="figure">
-<img src="https://i.imgur.com/4m1WFti.png" />
-
-</div>
+<p><img src="https://i.imgur.com/4m1WFti.png" /></p>
 <p>If you choose your theme from the <a href="https://themes.gohugo.io/"><strong>Hugo Themes</strong></a> site, you can also find it in the theme metadata listed on the theme page. They seem to vary quite a bit (<a href="https://themes.gohugo.io/academic/">Academic</a> requires 0.27; <a href="https://themes.gohugo.io/hugo-goa/">Goa</a> 0.16; etc.), so be sure to take a gander.</p>
-<div class="figure">
-<img src="https://i.imgur.com/vP0JNMu.png" />
-
-</div>
+<p><img src="https://i.imgur.com/vP0JNMu.png" /></p>
 <p>As discussed in section <a href="https://bookdown.org/yihui/blogdown/installation.html#update"><strong>1.1.1 Update</strong></a> of the blogdown book, you can use <code>blogdown::update_hugo</code> to update Hugo from R.</p>
 </div>
 <div id="how-do-i-make-this-happen-in-my-netlify-build" class="section level3">
 <h3><em>How do I make this happen in my Netlify build?</em></h3>
-<p>Now here’s the part that tripped me up (despite the fact that it’s completely and utterly described in blogdown 📖 <a href="https://bookdown.org/yihui/blogdown/netlify.html"><strong>3.1 Netlify</strong></a>). When you go to <a href="https://www.netlify.com/">Netlify</a> you’ll navigate to <code>Sites</code> and then open whichever site you’re working on. From there you can either go to <code>Deploys</code> <code>&gt;&gt;</code> <code>Deploy Settings</code> or <code>Settings</code> <code>&gt;&gt;</code> <code>Build &amp; deploy</code> (they both take you to the same place).</p>
+<p>Now here’s the part that tripped me up (despite the fact that it’s completely and utterly described in blogdown 📘 <a href="https://bookdown.org/yihui/blogdown/netlify.html"><strong>3.1 Netlify</strong></a>). When you go to <a href="https://www.netlify.com/">Netlify</a> you’ll navigate to <code>Sites</code> and then open whichever site you’re working on. From there you can either go to <code>Deploys</code> <code>&gt;&gt;</code> <code>Deploy Settings</code> or <code>Settings</code> <code>&gt;&gt;</code> <code>Build &amp; deploy</code> (they both take you to the same place).</p>
 <p>When I made my first Netlify/Hugo site, you could simply change the version of Hugo in the <strong>Build command</strong> field of Deploy settings.</p>
-<div class="figure">
-<img src="https://i.imgur.com/L8oIhIb.png" />
-
-</div>
+<p><img src="https://i.imgur.com/L8oIhIb.png" /></p>
 <p>This is still true <em>if</em> your build version of Hugo is 0.19 or lower. However, as Yihui, Amber and Alison eloquently describe:</p>
 <blockquote>
 <p>To specify a Hugo version greater or equal to 0.20, you need to create an environment variable <code>HUGO_VERSION</code> on Netlify.</p>
@@ -77,10 +56,7 @@ description: 'A ⚡️ quick, pictorial run-through for the blogdown, Hugo, Netl
 <li>Open <strong>Edit variables</strong> in the <strong>Build environmental variables</strong> pane</li>
 <li>Add a <strong>New variable</strong>, set the key to <code>HUGO_VERSION</code>, and the value for your desired Hugo version.</li>
 </ol>
-<div class="figure">
-<img src="https://i.imgur.com/Gzhr5Pg.gif" />
-
-</div>
+<p><img src="https://i.imgur.com/Gzhr5Pg.gif" /></p>
 <div id="further-resources" class="section level4">
 <h4>Further Resources?</h4>
 <p>There’s a helpful piece on the Netlify blog: <a href="https://www.netlify.com/blog/2017/04/11/netlify-plus-hugo-0.20-and-beyond/"><strong>Netlify Plus Hugo 2.0 and Beyond</strong></a>, if you want to take a peek there.</p>
@@ -91,7 +67,7 @@ description: 'A ⚡️ quick, pictorial run-through for the blogdown, Hugo, Netl
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>Inspired/liberated by the great <a href="https://twitter.com/JennyBryan">Jenny Bryan</a>’s <a href="https://github.com/jennybc/access-r-source">Accessing R Source</a> repo description which reads: <em>“I am sick of Googling this. I am writing it down this time.”</em><a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p>For more on this, see the <a href="https://bookdown.org/yihui/blogdown/installation.html"><strong>Installation</strong></a> section of the blogdown book.<a href="#fnref2">↩</a></p></li>
+<li id="fn1"><p>Inspired/liberated by the great <a href="https://twitter.com/JennyBryan">Jenny Bryan</a>’s <a href="https://github.com/jennybc/access-r-source">Accessing R Source</a> repo description which reads: <em>“I am sick of Googling this. I am writing it down this time.”</em><a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>For more on this, see the <a href="https://bookdown.org/yihui/blogdown/installation.html"><strong>Installation</strong></a> section of the blogdown book.<a href="#fnref2" class="footnote-back">↩</a></p></li>
 </ol>
 </div>

@@ -15,7 +15,7 @@ description: "There are very few things considered normal (in the ordinary sense
 
 <div id="what-is-normal-reading" class="section level4">
 <h4>🤓 What is “normal” reading?</h4>
-<p>There are very few things considered “normal” (in the “ordinary” sense of the word) about my reading habits. Let’s just say that, when I saw <code>#BookLoversDay</code> was trending on Twitter, my first thought was: <em>it me!</em> However, it also served as a reminder of my struggles regarding reading and “normalcy” of the <a href="https://en.wikipedia.org/wiki/Normal_distribution">Gaussian distribution</a> variety.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<p>There are very few things considered “normal” (in the “ordinary” sense of the word) about my reading habits. Let’s just say that, when I saw <code>#BookLoversDay</code> was trending on Twitter, my first thought was: <em>it me!</em> However, it also served as a reminder of my struggles regarding reading and “normalcy” of the <a href="https://en.wikipedia.org/wiki/Normal_distribution">Gaussian distribution</a> variety.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 <p>My beef is not with books themselves, but rather the limitations of rating them on <a href="https://www.goodreads.com/">Goodreads</a> using a restrictive 5-star scale. My reviews are often peppered with complaints re. “starflation,” and, at times, caveats regarding my use of an arbitrary, author-adjusted marks.</p>
 {{% tweet 895300309773320192 %}}
 </div>
@@ -31,7 +31,7 @@ This R package acts as a wrapper for the read-only features of the <a href="http
 # devtools::install_github(&quot;famguy/rgoodreads&quot;)
 library(rgoodreads)</code></pre>
 <p>In order to actually <em>do</em> anything with this package, you’ll need to get an API key for Goodreads set up (as detailed in Saguan Pai’s <a href="https://github.com/Famguy/rgoodreads#getting-started"><em>Getting Started</em></a> section).</p>
-<p>Once you’ve done that, you can set it up as an environmental variable, either by way of your <code>.Rprofile</code> or or <code>.Renviron</code> files.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> You can load your API 🔑 by running:</p>
+<p>Once you’ve done that, you can set it up as an environmental variable, either by way of your <code>.Rprofile</code> or or <code>.Renviron</code> files.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> You can load your API 🔑 by running:</p>
 <pre class="r"><code>Sys.setenv(GOODREADS_KEY = &quot;YOUR_KEY_HERE&quot;)</code></pre>
 </div>
 <div id="getting-data-with-the-rgoodreads" class="section level3">
@@ -65,7 +65,7 @@ glimpse(it_me)</code></pre>
 ## $ groups_count    &lt;chr&gt; &quot;3&quot;
 ## $ reviews_count   &lt;chr&gt; &quot;1778&quot;
 ## $ updates         &lt;chr&gt; &quot;wants to read &lt;a only_path=\&quot;false\&quot; href=\&quot;h...</code></pre>
-<p>Though you can get the proper urls for things such as user updates or reviews, this isn’t terribly helpful unto itself. Unfortunately, the Goodreads API limits the types of information you can retrieve for a user to reviews and/or updates. Since I don’t always review the books I read, some will be missing.<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a></p>
+<p>Though you can get the proper urls for things such as user updates or reviews, this isn’t terribly helpful unto itself. Unfortunately, the Goodreads API limits the types of information you can retrieve for a user to reviews and/or updates. Since I don’t always review the books I read, some will be missing.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
 </div>
 <div id="your-own-goodreads-data" class="section level3">
 <h3>Your own Goodreads data</h3>
@@ -135,7 +135,7 @@ colnames(my_books)  # check to make sure it worked</code></pre>
 <p>I’ll make a vector of the columns I consider “keepers.”</p>
 <pre class="r"><code>keeper_cols &lt;- c(&quot;book_id&quot;, &quot;title&quot;, &quot;author&quot;, &quot;my_rating&quot;, &quot;number_of_pages&quot;, 
                  &quot;original_publication_year&quot;, &quot;date_read&quot;, &quot;date_added&quot;, &quot;bookshelves&quot;)</code></pre>
-<p>Now I can use <code>dplyr::select</code> to make a leaner data frame.<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></p>
+<p>Now I can use <code>dplyr::select</code> to make a leaner data frame.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
 <pre class="r"><code>books_myvars &lt;- my_books %&gt;%
   select(one_of(keeper_cols))</code></pre>
 <p>Because I just want to look at books I’ve <em>read</em>, now I’ll filter the observations, restricting them to books with values for <code>date_read</code>.</p>
@@ -158,7 +158,7 @@ read_books &lt;- read_books %&gt;%
        caption = &quot;source: Mara&#39;s goodreads&quot;) +
   hrbrthemes::theme_ipsum_rc()</code></pre>
 <p><img src="/post/2017-08-11-part-1-rgoodreads_files/figure-html/hist-1.png" width="672" /></p>
-<p>Though I can safely say I read more <em>now</em> than I did circa 1989,<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a> I didn’t join Goodreads until 2009 (according to my user data), and wasn’t much of an “active user” until 2012 or so. So, lets look at just the past few years.</p>
+<p>Though I can safely say I read more <em>now</em> than I did circa 1989,<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> I didn’t join Goodreads until 2009 (according to my user data), and wasn’t much of an “active user” until 2012 or so. So, lets look at just the past few years.</p>
 <pre class="r"><code>read_books %&gt;%
   filter(year_read &gt;= 2012) %&gt;%
   ggplot(aes(year_read)) +
@@ -187,10 +187,10 @@ read_books &lt;- read_books %&gt;%
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>Yes, I know that a 5-point Likert scale is an ordinal variable and, thus, cannot be normally distributed (after all, it’s not continuous), but that doesn’t make me yearn for it any less.<a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p>Check out the <a href="https://csgillespie.github.io/efficientR/3-3-r-startup.html#rprofile"><code>.Rprofile</code> file</a> and <a href="https://csgillespie.github.io/efficientR/3-3-r-startup.html#renviron"><code>.Renviron</code> file</a> sections of <a href="https://twitter.com/csgillespie">Colin Gillespie</a> &amp; <a href="https://twitter.com/robinlovelace">Robin Lovelace</a>’s book, <a href="https://csgillespie.github.io/efficientR/"><em>Efficient R programming</em></a>, free online.<a href="#fnref2">↩</a></p></li>
-<li id="fn3"><p>If I <em>was</em> going to use this data, I’d also want to do quite a bit of cleaning with data types etc. See? This is why <code>readr</code> is so glorious.<a href="#fnref3">↩</a></p></li>
-<li id="fn4"><p>This isn’t actually a term, like <em>tidy</em>, or whatever; I just feel like using it.<a href="#fnref4">↩</a></p></li>
-<li id="fn5"><p>I mean, I <em>could’ve</em> been a 5-year-old bibliophile, for all you know 🤷!<a href="#fnref5">↩</a></p></li>
+<li id="fn1"><p>Yes, I know that a 5-point Likert scale is an ordinal variable and, thus, cannot be normally distributed (after all, it’s not continuous), but that doesn’t make me yearn for it any less.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>Check out the <a href="https://csgillespie.github.io/efficientR/3-3-r-startup.html#rprofile"><code>.Rprofile</code> file</a> and <a href="https://csgillespie.github.io/efficientR/3-3-r-startup.html#renviron"><code>.Renviron</code> file</a> sections of <a href="https://twitter.com/csgillespie">Colin Gillespie</a> &amp; <a href="https://twitter.com/robinlovelace">Robin Lovelace</a>’s book, <a href="https://csgillespie.github.io/efficientR/"><em>Efficient R programming</em></a>, free online.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>If I <em>was</em> going to use this data, I’d also want to do quite a bit of cleaning with data types etc. See? This is why <code>readr</code> is so glorious.<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>This isn’t actually a term, like <em>tidy</em>, or whatever; I just feel like using it.<a href="#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>I mean, I <em>could’ve</em> been a 5-year-old bibliophile, for all you know 🤷!<a href="#fnref5" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
