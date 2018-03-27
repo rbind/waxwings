@@ -2,6 +2,7 @@
 title: 'Docker-izing your work in R `r emo::ji("whale")`'
 author: Mara Averick
 date: '2017-11-20'
+lastmod: '`r Sys.Date()`'
 slug: docker-izing-your-work-in-r
 categories: []
 tags:
@@ -16,6 +17,8 @@ description: 'A roundup of helpful guides to containerizing packages, docs, proj
 ```{r include=FALSE}
 library(emo)
 ```
+
+_Updated: 2018-03-36_
 
 I am decidedly a novice when it comes to any and all things Docker (which, 
 incidentally, is why I've been reading these posts). But, since it's helpful for 
@@ -72,6 +75,18 @@ blogdown::shortcode("tweet", "696057282325561344")
 
 ```{r, echo = FALSE}
 blogdown::shortcode("tweet", "954353292221575168")
+```
+
+### [stevedore: A docker client for R](https://richfitz.github.io/stevedore/) by Rich FitzJohn
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "935264570901442560")
+```
+
+### [Using RSelenium and Docker To Webscrape In R - Using The WHO Snake Database](https://callumgwtaylor.github.io/blog/2018/02/01/using-rselenium-and-docker-to-webscrape-in-r-using-the-who-snake-database/) by Callum Taylor
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "961074296515899393")
 ```
 
 ## Fin `r emo::ji("tada")`
