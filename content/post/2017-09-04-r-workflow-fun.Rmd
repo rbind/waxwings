@@ -2,6 +2,7 @@
 title: R workflow fun
 author: Mara Averick
 date: '2017-09-04'
+lastmod: '`r Sys.Date()`'
 slug: r-workflow-fun
 categories: []
 tags:

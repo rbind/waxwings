@@ -2,7 +2,8 @@
 title: "😸 purrr-ty posts"
 author: Mara Averick
 date: '2017-09-26'
-slug: purrr-ty-posts
+slastmod: '`r Sys.Date()`'
+lug: purrr-ty-posts
 categories: []
 tags:
   - purrr

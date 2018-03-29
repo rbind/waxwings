@@ -2,6 +2,7 @@
 title: 'Git guides'
 author: Mara Averick
 date: '2017-12-30'
+lastmod: '`r Sys.Date()`'
 slug: git-guides
 categories: []
 tags:

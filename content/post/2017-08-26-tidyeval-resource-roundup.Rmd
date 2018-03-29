@@ -2,6 +2,7 @@
 title: tidyeval resource roundup
 author: Mara Averick
 date: '2017-08-26'
+lastmod: '`r Sys.Date()`'
 slug: tidyeval-resource-roundup
 categories: []
 tags:
