@@ -16,6 +16,7 @@ googleAnalytics = "UA-101515030-1"
 # Define the number of posts per page
 paginate = 10
 footnotereturnlinkcontents = "↩"
+footnoteanchorprefix = "°"
 
 theme = "hugo-icarus-theme"
 # Comment the themesDir option if you use this theme in production
@@ -80,19 +81,14 @@ theme = "hugo-icarus-theme"
     bitbucket       = ""
     jsfiddle        = ""
     codepen         = ""
-    foursquare      = ""
-    dribbble        = ""
-    deviantart      = ""
     behance         = ""
     flickr          = ""
     instagram       = ""
     youtube         = ""
     vimeo           = ""
-    vine            = ""
     medium          = "dataandme"
     wordpress       = ""
     tumblr          = ""
-    xing            = ""
     linkedin        = "maraaverick"
     slideshare      = ""
     stackoverflow   = ""
@@ -130,4 +126,4 @@ params = ["categories", "tags", "description"]
 
 # Add outputs
 [outputs]
-home = ["HTML", "RSS", "Algolia"]
+home = ["html", "rss", "Algolia"]
