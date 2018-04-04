@@ -1,0 +1,30 @@
+---
+title: 'DataFramed podcast interview `r emo::ji("radio")`'
+author: Mara Averick
+date: '2018-04-04'
+slug: dataframed-podcast-interview
+categories: []
+tags:
+  - sci-comm
+banner: "banners/dataframed.jpg"
+images: ["banners/dataframed.jpg"]
+description: '`r emo::ji("studio_microphone")` I had lots of fun talking to Hugo Bowne of DataCamp on their aptly-named podcast, DataFramed, Episode 16 — Data Nerdism at Large.'
+---
+
+In my personal going-on-a-podcast debut, I chatted with [Hugo Bowne-Anderson](https://twitter.com/hugobowne) for the DataCamp podcast, [DataFramed](https://www.datacamp.com/community/podcast). Hugo must be an amazing editor, because it even makes sense!
+
+The episode, [Data Nerdism at Large (with Mara Averick)](https://www.datacamp.com/community/podcast/data-nerd), is up on their site, along with links to some of the topics that came up. Since Hugo's good at this stuff, I'll just steal his blurb:
+
+> Mara Averick, self-labelled data nerd and Tidyverse developer advocate at RStudio, speaks with Hugo about all things data: what it means to be a data nerd and how data science impacts all of our lives from thinking about toxicology to sports analytics to data for social good and civic tech.
+
+Hard-hitting, super important mentions include:  
+
+  *  The 1976 Disney classic, [Donald in Mathemagic Land](https://www.youtube.com/watch?v=U_ZHsk0-eF0);
+  *  Some great data-science-for-social-good organizations, such as [DrivenData: Data science competitions to save the world](https://www.drivendata.org/), and [Data Analysts for Social Good](http://www.dataanalystsforsocialgood.com/);
+  *  The prediction- and classifier-explaining package LIME (short for [Local Interpretable Model-agnostic Explanations](https://github.com/marcotcr/lime)[^1], which, thanks to Thomas Lin Pedersen, also has an [R-package implementation](https://github.com/thomasp85/lime)); and
+  *  Tamara Munzer's excellent book, [Visualization Analysis and Design](http://www.cs.ubc.ca/~tmm/vadbook/).[^2]
+
+There are probably others, but I'm pretty sure Hugo's got them covered!
+
+[^1]: Ribiero, Marco Tulio, Sameer Singh, and Carlos Guestrin. 2016. “Why Should I Trust You? Explaining the Predictions of Any Classifier.” In KDD ’16. doi:http://dx.doi.org/10.1145/2939672.2939778.
+[^2]: Munzner, Tamara. Visualization Analysis and Design. A K Peters Visualization Series, CRC Press, 2014.
