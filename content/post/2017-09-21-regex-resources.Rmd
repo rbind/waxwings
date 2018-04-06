@@ -16,7 +16,7 @@ images: ["banners/regex_tweets.jpg"]
 description: "At some point in your computing life, you're gonna need to get down with regular expressions. So, here's a roundup of some Regex-related resources (R-specific or otherwise) I've found handy."
 ---
 
-Updated: `r emo::ji("calendar")` 2017-10-27.
+Updated: `r emo::ji("calendar")` 2018-04-06.
 
 Regular Expressions, RegEx, regexps-- call them what you like, but no matter how you slice it, they're useful af. After all, data spelunking is all about patterns, and that's precisely what regexps are for: (wo)manhandling patterns in strings. Good Sirs Wickham and Grolemund, in their masterful tome, [r4ds](http://r4ds.had.co.nz/strings.html#matching-patterns-with-regular-expressions), describe them thusly:
 
@@ -24,7 +24,11 @@ Regular Expressions, RegEx, regexps-- call them what you like, but no matter how
  
 There are helpful string-related R packages `r emo::ji("package")`, [`stringr`](http://stringr.tidyverse.org/) (which is built on top of the more comprehensive [`stringi`](https://github.com/gagolews/stringi) package) comes to mind. But, at some point in your computing life, you're gonna need to get down with regular expressions.
 
-And so, here's a collection of some of the Regex-related links I've tweeted `r emo::ji("bird")`:
+`r emo::ji("new")` An RStudio addin by [Garrick Aden-Buie](https://www.garrickadenbuie.com/), [**RegExplain**](https://www.garrickadenbuie.com/project/regexplain/), looks like it will be an invaluable companion to go along with the other resources collected here.
+
+![](https://i.imgur.com/iGnEpPV.gif)
+
+Below you'll find a collection of some of the Regex-related links I've tweeted `r emo::ji("bird")`:
 
 ### [Basic Regular Expressions in R Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf) by Ian Kopacka
 
