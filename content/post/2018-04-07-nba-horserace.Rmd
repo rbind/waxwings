@@ -1,0 +1,53 @@
+---
+title: 'NBA Horserace `r emo::ji("horse_racing")`'
+author: Mara Averick
+date: '2018-04-07'
+slug: nba-horserace
+categories: []
+tags:
+  - data viz
+  - NBA
+banner: "banners/nba_horserace_w_title.png"
+images: ["banners/nba_horserace_w_title.png"]
+description: '`r emo::ji("basketball")` NBA teams ranked by win percentage over the course of the 2017-18 season/an excuse to tinker with Flourish visualizations.'
+---
+
+Inspired by Laura Ellis (aka [\@LittleMissData](https://twitter.com/LittleMissData)'s) post, [**Data Storytelling**](https://www.littlemissdata.com/blog/data-storytelling), I decided to take [**Flourish**](https://flourish.studio/) for a spin to look at NBA-team win percentages over the course of the season thus far. `r emo::ji("basketball")`
+
+As advertised, Flourish is a tool for _"powerful, beautiful, easy data visualisation"_ that lets you _"quickly turn your spreadsheets into stunning online charts, maps and interactive stories."_ Clearly someone on the Flourish team and I are on the same wavelength when it comes to carnival games and data visualization, since the animated rank or relative-score chart that caught my eye turned out to be named the [Horserace template](https://public.flourish.studio/story/959/).
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "952159667668553728")
+```
+
+The hardest part (which wasn't very hard at all) was un-tidying my data to fit their spreadsheet model, with the x-axis variable (number of games played, in my example) as column headers.
+
+![](https://i.imgur.com/nly4x9Y.png)
+
+After that, there were very few design decisions to be made, which (I think) is part of the allure of such a tool. Going with the **Ranks** (as opposed to **Scores**) view as default was an easy decision, since the actual win-percentage values tend to be pretty close, making things look quite cluttered.
+
+![](https://i.imgur.com/JJeAos5.png)
+
+The limited "possibility space"[^elijah] makes for a "beginner-friendly" visualization tool. Of course, there's a trade-off — you can't add another layer of labels or annotation with a  `+` sign. Actually, the title in the banner for this post is "_after-market_" (read: I added it to the image outside of Flourish).
+
+Anyhow, you can see the chart in the embed below, though, if you happen to be on your computer I recommend viewing it [here `r emo::ji("link")`](https://public.flourish.studio/visualisation/30168/), since my blog template is too narrow a view-port for a chart of this nature (IMHO).
+
+<div class="flourish-embed" data-src="visualisation/30168"></div><script src="https://public.flourish.studio/resources/embed.js"></script>
+
+Here it is as a GIF, just in case — umm, I can't actually think of a use case, but I like GIFs. `r emo::ji("film")`
+
+![](https://i.imgur.com/90uAqYD.gif)
+
+All in all, Flourish is a fun tool, and definitely worth playing with yourself. Big ups to the folks at [\@f_l_o_u_r_i_s_h](https://twitter.com/f_l_o_u_r_i_s_h), who helped me figure out how to add custom colours to my chart!
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "978677821177581568")
+```
+
+So much better, right?!
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "978959050854600704")
+```
+
+[^elijah]: Shout-out to Elijah Meeks, who loves that term.
