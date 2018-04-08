@@ -33,7 +33,7 @@ theme = "hugo-statnmap-theme"
     bio = "data nerd at large"
     location = ""
     site_description = ""
-    copyright  = "Mara Averick. Powered by [Hugo](//gohugo.io)."
+    copyright  = "Mara Averick. Powered by [Hugo](//gohugo.io). Original theme by [PPOffice](http://github.com/ppoffice), adapted for this site."
     avatar = "img/mga_profile_pic.png"
     # Enter your email address to display your Gravatar icon in the profile. If not set the theme
     # will fallback to the avatar.
@@ -48,8 +48,8 @@ theme = "hugo-statnmap-theme"
     date_format = "2006-01-02"
 
     # Add custom assets with their paths relative to the static folder
-	custom_css = ["css/tomorrow-night-bright.css"]
-	custom_js  = []
+	  custom_css = ["css/tomorrow-night-bright.css"]
+	  custom_js  = []
 
 # Create custom menu entries by defining a label and a link for
 # them. Since you can also link posts, you've the option the
@@ -112,3 +112,5 @@ theme = "hugo-statnmap-theme"
     categories = false
     tags = false
     tag_cloud = false
+    language_switcher = false
+
