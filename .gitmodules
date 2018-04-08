@@ -1,3 +1,6 @@
 [submodule "themes/hugo-statnmap-theme"]
 	path = themes/hugo-statnmap-theme
 	url = https://github.com/batpigandme/hugo-statnmap-theme.git
+[submodule "themes/hugo-nederburg-theme"]
+	path = themes/hugo-nederburg-theme
+	url = https://github.com/batpigandme/hugo-nederburg-theme.git
