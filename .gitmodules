@@ -1,0 +1,3 @@
+[submodule "themes/hugo-statnmap-theme"]
+  path = themes/hugo-statnmap-theme
+  url = https://github.com/batpigandme/hugo-statnmap-theme.git
