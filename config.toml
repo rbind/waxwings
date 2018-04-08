@@ -1,6 +1,6 @@
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
-baseurl = "https://maraaverick.rbind.io/"
+baseurl = "https://dangerzone.netlify.com/"
 relativeurls = true
 languageCode = "en-us"
 title = "Mara Averick"
@@ -11,7 +11,7 @@ enableEmoji = true
 # Enable comments by entering your Disqus shortname
 disqusShortname = "maraaverick"
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = "UA-101515030-1"
+# googleAnalytics = "UA-101515030-1"
 
 # Define the number of posts per page
 paginate = 10
@@ -112,18 +112,3 @@ theme = "hugo-statnmap-theme"
     categories = false
     tags = false
     tag_cloud = false
-
-# Add algolia
-[outputFormats.Algolia]
-baseName = "algolia"
-isPlainText = true
-mediaType = "application/json"
-notAlternative = true
-
-[params.algolia]
-vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
-params = ["categories", "tags", "description"]
-
-# Add outputs
-[outputs]
-home = ["html", "rss", "Algolia"]
