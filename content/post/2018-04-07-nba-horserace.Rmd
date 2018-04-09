@@ -2,6 +2,7 @@
 title: 'NBA Horserace `r emo::ji("horse_racing")`'
 author: Mara Averick
 date: '2018-04-07'
+lastmod: '`r Sys.Date()`'
 slug: nba-horserace
 categories: []
 tags:
@@ -37,6 +38,10 @@ Anyhow, you can see the chart in the embed below, though, if you happen to be on
 Here it is as a GIF, just in case — umm, I can't actually think of a use case, but I like GIFs. `r emo::ji("film")`
 
 ![](https://i.imgur.com/90uAqYD.gif)
+
+### Bonus chart: Tankathon `r emo::ji("chart_decreasing")`
+
+<div class="flourish-embed" data-src="visualisation/34024"></div><script src="https://public.flourish.studio/resources/embed.js"></script>
 
 All in all, Flourish is a fun tool, and definitely worth playing with yourself. Big ups to the folks at [\@f_l_o_u_r_i_s_h](https://twitter.com/f_l_o_u_r_i_s_h), who helped me figure out how to add custom colours to my chart!
 
