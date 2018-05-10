@@ -13,10 +13,10 @@ tags:
   - roundups
 banner: "banners/tidyeval_combo.png"
 images: ["banners/tidyeval_combo.png"]
-description: 'Updated `r emo::ji("calendar")` 2018-02-24. After posting a link to Edwin Thoen’s "Tidy evaluation most common actions," I was asked if there were other tidy eval resources I knew of. So, here are some of the tutorials  I’ve found and tweeted.'
+description: 'Updated `r emo::ji("calendar")` 2018-05-10. After posting a link to Edwin Thoen’s "Tidy evaluation most common actions," I was asked if there were other tidy eval resources I knew of. So, here are some of the tutorials  I’ve found and tweeted.'
 ---
 
-_Updated: 2018-04-09_  
+_Updated: 2018-05-10_  
 
 Though, naturally, the [Honorable Professor Doctor Sir Lord General Hadley Wickham](http://hadley.nz/)'s [**Programming with dplyr**](http://dplyr.tidyverse.org/articles/programming.html) article is the _ne plus ultra_ of getting oneself aquainted with the latest and greatest in [tidyeval programming recipes](http://dplyr.tidyverse.org/articles/programming.html#programming-recipes), [quoting](http://dplyr.tidyverse.org/articles/programming.html#quoting), and [quasiquotation](http://dplyr.tidyverse.org/articles/programming.html#quasiquotation); there _are_ some other resources out there.
 
@@ -31,6 +31,13 @@ blogdown::shortcode("tweet", "901429535266267136")
 ```{r, echo = FALSE}
 blogdown::shortcode("tweet", "963175175658397701")
 ```
+
+### [Quotes, Quotation and Quasiquotation](https://github.com/cwickham/quotation) by Charlotte Wickham
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "994563225583747074")
+```
+
 
 ### [Lesser known `dplyr` 0.7* tricks](http://www.brodrigues.co/blog/2017-06-19-dplyr-0-70-tutorial/) by Bruno Rodrigues
 
