@@ -18,6 +18,9 @@
             <div class="archive-article-date">
                 <i class="far fa-calendar"></i>
                 <time datetime="{{ .Date }}" itemprop="datePublished">{{ .Date.Format .Site.Params.date_format }}</time>
+                <p>Last updated
+                <time datetime="{{ .Lastmod }}" itemprop="lastModified">{{ .Lastmod.Format .Site.Params.date_format }}</time>
+                </p>
             </div>
         </header>
     </div>
