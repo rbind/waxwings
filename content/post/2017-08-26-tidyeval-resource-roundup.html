@@ -2,7 +2,7 @@
 title: tidyeval resource roundup
 author: Mara Averick
 date: '2017-08-26'
-lastmod: '2018-04-09'
+lastmod: '2018-05-19'
 slug: tidyeval-resource-roundup
 categories: []
 tags:
@@ -13,18 +13,22 @@ tags:
   - roundups
 banner: "banners/tidyeval_combo.png"
 images: ["banners/tidyeval_combo.png"]
-description: 'Updated 📆 2018-02-24. After posting a link to Edwin Thoen’s "Tidy evaluation most common actions," I was asked if there were other tidy eval resources I knew of. So, here are some of the tutorials  I’ve found and tweeted.'
+description: 'Updated 📆 2018-05-10. After posting a link to Edwin Thoen’s "Tidy evaluation most common actions," I was asked if there were other tidy eval resources I knew of. So, here are some of the tutorials  I’ve found and tweeted.'
 ---
 
 
 
-<p><em>Updated: 2018-04-09</em></p>
+<p><em>Updated: 2018-05-19</em></p>
 <p>Though, naturally, the <a href="http://hadley.nz/">Honorable Professor Doctor Sir Lord General Hadley Wickham</a>’s <a href="http://dplyr.tidyverse.org/articles/programming.html"><strong>Programming with dplyr</strong></a> article is the <em>ne plus ultra</em> of getting oneself aquainted with the latest and greatest in <a href="http://dplyr.tidyverse.org/articles/programming.html#programming-recipes">tidyeval programming recipes</a>, <a href="http://dplyr.tidyverse.org/articles/programming.html#quoting">quoting</a>, and <a href="http://dplyr.tidyverse.org/articles/programming.html#quasiquotation">quasiquotation</a>; there <em>are</em> some other resources out there.</p>
 <p>After posting a link to <a href="https://edwinth.github.io">Edwin Thoen</a>’s ⭐️ <a href="https://edwinth.github.io/blog/dplyr-recipes/"><strong>Tidy evaluation, most common actions</strong></a>, I was asked if there were other <code>tidyeval</code> tutorials I knew of. And so, here are some resources I’ve found and tweeted.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 {{% tweet "901429535266267136" %}}
 <div id="tidy-evaluation-in-5-minutes-by-hadley-wickham" class="section level3">
 <h3><a href="https://www.youtube.com/watch?v=nERXS3ssntw">Tidy evaluation in 5 minutes</a> by Hadley Wickham</h3>
 {{% tweet "963175175658397701" %}}
+</div>
+<div id="quotes-quotation-and-quasiquotation-by-charlotte-wickham" class="section level3">
+<h3><a href="https://github.com/cwickham/quotation">Quotes, Quotation and Quasiquotation</a> by Charlotte Wickham</h3>
+{{% tweet "994563225583747074" %}}
 </div>
 <div id="lesser-known-dplyr-0.7-tricks-by-bruno-rodrigues" class="section level3">
 <h3><a href="http://www.brodrigues.co/blog/2017-06-19-dplyr-0-70-tutorial/">Lesser known <code>dplyr</code> 0.7* tricks</a> by Bruno Rodrigues</h3>
@@ -33,14 +37,6 @@ description: 'Updated 📆 2018-02-24. After posting a link to Edwin Thoen’s "
 <div id="why-i-find-tidyeval-useful-by-bruno-rodrigues" class="section level3">
 <h3><a href="http://www.brodrigues.co/blog/2017-08-27-why_tidyeval/">Why I find tidyeval useful</a> by Bruno Rodrigues</h3>
 {{% tweet "902278898968170496" %}}
-</div>
-<div id="making-sense-of-dplyr-0.6-by-jason-becker" class="section level3">
-<h3><a href="http://www.json.blog/2017/05/making-sense-of-dplyr-0.6/?utm_content=bufferb2c45&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer">Making Sense of <code>dplyr</code> 0.6</a> by Jason Becker</h3>
-{{% tweet "865975935245451264" %}}
-</div>
-<div id="gentle-non-standard-evaluation-in-dplyr-0.6-by-alex-hayes" class="section level3">
-<h3><a href="https://alexpghayes.github.io/2017/gentle-non-standard-evaluation-in-dplyr-0-6/?utm_content=buffer3fc76&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer">gentle non-standard evaluation in <code>dplyr</code> 0.6</a> by Alex Hayes</h3>
-{{% tweet "866364480212611072" %}}
 </div>
 <div id="excluding-rows-by-romain-francois" class="section level3">
 <h3><a href="https://romain.rbind.io/blog/2017/07/01/excluding-rows/?utm_content=bufferc1336&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer">Excluding Rows</a> by Romain François</h3>
@@ -58,6 +54,10 @@ description: 'Updated 📆 2018-02-24. After posting a link to Edwin Thoen’s "
 <h3><a href="https://edwinth.github.io/blog/nse/">Non-standard evaluation, how tidy eval builds on base R</a> by Edwin Thoen</h3>
 {{% tweet "906925770538455040" %}}
 </div>
+<div id="tidyeval-meets-pdf-table-hell-by-luis-verde-arregoitia" class="section level3">
+<h3><a href="https://luisdva.github.io/rstats/Tidyeval-pdf-hell/">Tidyeval meets PDF table hell</a> by Luis Verde Arregoitia</h3>
+{{% tweet "983164881020080129" %}}
+</div>
 <div id="my-first-steps-into-the-world-of-tidy-eval-by-omayma" class="section level3">
 <h3><a href="www.onceupondata.com/2017/08/12/my-first-steps-into-the-world-of-tidyeval/">My First Steps into The World of Tidy Eval</a> by Omayma</h3>
 {{% tweet "909126265923391488" %}}
@@ -74,12 +74,24 @@ description: 'Updated 📆 2018-02-24. After posting a link to Edwin Thoen’s "
 <h3><a href="https://www.johnmackintosh.com/2018-02-19-theory-free-tidyeval/">Theory free tidyeval</a> by John MacKintosh</h3>
 {{% tweet "966799020281692161" %}}
 </div>
+<div id="how-do-i-make-my-own-dplyr-style-functions-by-nic-crane" class="section level3">
+<h3><a href="https://thisisnic.github.io/2018/04/16/how-do-i-make-my-own-dplyr-style-functions/">How do I make my own dplyr-style functions?</a> by Nic Crane</h3>
+{{% tweet "985952471209127937" %}}
+</div>
+<div id="making-sense-of-dplyr-0.6-by-jason-becker" class="section level3">
+<h3><a href="http://www.json.blog/2017/05/making-sense-of-dplyr-0.6/?utm_content=bufferb2c45&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer">Making Sense of <code>dplyr</code> 0.6</a> by Jason Becker</h3>
+{{% tweet "865975935245451264" %}}
+</div>
+<div id="gentle-non-standard-evaluation-in-dplyr-0.6-by-alex-hayes" class="section level3">
+<h3><a href="https://alexpghayes.github.io/2017/gentle-non-standard-evaluation-in-dplyr-0-6/?utm_content=buffer3fc76&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer">gentle non-standard evaluation in <code>dplyr</code> 0.6</a> by Alex Hayes</h3>
+{{% tweet "866364480212611072" %}}
+</div>
 <div id="filter-with-context-by-romain-francois" class="section level3">
 <h3><a href="https://purrple.cat/blog/2017/06/28/filter-with-context/">filter with context</a> by Romain François</h3>
 {{% tweet "968973417197309954" %}}
 </div>
 <div id="tidy-evaluation-by-lionel-henry-and-hadley-wickham" class="section level2">
-<h2>📽️ <a href="https://schd.ws/hosted_files/user2017/43/tidyeval-user.pdf">Tidy Evaluation</a> by Lionel Henry and Hadley Wickham</h2>
+<h2>📽 <a href="https://schd.ws/hosted_files/user2017/43/tidyeval-user.pdf">Tidy Evaluation</a> by Lionel Henry and Hadley Wickham</h2>
 <p><em>n.b. these are likely not as up-to-date as <a href="http://dplyr.tidyverse.org/articles/programming.html"><strong>Programming with dplyr</strong></a>, but I like the visuals— so, they’re here</em></p>
 {{% tweet "919311107357069316" %}}
 <div id="tidy-evaluation-programming-with-ggplot2-and-dplyr-by-hadley-wickham" class="section level3">
