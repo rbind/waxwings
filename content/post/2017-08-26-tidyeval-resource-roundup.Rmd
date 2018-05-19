@@ -16,7 +16,7 @@ images: ["banners/tidyeval_combo.png"]
 description: 'Updated `r emo::ji("calendar")` 2018-05-10. After posting a link to Edwin Thoen’s "Tidy evaluation most common actions," I was asked if there were other tidy eval resources I knew of. So, here are some of the tutorials  I’ve found and tweeted.'
 ---
 
-_Updated: 2018-05-10_  
+_Updated: 2018-05-19_  
 
 Though, naturally, the [Honorable Professor Doctor Sir Lord General Hadley Wickham](http://hadley.nz/)'s [**Programming with dplyr**](http://dplyr.tidyverse.org/articles/programming.html) article is the _ne plus ultra_ of getting oneself aquainted with the latest and greatest in [tidyeval programming recipes](http://dplyr.tidyverse.org/articles/programming.html#programming-recipes), [quoting](http://dplyr.tidyverse.org/articles/programming.html#quoting), and [quasiquotation](http://dplyr.tidyverse.org/articles/programming.html#quasiquotation); there _are_ some other resources out there.
 
@@ -38,7 +38,6 @@ blogdown::shortcode("tweet", "963175175658397701")
 blogdown::shortcode("tweet", "994563225583747074")
 ```
 
-
 ### [Lesser known `dplyr` 0.7* tricks](http://www.brodrigues.co/blog/2017-06-19-dplyr-0-70-tutorial/) by Bruno Rodrigues
 
 ```{r echo=FALSE}
@@ -49,18 +48,6 @@ blogdown::shortcode('tweet', '881860624808128512')
 
 ```{r echo=FALSE}
 blogdown::shortcode("tweet", "902278898968170496")
-```
-
-### [Making Sense of `dplyr` 0.6](http://www.json.blog/2017/05/making-sense-of-dplyr-0.6/?utm_content=bufferb2c45&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) by Jason Becker
-
-```{r echo=FALSE}
-blogdown::shortcode('tweet', '865975935245451264')
-```
-
-### [gentle non-standard evaluation in `dplyr` 0.6](https://alexpghayes.github.io/2017/gentle-non-standard-evaluation-in-dplyr-0-6/?utm_content=buffer3fc76&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) by Alex Hayes
-
-```{r echo=FALSE}
-blogdown::shortcode('tweet', '866364480212611072')
 ```
 
 ### [Excluding Rows](https://romain.rbind.io/blog/2017/07/01/excluding-rows/?utm_content=bufferc1336&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) by Romain François
@@ -87,6 +74,12 @@ blogdown::shortcode("tweet", "902214722572996612")
 blogdown::shortcode("tweet", "906925770538455040")
 ```
 
+### [Tidyeval meets PDF table hell](https://luisdva.github.io/rstats/Tidyeval-pdf-hell/) by Luis Verde Arregoitia
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "983164881020080129")
+```
+
 ### [My First Steps into The World of Tidy Eval](www.onceupondata.com/2017/08/12/my-first-steps-into-the-world-of-tidyeval/) by Omayma
 ```{r echo=FALSE}
 blogdown::shortcode("tweet", "909126265923391488")
@@ -108,6 +101,24 @@ blogdown::shortcode("tweet", "935344760029671424")
 
 ```{r, echo = FALSE}
 blogdown::shortcode("tweet", "966799020281692161")
+```
+
+### [How do I make my own dplyr-style functions?](https://thisisnic.github.io/2018/04/16/how-do-i-make-my-own-dplyr-style-functions/) by Nic Crane
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "985952471209127937")
+```
+
+### [Making Sense of `dplyr` 0.6](http://www.json.blog/2017/05/making-sense-of-dplyr-0.6/?utm_content=bufferb2c45&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) by Jason Becker
+
+```{r echo=FALSE}
+blogdown::shortcode('tweet', '865975935245451264')
+```
+
+### [gentle non-standard evaluation in `dplyr` 0.6](https://alexpghayes.github.io/2017/gentle-non-standard-evaluation-in-dplyr-0-6/?utm_content=buffer3fc76&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) by Alex Hayes
+
+```{r echo=FALSE}
+blogdown::shortcode('tweet', '866364480212611072')
 ```
 
 ### [filter with context](https://purrple.cat/blog/2017/06/28/filter-with-context/) by Romain François
