@@ -15,7 +15,7 @@ images: ["banners/purrr_apply_cheatsheet_rstudio.png"]
 description: "Now that 😻 purrr has a shiny new cheat sheet, it seemed like a fitting tribute to give the package its own tweet roundup..."
 ---
 
-Updated: `r emo::ji("calendar")` 2018-03-20.
+Updated: `r emo::ji("calendar")` 2018-05-19.
 
 
 ### `r emo::ji("tada")``r emo::ji("cat")`&nbsp; purrr-tiest cheat sheet
@@ -154,6 +154,12 @@ And part six: [**A Crazy Little Thing Called {purrr} - Part 6 : doing statistics
 
 ```{r, echo = FALSE}
 blogdown::shortcode("tweet", "946467289892884480")
+```
+
+### [(How to) Write a purrr-like adverb](https://colinfay.me/purrr-adverb-tidyverse/) by Colin Fay
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "988600672269619200")
 ```
 
 ### [Reproducible Shiny App Development with Modules](https://www.blog.cultureofinsight.com/2018/01/reproducible-shiny-app-development-with-modules/) by Paul Campbell
