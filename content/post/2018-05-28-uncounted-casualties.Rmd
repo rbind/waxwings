@@ -1,0 +1,101 @@
+---
+title: Uncounted casualties
+author: Mara Averick
+date: '2018-05-28'
+slug: uncounted-casualties
+tags:
+  - data viz
+banner: 'banners/days_of_hospitalization.png'
+description: "Reflections on the visualizations in Colonel Alfred G. Love's War Casualties, 1931."
+images: ['banners/days_of_hospitalization.png']
+--- 
+
+There is a relationship between war (and death) and counting things.[^debt]
+Some of the best known data visualizations pertain to the casualties of war
+(e.g. Florence Nightingale's coxcomb chart, [Diagram of the Causes of Mortality, 1858](http://infowetrust.com/scroll/#nightingale)).
+
+When I came upon Lt. Colonel Albert G. Love's 1931 ["War Casualties"](http://www.gwpda.org/medical/stats/warcasu1.htm)[^love] my curiosity 
+was piqued. Focused on "the World War" (at that date there had only 
+been one), Colonel Love describes his task in the preface:
+
+> An attempt is made in the following pages to outline a system for estimating, 
+> on the basis of our casualty experience in past wars, the requirements for 
+> medical service including hospitalization and evacuation of front line 
+> casualties; and further to show how intimately the question of replacements 
+> for all branches of an army is related to casualty rates, and also to prompt 
+> and efficient medical care.
+
+Love's goal is not ignoble, and there's something oddly charming about
+visualizations made by hand — annotations and all, which made it (briefly) easy
+to ignore the meaning behind the charts.
+
+Take [Figure 56](http://www.gwpda.org/medical/stats/graphs/fig056.gif),
+for example: _Loss of manpower from war (poisonous) gases in the Theater of
+Operations, during successive months_ (below).
+
+![](https://i.imgur.com/6tnUuDU.gif)
+
+Or [Figure 48](http://www.gwpda.org/medical/stats/graphs/fig048.gif), for
+another: _Theater of Operations war gas cases disposed of in the Zone of the
+Interior by return to duty, death, or disability discharge when sent to the Zone
+of the Interior for further treatment_.
+
+![](https://i.imgur.com/sw57zjL.gif)
+
+It's particularly striking that the category "disposed of" encompasses: return
+to duty, disability discharge, and _death_, which seem like very different
+outcomes.
+
+I've chosen "War Gas" examples because of Wilfred Owen's 1921 poem on one such
+casualty, [_Dulce et Decorum Est_](https://www.poetryfoundation.org/poems/46560/dulce-et-decorum-est), 
+which has stuck with me ever since we read it in history class when I was 16.
+
+<blockquote>
+<strong><em>Dulce et Decorum Est</em></strong>  
+<strong>by Wilfred Owen</strong>
+
+Bent double, like old beggars under sacks,  
+Knock-kneed, coughing like hags, we cursed through sludge,  
+Till on the haunting flares we turned our backs,  
+And towards our distant rest began to trudge.  
+Men marched asleep. Many had lost their boots,  
+But limped on, blood-shod. All went lame; all blind;  
+Drunk with fatigue; deaf even to the hoots  
+Of gas-shells dropping softly behind.
+
+
+Gas! GAS! Quick, boys!—An ecstasy of fumbling  
+Fitting the clumsy helmets just in time,  
+But someone still was yelling out and stumbling  
+And flound’ring like a man in fire or lime.—  
+Dim through the misty panes and thick green light,  
+As under a green sea, I saw him drowning.  
+
+
+In all my dreams before my helpless sight,  
+He plunges at me, guttering, choking, drowning.  
+
+
+If in some smothering dreams, you too could pace  
+Behind the wagon that we flung him in,  
+And watch the white eyes writhing in his face,  
+His hanging face, like a devil’s sick of sin;  
+If you could hear, at every jolt, the blood  
+Come gargling from the froth-corrupted lungs,  
+Obscene as cancer, bitter as the cud  
+Of vile, incurable sores on innocent tongues,—  
+My friend, you would not tell with such high zest  
+To children ardent for some desperate glory,  
+The old Lie: <em>Dulce et decorum est</em>  
+<em>Pro patria mori</em>.  
+</blockquote>
+
+Neither the numbers nor their graphical depictions glorify war, but there is
+something immeasurable caught in Owen's poem, and the juxtaposition of the two
+brought to mind a Stalin aphorism:[^stalin]
+
+> _When one man dies it's a tragedy. When thousands die it's statistics._
+
+[^debt]: Graeber, David. 2011. _Debt: The First 5,000 Years._ New York: Melville House.
+[^love]: Love, Albert G. 1931. “War Casualties.” _The Army Medical Bulletin_ 24.
+[^stalin]: Antonov-Ovseyenko, Anton. 1981. _The Time of Stalin: Portrait of a Tyranny._ Harper & Row.
