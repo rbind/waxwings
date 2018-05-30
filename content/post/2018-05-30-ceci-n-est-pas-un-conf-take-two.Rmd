@@ -1,0 +1,62 @@
+---
+title: 'Ceci n''est pas un conf, `r emo::ji_glue(":clapper:")``r emo::ji_glue(":v:")`'
+author: Mara Averick
+date: '2018-05-30'
+slug: ceci-n-est-pas-un-conf-take-two
+categories: []
+tags:
+  - rOpenSci
+  - R
+banner: "banners/ceci_nest_pas_un_conf_2018.png"
+images: ["banners/ceci_nest_pas_un_conf_2018.png"]
+description: '`r emo::ji("memo")` Notes from my the 2018 rOpenSci unconf — Seattle edition.'
+---
+
+This year's [rOpenSci unconf](http://unconf18.ropensci.org/) was held in
+Seattle, and (after the great time I had at 
+[last year's event](https://maraaverick.rbind.io/2017/06/ceci-n-est-pas-un-conf/)), 
+I was thrilled to be able to go back for more! All the fun, with like 40% less 
+mind-crippling impostor-syndrome anxiety.[^1] `r emo::ji("grimace")`
+
+Once again, [Sean Kross](https://twitter.com/seankross) did a great job of rounding up [the projects](https://ropenscilabs.github.io/runconf18-projects/), complete with emoji annotations. `r emo::ji("boom")`
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "999073432494006273")
+```
+
+In order to avoid the month-long delay between attendance and blog post
+from last year, I took large(ish) notes during the project presentations.
+[^accessible] You can and _should_ visit the project README files for the
+details (since after two days of unconferring my note-taking skills were a
+little sub-par).
+
+![](https://i.imgur.com/UqVkPWm.png)
+
+![](https://i.imgur.com/YozSl1z.jpg)
+
+### Addenda
+
+ * The very awesome Paige Bailey (aka [\@DynamicWebPaige](https://twitter.com/DynamicWebPaige)) made a vignette on Ethical Machine Learning, but wasn't there to present. So, be sure to check that out `r emo::ji_glue(":point_down:")`.
+ 
+ ```{r, echo = FALSE}
+ blogdown::shortcode("tweet", "1000007823051325442")
+ ```
+ 
+ * [jobstatus](https://github.com/ropenscilabs/jobstatus) is now working! `r emo::ji("tada")` 
+ 
+ ```{r, echo = FALSE}
+ blogdown::shortcode("tweet", "1000624037091950592")
+ ```
+ 
+### Thank you `r emo::ji("pray")`
+ 
+A huge thank you to [rOpenSci](https://ropensci.org/), and everyone who
+made the event happen, especially [Stefanie Butland](https://twitter.com/stefaniebutland)! 
+Look at all those happy faces — what more proof could you possibly need of a 
+job well done? `r emo::ji("smile")`
+ 
+ ![](https://i.imgur.com/Q1d24ZO.jpg)
+
+[^1]: At this point the fact that I'm an impostor is pretty much common knowledge, so what's there to be nervous about? `r emo::ji("wink")`
+
+[^accessible]: Accessible pdf versions of my notes, pages [one](https://www.dropbox.com/s/tzjfexv7bd0czb0/runconf18.pdf?dl=0) and [two](https://www.dropbox.com/s/c27soh9rrktzvfi/runconf18%201.pdf?dl=0), are available at their respective links.
