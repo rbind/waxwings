@@ -1,0 +1,63 @@
+---
+title: 'Hand-crafted curation: meta-SoDS18'
+author: Mara Averick
+date: '2018-06-05'
+slug: meta-sods18-a-call-to-curation
+categories: []
+tags:
+  - sci-comm
+  - resources
+  - R
+banner: ''
+description: 'Looking for a fun mini project? Be the best cyborg you can be, and do a little something by hand ✋🤖!'
+images: []
+---
+
+
+
+<p>😎 Summer of Data Science (<a href="https://twitter.com/hashtag/SoDS18?src=hash"><code>#SoDS18</code></a>) is upon us, and (thanks to Renée (aka <a href="https://twitter.com/becomingdatasci">@BecomingDataSci</a>)) there is already some <a href="https://www.becomingadatascientist.com/2018/05/28/summer-of-data-science-2018-sods18-launch-day/">great guidance</a> out there. I’m a big fan of “mini” projects — and, unlike Highlander, I’m pretty sure <em>There can only be one!</em> isn’t the name of the <code>SoDS</code> game.</p>
+<p>So, I wanted to share some ideas I have for potential micro-projects…</p>
+<div id="do-something-by-hand" class="section level2">
+<h2>✋ do something by hand</h2>
+<p>I know, I know — this borders on heresy. As my <a href="http://archervisualization.herokuapp.com/">Archer visualization</a> partner in crime, <a href="https://twitter.com/Elijah_Meeks">Elijah Meeks</a>, put it:<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<blockquote>
+<p>Whenever you tell someone you painstakingly annotated something by hand they
+grimace and get uncomfortable like you told them you enjoy thrash metal.</p>
+</blockquote>
+<p>But, according to expert educators (Albert Y. Kim and Chester Ismay, to be specific), there’s still a lot of value in taking ye olde approach to things.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+{{% tweet "907272065811714048" %}}
+<div id="comparerecommend-packages" class="section level3">
+<h3>📦 Compare/recommend packages</h3>
+<p>First off, I want to acknowledge that there have been some great algorithmic/technical approaches to this, and there are projects under way (🐬 give <a href="https://github.com/ropenscilabs/flipper"><code>flipper</code></a> a look when you have a chance).<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> In fact, I recommend you make use of these approaches should you give it a go (detailed nicely in <a href="https://ropensci.org/blog/2017/06/27/packagemetrics/"><em>packagemetrics - Helping you choose a package since runconf17</em></a>) — but give it that certain human <em>je ne sais quoi</em>. 💅</p>
+<p>This doesn’t have to be exhaustive! I really enjoyed two posts by Adam Medcalf, <a href="https://dabblingwithdata.wordpress.com/2018/01/02/my-favourite-r-package-for-summarising-data/">My favourite R package for: summarising data</a> and <a href="https://dabblingwithdata.wordpress.com/2018/02/26/r-packages-for-summarising-data-part-2/">R packages for summarising data – part 2</a>.</p>
+{{% tweet "950453570901565441" %}}
+{{% tweet "971385513465794562" %}}
+<p>This can also be great info to add to a package README or vignette. For example, <a href="https://twitter.com/JennyBryan">Jenny Bryan</a> (readxl’s maintainer, and all-around awesome human) discusses similar packages in the <a href="https://github.com/tidyverse/readxl">readxl README</a>. This is a win-win, since she’ll point users who file issues to a <em>different</em> Excel-related package when it’s appropriate — as is often the case when it comes to <a href="https://github.com/nacnudus/tidyxl">tidyxl</a>’s specialty of handling awkward, non-tabular Excel files.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
+<p><img src="https://i.imgur.com/PD0Q8GK.png" /></p>
+<p>There’s no need to leave this up to the maintainers, though. If you go through a few packages while trying to accomplish a task, <em>you</em> are in a great position to describe what it was about them that led to your choice!</p>
+</div>
+<div id="round-up-related-resources" class="section level3">
+<h3>🐚 Round-up related resources</h3>
+<p>I’ve done this a few times <a href="https://maraaverick.rbind.io/tags/roundups/">on my blog</a>, mainly with posts featuring a given package, but there are a lot of different angles one could take here. At the recent rOpenSci unconf, one group made a package (<a href="https://github.com/ropenscilabs/mchtoolbox">mchtoolbox</a>) related to maternal and child health outcomes. Afterward, they learned about some existing, related packages out there they hadn’t known about. IMHO, this is a good thing — in fact, it was a conversation with <a href="https://twitter.com/mwgerber">Monica Gerber</a> that led me to write this post.</p>
+<p>You might think of this as making a sort of micro <a href="https://cran.r-project.org/web/views/">CRAN Task View</a>. While it might be obvious to you that <em>X</em> package can be used for <em>Y</em> task, it can be difficult to navigate the 12,000+ packages on CRAN (to say nothing of the others on Bioconductor, GitHub and elsewhere).<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
+</div>
+<div id="bring-a-dataset-to-life" class="section level3">
+<h3>👼 Bring a dataset to life</h3>
+<p>🌼 How many times have you used the <code>iris</code> dataset?</p>
+{{% tweet "999579440953937920" %}}
+<p>🚗 What about <code>mtcars</code>?</p>
+{{% tweet "1001620339766460423" %}}
+<p>I can’t speak for <a href="https://twitter.com/_abichat">Antoine Bichat</a> and <code>iris</code>, but hunting down and sharing pics of the frequently-plotted ’74 vehicles was a pretty eye-opening experience. Among other things, thanks to the keen eye of <a href="https://twitter.com/nateaff/status/1001635351868260352">Nathanael Aff</a> we found out that the Mazda RX4 and RX4 Wagons have <strong><em>rotary engines</em></strong>. Even if you allow for the cylinder-to-rotor conversion (which is a bit of a stretch), it’s like comparing apples to oranges (or doritos to a water pump).</p>
+{{% youtube "4x04M8YwOBw" %}}
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>👀 you should read the whole piece, <a href="https://towardsdatascience.com/visualizing-archer-bcb80e319625">Visualizing Archer: Data visualization to further your enjoyment of narrative</a>, because it’s great…and I’m totally not biased at all.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>Check out the slides from Albert Kim’s talk from Data Day Texas 2018, <a href="http://rudeboybert.rbind.io/talk/2018-01-27_Data_Day_Texas.pdf">“Something old, something new, something borrowed, something blue Ways to teach data science (and learn it too!)”</a>.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p><a href="https://ropensci.org/blog/2017/06/27/packagemetrics/">packagemetrics</a> and its related <a href="https://github.com/ropensci/unconf17/issues/78">issues</a> from the <a href="http://unconf17.ropensci.org/">rOpenSci 2017 unconf</a> in will give you a better sense of this problem than I could ever hope to!<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>These include: <a href="https://github.com/awalker89/openxlsx">openxlsx</a>, <a href="https://CRAN.R-project.org/package=writexla">writexl</a>, the C-library <a href="https://github.com/jmcnamara/libxlsxwriter">libxlsxwriter</a>, and <a href="https://cran.r-project.org/package=tidyxl">tidyxl</a>.<a href="#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>In fact, there was a whole session about this at useR! 2017, which you can learn more about from Julia Silge’s posts, <a href="https://juliasilge.com/blog/package-search/">“How do you discover R packages?”</a>, and <a href="https://juliasilge.com/blog/package-guidance/">“Seeking guidance in choosing and evaluating R packages”</a>.<a href="#fnref5" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
