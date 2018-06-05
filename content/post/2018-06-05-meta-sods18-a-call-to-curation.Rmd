@@ -2,6 +2,7 @@
 title: 'Hand-crafted curation: meta-SoDS18'
 author: Mara Averick
 date: '2018-06-05'
+draft: TRUE
 slug: meta-sods18-a-call-to-curation
 categories: []
 tags:
