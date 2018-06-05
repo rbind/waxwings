@@ -1,31 +1,38 @@
 ---
-title: 'Hand-crafted curation: meta-SoDS18'
+title: 'Hand-crafted curation: meta-#SoDS18'
 author: Mara Averick
 date: '2018-06-05'
-draft: TRUE
 slug: meta-sods18-a-call-to-curation
 categories: []
 tags:
   - sci-comm
   - resources
   - R
-banner: ''
-description: 'Looking for a fun mini project? Be the best cyborg you can be, and do a little something by hand `r emo::ji("hand")``r emo::ji("robot")`!'
-images: []
+banner: 'banners/charlie_carol_iasip.gif'
+description: 'Looking for a fun mini project? Be the best cyborg you can be, and do a little something by hand to make R-life better. `r emo::ji("hand")``r emo::ji("robot")`!'
+images: ['banners/charlie_carol_iasip.gif']
 ---
 
-`r emo::ji("sunglasses")` Summer of Data Science ([`#SoDS18`](https://twitter.com/hashtag/SoDS18?src=hash)) is upon us, and (thanks to Renée (aka [\@BecomingDataSci](https://twitter.com/becomingdatasci))) there is already some [great guidance](https://www.becomingadatascientist.com/2018/05/28/summer-of-data-science-2018-sods18-launch-day/) out there. I'm a big fan of “mini” projects — and, unlike Highlander, I'm pretty sure _There can only be one!_ isn't the name of the `SoDS` game. 
+`r emo::ji("sunglasses")` Summer of Data Science ([`#SoDS18`](https://twitter.com/hashtag/SoDS18?src=hash)) 
+is upon us, and (thanks to Renée (aka 
+[\@BecomingDataSci](https://twitter.com/becomingdatasci))) there is already
+some [great guidance](https://www.becomingadatascientist.com/2018/05/28/summer-of-data-science-2018-sods18-launch-day/) out there. I'm a big fan of “mini”
+projects — and, unlike Highlander, I'm pretty sure _there can only be one_
+isn't the name of the `SoDS` game.
 
-So, I wanted to share some ideas I have for potential micro-projects…
+So, I wanted to share some ideas I have for potential micro-projects...
 
 ## `r emo::ji("hand")` do something by hand
 
-I know, I know — this borders on heresy. As my [Archer visualization](http://archervisualization.herokuapp.com/) partner in crime, [Elijah Meeks](https://twitter.com/Elijah_Meeks), put it:[^1]
+I know, I know — this borders on heresy. As my [Archer visualization](http://archervisualization.herokuapp.com/) 
+partner-in-crime, [Elijah Meeks](https://twitter.com/Elijah_Meeks), put it:[^1]
 
 > Whenever you tell someone you painstakingly annotated something by hand they
 > grimace and get uncomfortable like you told them you enjoy thrash metal.
 
-But, according to expert educators (Albert Y. Kim and Chester Ismay, to be specific), there's still a lot of value in taking ye olde approach to things.[^2]
+But, according to expert educators (Albert Y. Kim and Chester Ismay, to be
+specific), there's still a lot of value in taking ye olde approach to things.
+[^2]
 
 ```{r, echo = FALSE}
 blogdown::shortcode("tweet", "907272065811714048")
@@ -33,9 +40,17 @@ blogdown::shortcode("tweet", "907272065811714048")
 
 ### `r emo::ji("package")` Compare/recommend packages
 
-First off, I want to acknowledge that there have been some great algorithmic/technical approaches to this, and there are projects under way (`r emo::ji("dolphin")` give [`flipper`](https://github.com/ropenscilabs/flipper) a look when you have a chance).[^3] In fact, I recommend you make use of these approaches should you give it a go (detailed nicely in [_packagemetrics - Helping you choose a package since runconf17_](https://ropensci.org/blog/2017/06/27/packagemetrics/)) — but give it that certain human _je ne sais quoi_. `r emo::ji("nail")`
+First off, I want to acknowledge that there have been some great
+algorithmic/technical approaches to this, and there are projects under way
+(`r emo::ji("dolphin")` give [`flipper`](https://github.com/ropenscilabs/flipper) 
+a look when you have a chance).[^3] In fact, I recommend you make use of these 
+approaches should you give it a go (detailed nicely in [_packagemetrics
+- Helping you choose a package since runconf17_](https://ropensci.org/blog/2017/06/27/packagemetrics/)) 
+— but give it that certain human _je ne sais quoi_. `r emo::ji("nail")`
 
-This doesn't have to be exhaustive! I really enjoyed two posts by Adam Medcalf, [My favourite R package for: summarising data](https://dabblingwithdata.wordpress.com/2018/01/02/my-favourite-r-package-for-summarising-data/) and [R packages for summarising data – part 2](https://dabblingwithdata.wordpress.com/2018/02/26/r-packages-for-summarising-data-part-2/).
+This doesn't have to be exhaustive! I really enjoyed two posts by Adam
+Medcalf, ["My favourite R package for: summarising data"](https://dabblingwithdata.wordpress.com/2018/01/02/my-favourite-r-package-for-summarising-data/) 
+and ["R packages for summarising data – part 2"](https://dabblingwithdata.wordpress.com/2018/02/26/r-packages-for-summarising-data-part-2/).
 
 ```{r, echo = FALSE}
 blogdown::shortcode("tweet", "950453570901565441")
@@ -45,17 +60,43 @@ blogdown::shortcode("tweet", "950453570901565441")
 blogdown::shortcode("tweet", "971385513465794562")
 ```
 
-This can also be great info to add to a package README or vignette. For example, [Jenny Bryan](https://twitter.com/JennyBryan) (readxl's maintainer, and all-around awesome human) discusses similar packages in the [readxl README](https://github.com/tidyverse/readxl). This is a win-win, since she'll point users who file issues to a _different_ Excel-related package when it's appropriate — as is often the case when it comes to [tidyxl](https://github.com/nacnudus/tidyxl)'s specialty of handling awkward, non-tabular Excel files.[^readxl]
+This can also be great info to add to a package README or vignette. For example,
+[Jenny Bryan](https://twitter.com/JennyBryan) (readxl's maintainer, and all-
+around awesome human) discusses similar packages in the [readxl README](https://github.com/tidyverse/readxl). 
+This is a win-win, since she'll point users who file issues to a _different_ 
+Excel-related package when it's appropriate — as is often the case when it comes to [tidyxl](https://github.com/nacnudus/tidyxl)'s specialty of handling awkward, 
+non-tabular Excel files.[^readxl]
 
 ![](https://i.imgur.com/PD0Q8GK.png)
 
-There's no need to leave this up to the maintainers, though. If you go through a few packages while trying to accomplish a task, _you_ are in a great position to describe what it was about them that led to your choice!
+There's no need to leave this up to the maintainers, though. If you go through a
+few packages while trying to accomplish a task, _you_ are in a great position to
+describe what it was about them that led to your choice!
+
+Recommending packages can also be of great help to others. Check out 
+[Sharon Machlis'](https://twitter.com/sharon000) posts for some inspiration in 
+that department.
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1002622318923874309")
+```
 
 ### `r emo::ji("spiral")` Round-up related resources
 
-I've done this a few times [on my blog](https://maraaverick.rbind.io/tags/roundups/), mainly with posts featuring a given package, but there are a lot of different angles one could take here. At the recent rOpenSci unconf, one group made a package ([mchtoolbox](https://github.com/ropenscilabs/mchtoolbox)) related to maternal and child health outcomes. Afterward, they learned about some existing, related packages out there they hadn't known about. IMHO, this is a good thing — in fact, it was a conversation with [Monica Gerber](https://twitter.com/mwgerber) that led me to write this post.
+I've done this a few times [on my blog](https://maraaverick.rbind.io/tags/roundups/), 
+mainly with posts featuring a given package, but there are a lot of different 
+angles one could take here. At the recent rOpenSci unconf, one group made a 
+package ([mchtoolbox](https://github.com/ropenscilabs/mchtoolbox)) related to
+maternal and child health outcomes. Afterwards, they learned about some 
+existing, related packages out there they hadn't known about. IMHO, this is a 
+good thing — in fact, it was a conversation with 
+[Monica Gerber](https://twitter.com/mwgerber) that led me to write this post.
 
-You might think of this as making a sort of micro [CRAN Task View](https://cran.r-project.org/web/views/). While it might be obvious to you that _X_ package can be used for _Y_ task, it can be difficult to navigate the 12,000+ packages on CRAN (to say nothing of the others on Bioconductor, GitHub and elsewhere).[^4]
+You might think of this as making a sort of micro 
+[CRAN Task View](https://cran.r-project.org/web/views/). While it might be
+obvious to you that _X_ package can be used for _Y_ task, it can be difficult
+to navigate the 12,000+ packages on CRAN (to say nothing of the others on
+Bioconductor, GitHub and elsewhere).[^4]
 
 ### `r emo::ji("angel")` Bring a dataset to life
 
@@ -71,12 +112,22 @@ blogdown::shortcode("tweet", "999579440953937920")
 blogdown::shortcode("tweet", "1001620339766460423")
 ```
 
-I can't speak for [Antoine Bichat](https://twitter.com/_abichat) and `iris`, but hunting down and sharing pics of the frequently-plotted ’74 vehicles was a pretty eye-opening experience. Among other things, thanks to the keen eye of [Nathanael Aff](https://twitter.com/nateaff/status/1001635351868260352) we found out that the Mazda RX4 and RX4 Wagons have **_rotary engines_**. Even if you allow for the cylinder-to-rotor conversion (which is a bit of a stretch), it's like comparing apples to oranges (or doritos to a water pump).
+I can't speak for [Antoine Bichat](https://twitter.com/_abichat)'s experience
+with `iris`, but hunting down and sharing pics of the frequently-plotted
+’74 vehicles was a pretty eye-opening experience. Among other things, thanks
+to the keen eye of [Nathanael Aff](https://twitter.com/nateaff/status/1001635351868260352) 
+we found out that the Mazda RX4 and RX4 Wagons have **_rotary engines_**. Even 
+if you allow for the cylinder-to-rotor conversion (which is a bit of a stretch), 
+it's like comparing apples to oranges (or doritos to a water pump).
 
 ```{r echo = FALSE}
 blogdown::shortcode("youtube", "4x04M8YwOBw")
 ```
 
+## `r emo::ji("singer")` And more...
+
+Let the spirit move you! Share your ideas with others (including me, naturally), 
+and make it an `#SoDS18` to remember.
 
 [^1]: `r emo::ji("eyes")` you should read the whole piece, [Visualizing Archer: Data visualization to further your enjoyment of narrative](https://towardsdatascience.com/visualizing-archer-bcb80e319625), because it's great...and I'm totally not biased at all.
 
