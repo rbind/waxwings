@@ -22,7 +22,7 @@ isn't the name of the `SoDS` game.
 
 So, I wanted to share some ideas I have for potential micro-projects...
 
-## `r emo::ji("hand")` do something by hand
+## `r emo::ji_glue(":raised_hands:")` do something by hand
 
 I know, I know — this borders on heresy. As my [Archer visualization](http://archervisualization.herokuapp.com/) 
 partner-in-crime, [Elijah Meeks](https://twitter.com/Elijah_Meeks), put it:[^1]
@@ -81,7 +81,7 @@ that department.
 blogdown::shortcode("tweet", "1002622318923874309")
 ```
 
-### `r emo::ji("spiral")` Round-up related resources
+### `r emo::ji("cyclone")` Round-up related resources
 
 I've done this a few times [on my blog](https://maraaverick.rbind.io/tags/roundups/), 
 mainly with posts featuring a given package, but there are a lot of different 
