@@ -1,5 +1,21 @@
 body {
   width: 100%;
+  /* Mara mod - text settings for everything */
+text-rendering: optimizeLegibility;
+-moz-font-feature-settings: 'kern=1';
+-moz-font-feature-settings: 'kern' 1;
+-webkit-font-feature-settings: 'kern' 1;
+-o-font-feature-settings: 'kern' 1;
+-ms-font-feature-settings: 'kern' 1;
+font-feature-settings: 'kern' 1;
+
+text-rendering: optimizeLegibility;
+-moz-font-feature-settings: 'liga=1';
+-moz-font-feature-settings: 'liga' 1;
+-webkit-font-feature-settings: 'liga' 1;
+-o-font-feature-settings: 'liga' 1;
+-ms-font-feature-settings: 'liga' 1;
+font-feature-settings: 'liga' 1;
 }
 body:before,
 body:after {
@@ -120,7 +136,7 @@ body {
   background: #f5f8f9;
   -webkit-text-size-adjust: 100%;
   /* Mara mod */
-  font-family: "concourse-t4";
+  font-family: "concourse-t3";
   font-size: 1em;
 }
 a {
@@ -367,6 +383,8 @@ a code {
 .header-inner #logo,
 #main-nav {
   float: left;
+  /* Mara mod */
+  font-family: "concourse-t4";
 }
 #sub-nav,
 #search-form-wrap {
@@ -384,10 +402,13 @@ a code {
   display: inline-block;
 }
 .header-inner #logo .site-title {
-  font-size: 16px;
   display: inline-block;
   vertical-align: top;
-  font-weight: 600;
+  /* Mara mod - title text */
+  font-family: "concourse-t4";
+  font-size: 1.2em;
+
+  font-weight: bolder;
 }
 #header-title {
   text-align: center;
@@ -826,6 +847,8 @@ a code {
   color: #565a5f;
   text-decoration: none;
   line-height: 1.3em;
+  /* Mara mod */
+  font-family: "concourse-t4";
 }
 a.article-title:visited {
   color: #565a5f;
@@ -989,6 +1012,8 @@ a.article-title:hover {
 .article-entry .caption {
   color: #999;
   display: block;
+  /* Mara mod */
+  font-family: "concourse-t4";
   font-size: 0.9em;
   margin-top: 0.5em;
   position: relative;
