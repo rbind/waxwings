@@ -53,15 +53,15 @@ Because the example is suitably minimal, you don't _need_ to run the code to see
 
 If, like me, you're lazy _and_ run a lot of reprexes, you might want to consider making your life easier by using a keyboard shortcut for your reprexing needs. The shortcut can be anything you desire, I'm just demonstrating with the one I happen to use.
 
-![](https://i.imgur.com/OjzLPtE.gif)
+![Generate reprex of selection using `Ctrl` + `R` + `P`](https://i.imgur.com/OjzLPtE.gif)
 
 Adding a shortcut of your own is easy as can be. First, you'll need to navigate to `Modify Keyboard Shortcuts...` in the RStudio IDE by way of the `Tools` menu.
 
-![](https://i.imgur.com/qhpEmxO.png)
+![RStudio Tools >> Modify Keyboard Shortcuts...](https://i.imgur.com/qhpEmxO.png)
 
 Once you're in the `Keyboard Shortcuts` interface, find the reprex add-in names. (You can do this by searching for "reprex." `r emo::ji("magnifying")`) To add a shortcut, just click in the **Shortcuts** column of your chosen command (in this example, `reprex selection`) and start typing, click **Apply**, and you're good to go. 
 
-![](https://i.imgur.com/CxLKawd.gif)
+![Add keyboard shortcut for "Reprex selection"](https://i.imgur.com/CxLKawd.gif)
 
 ## Further resources
 
