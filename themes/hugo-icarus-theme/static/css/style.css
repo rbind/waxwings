@@ -118,10 +118,10 @@ body,
 body {
   color: #565a5f;
   background: #f5f8f9;
-  font: 14px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
   /* Mara mod */
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "concourse-t4";
+  font-size: 1em;
 }
 a {
   color: #38b7ea;
@@ -653,6 +653,7 @@ a code {
 #profile .inner {
   margin-top: 40px;
   background: #fff;
+  font-family: "concourse-t3";
 }
 #profile .inner .base-info #avatar {
   display: block;
