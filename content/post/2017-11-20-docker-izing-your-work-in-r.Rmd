@@ -89,6 +89,12 @@ blogdown::shortcode("tweet", "935264570901442560")
 blogdown::shortcode("tweet", "961074296515899393")
 ```
 
+### [Dockerise and deploy your own R Archive Repo](https://rtask.thinkr.fr/blog/dockerise-and-deploy-your-own-r-archive-repo/) by Colin Fay
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1004908127521828864")
+```
+
 ## Fin `r emo::ji("tada")`
 
 Additions? Questions? Comments? Snide remarks? Feel free to tweet me [\@dataandme](https://twitter.com/dataandme) `r emo::ji("bird")`, and/or comment below!

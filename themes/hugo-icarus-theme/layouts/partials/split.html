@@ -1,0 +1,7 @@
+{{ $cols := split .RawContent "||" }}
+
+{{ range $cols }}
+   <div class="content-column">
+   {{ . | markdownify }}
+   </div>
+{{ end }}

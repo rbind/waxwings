@@ -1,0 +1,90 @@
+---
+title: 'reprex-cellence `r emo::ji("crown")`'
+author: Mara Averick
+date: '2018-06-24'
+slug: reprexcellence
+categories: []
+tags:
+  - R
+  - reprex
+  - tidyverse
+banner: "banners/reprex_ggplot2_descent_height.gif"
+description: 'Celebrating the release of reprex 0.2.0 on CRAN by reviewing the keys to reprexcellence. `r emo::ji("key")`'
+images: ["banners/reprex_ggplot2_descent_height.gif"]
+---
+
+In honour of the triumphant return of [reprex](https://reprex.tidyverse.org/) to CRAN, let's revisit what I refer to as [Jenny Bryan](https://twitter.com/jennybryan)'s keys to **reprex-cellence**.[^notjenny] The three keys are as follows:
+
+ 1. code that **actually runs**  
+ 2. code that **I don't have to run**
+ 3. code that **can be easily run**[^jenny]
+ 
+## Our example
+
+True to the _ésprit de reprex_, let's look at a real world example to unpack why these attributes are so useful. The code shown comes from an issue filed by [Claus Wilke](https://twitter.com/ClausWilke/) in the ggplot2 repo, [Descent heights still not right](https://github.com/tidyverse/ggplot2/issues/2687). 
+
+To be clear, "code that actually runs" does not mean that your code needs to be error-free. In fact, a reprex is a great way to show exactly what's leading to an error. It just so happens that, in this particular case, the "error" is in what's _produced_ by the code.
+
+
+Code that actually runs, and that can be easily run is, in essence, *self-contained* and *minimal*. Self-contained means that everything we need (packages, data) is inside of the reprex, and you really can't get much more minimal than a ggplot2 chart that plots but a single point.[^dosdonts] Since the focus of the issue is descent height for the title text, that's the only aspect that changes between the two charts (_13/10 minimal af_).
+
+
+```{r}
+library(ggplot2)
+
+df <- data.frame(x = 1)
+```
+
+```{r text10, fig.retina=2}
+ggplot(df, aes(x, x)) + geom_point() +
+  ggtitle("gjpjQ") +
+  theme(plot.title = element_text(size = 10))
+```
+
+```{r text100, fig.retina=2}
+ggplot(df, aes(x, x)) + geom_point() +
+  ggtitle("gjpjQ") +
+  theme(plot.title = element_text(size = 100))
+```
+
+Because the example is suitably minimal, you don't _need_ to run the code to see the problem.
+
+## Mouse-free reprexing `r emo::ji("mouse")`
+
+If, like me, you're lazy _and_ run a lot of reprexes, you might want to consider making your life easier by using a keyboard shortcut for your reprexing needs. The shortcut can be anything you desire, I'm just demonstrating with the one I happen to use.
+
+![Generate reprex of selection using `Ctrl` + `R` + `P`](https://i.imgur.com/OjzLPtE.gif)
+
+Adding a shortcut of your own is easy as can be. First, you'll need to navigate to `Modify Keyboard Shortcuts...` in the RStudio IDE by way of the `Tools` menu.
+
+![RStudio Tools >> Modify Keyboard Shortcuts...](https://i.imgur.com/qhpEmxO.png)
+
+Once you're in the `Keyboard Shortcuts` interface, find the reprex add-in names. (You can do this by searching for "reprex." `r emo::ji("magnifying")`) To add a shortcut, just click in the **Shortcuts** column of your chosen command (in this example, `reprex selection`) and start typing, click **Apply**, and you're good to go. 
+
+![Add keyboard shortcut for "Reprex selection"](https://i.imgur.com/CxLKawd.gif)
+
+## Further resources
+
+There are lots of other excellent resources out there on how to up your reprex (or reproducible-example/troubleshooting) game:
+
+ * [reprex](http://reprex.tidyverse.org/) `r emo::ji("package")`  
+ * [reprex GitHub](https://github.com/tidyverse/reprex)  
+ * [The Minimal Reproducible Example   Paradox](https://yihui.name/en/2017/09/the-minimal-reprex-paradox/) by Yihui Xie  
+ * [tidyverse help: reprex](https://www.tidyverse.org/help/#reprex)  
+ * [rOpenSci community call](https://vimeo.com/208749032)  
+ * [Magic Reprex](http://www.njtierney.com/post/2017/01/11/magic-reprex/) by Nick Tierney  
+ * [So you’ve been asked to make a reprex](https://www.jessemaegan.com/post/so-you-ve-been-asked-to-make-a-reprex.html) by Jesse Maegan  
+ * [StackOverflow: How to make a great R reproducible example? aka MCVE](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example-aka-mcve-minimal-complete-and-ver)  
+ * [Three tips for posting good questions to R-help and Stack Overflow](https://www.r-bloggers.com/three-tips-for-posting-good-questions-to-r-help-and-stack-overflow/)  
+ * [The R Inferno, Circle 9: Unhelpfully Seeking Help](http://www.burns-stat.com/pages/Tutor/R_inferno.pdf)
+
+### [reprex: the package, the point](https://speakerdeck.com/jennybc/reprex-help-me-help-you) by Jenny Bryan
+
+<script async class="speakerdeck-embed" data-id="906ef0adea0a411f81412ffe9cc53713" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+[^notjenny]: I take full responsibility for this disaster of a portmanteau, but the actual important information is all Jenny's. 
+
+[^jenny]: Jenny Bryan, 2017. "reprex: the package, the point." <https://speakerdeck.com/jennybc/reprex-help-me-help-you>
+
+[^dosdonts]: As Jenny notes in the [Reprex do's and don'ts](https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html), _"Use the smallest, simplest, most built-in data possible. Think: `iris` or `mtcars`. Bore me."_

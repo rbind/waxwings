@@ -1,0 +1,16 @@
+
+/* Hack
+ * source: https://github.com/liwenyip/hugo-easy-gallery/issues/23
+ *
+ * This is a hack:
+ *
+ * hugo-easy-gallery puts a "caption" into the image.
+ * my hugo theme (icarus) formats a "class = 'caption'" for images.
+ * But as the hugo easy gallery plugin renders its own caption with the
+ * <figcaption> tag, we don't need to see that hugo caption.
+ *
+ * So we hide it.
+ */
+.img .caption {
+  display: none
+}

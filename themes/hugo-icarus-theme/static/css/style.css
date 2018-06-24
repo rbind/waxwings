@@ -993,6 +993,13 @@ a.article-title:hover {
   position: relative;
   text-align: center;
 }
+/* Mara mod hide image caption */
+.img .caption {
+  display: none
+}
+.figure span.caption {
+    display: none;
+}
 .article-entry .video-container {
   position: relative;
   padding-top: 56.25%;
