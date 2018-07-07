@@ -95,6 +95,12 @@ blogdown::shortcode("tweet", "961074296515899393")
 blogdown::shortcode("tweet", "1004908127521828864")
 ```
 
+## [Shipping Data Science Products with R and Docker](https://itsalocke.com/talks/post/shipping-r-with-docker/) by Steph Locke
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1014846062568312835")
+```
+
 ## Fin `r emo::ji("tada")`
 
 Additions? Questions? Comments? Snide remarks? Feel free to tweet me [\@dataandme](https://twitter.com/dataandme) `r emo::ji("bird")`, and/or comment below!
