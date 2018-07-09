@@ -1508,6 +1508,8 @@ ol.toc {
   font-size: 1.2em;
   line-height: 1.2em;
   margin-bottom: 12px;
+  /* Mara mod */
+  font-weight: bold;
 }
 @media screen and (max-width: 559px) {
   .archive-article-title {
