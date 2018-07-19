@@ -18,7 +18,7 @@ description: 'A roundup of helpful guides to containerizing packages, docs, proj
 library(emo)
 ```
 
-_Updated: 2018-03-36_
+_Updated: 2018-07-15_
 
 I am decidedly a novice when it comes to any and all things Docker (which, 
 incidentally, is why I've been reading these posts). But, since it's helpful for 
@@ -34,6 +34,11 @@ rOpenSci unconf in 2016.
 blogdown::shortcode("tweet", "930633713876127744")
 ```
 
+### [Docker for the UseR](https://github.com/noamross/nyhackr-docker-talk) by Noam Ross
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1017077037146796032")
+```
 
 ### [Enough Docker to be Dangerous](http://seankross.com/2017/09/17/Enough-Docker-to-be-Dangerous.html) by Sean Kross
 
@@ -95,7 +100,7 @@ blogdown::shortcode("tweet", "961074296515899393")
 blogdown::shortcode("tweet", "1004908127521828864")
 ```
 
-## [Shipping Data Science Products with R and Docker](https://itsalocke.com/talks/post/shipping-r-with-docker/) by Steph Locke
+### [Shipping Data Science Products with R and Docker](https://itsalocke.com/talks/post/shipping-r-with-docker/) by Steph Locke
 
 ```{r, echo = FALSE}
 blogdown::shortcode("tweet", "1014846062568312835")

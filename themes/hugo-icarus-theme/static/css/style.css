@@ -911,6 +911,8 @@ a.article-title:hover {
 }
 .article-entry p,
 .article-entry table {
+  /* Mara mod increase font size */
+  font-size: 1.1em;
   line-height: 1.6em;
   margin: 1.6em 0;
 }
@@ -1018,6 +1020,10 @@ a.article-title:hover {
   margin-top: 0.5em;
   position: relative;
   text-align: center;
+}
+/* Mara mod decrease footnote font */
+.footnotes ol {
+    font-size: 1em;
 }
 /* Mara mod hide image caption */
 .img .caption {
@@ -1502,6 +1508,8 @@ ol.toc {
   font-size: 1.2em;
   line-height: 1.2em;
   margin-bottom: 12px;
+  /* Mara mod */
+  font-weight: bold;
 }
 @media screen and (max-width: 559px) {
   .archive-article-title {
@@ -1558,6 +1566,7 @@ ol.toc {
 .layout-wrap-inner.tag-cloud a {
   margin-right: 8px;
 }
+
 .layout-wrap-inner.tag-cloud a:before {
   content: '#';
 }
