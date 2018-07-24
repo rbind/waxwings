@@ -12,7 +12,7 @@ images: ['banners/archer_intro_colours.png']
 ---
 
 ```{r setup, include = FALSE}
-knitr::opts_chunk$set(collapse = TRUE, comment = "#>", fig.retina = 2)
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", fig.retina = 2, cache.lazy = TRUE)
 library(tidyverse)
 ```
 
