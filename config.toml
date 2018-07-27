@@ -1,6 +1,6 @@
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
-baseurl = "https://maraaverick.rbind.io/"
+baseurl = "https://equi-b.netlify.com/"
 relativeurls = true
 languageCode = "en-us"
 title = "Mara Averick"
