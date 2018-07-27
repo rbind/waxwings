@@ -136,7 +136,7 @@ body {
   background: #f5f8f9;
   -webkit-text-size-adjust: 100%;
   /* Mara mod */
-  font-family: "concourse-t3";
+  font-family: "equity-text";
   font-size: 1em;
 }
 a {
@@ -246,6 +246,8 @@ a code {
   line-height: 1em;
   text-decoration: none;
   text-transform: uppercase;
+  /* Mara mod */
+  font-family: "concourse-t3";
 }
 #header,
 #profile .inner,
@@ -261,27 +263,39 @@ a code {
 .article-entry h1,
 .widget h1 {
   font-size: 2em;
+  /* Mara mod */
+  font-family: "concourse-t3";
 }
 .article-entry h2,
 .widget h2 {
   font-size: 1.5em;
+  /* Mara mod */
+  font-family: "concourse-t3";
 }
 .article-entry h3,
 .widget h3 {
   font-size: 1.3em;
+  /* Mara mod */
+  font-family: "concourse-t3";
 }
 .article-entry h4,
 .widget h4 {
   font-size: 1.2em;
+  /* Mara mod */
+  font-family: "concourse-t3";
 }
 .article-entry h5,
 .widget h5 {
   font-size: 1em;
+  /* Mara mod */
+  font-family: "concourse-t3";
 }
 .article-entry h6,
 .widget h6 {
   font-size: 1em;
   color: #999;
+  /* Mara mod */
+  font-family: "concourse-t3";
 }
 .article-entry hr,
 .widget hr {
@@ -1058,6 +1072,8 @@ a.article-title:hover {
   color: #999;
   text-shadow: 0 1px #fff;
   text-decoration: none;
+  /* Mara mod */
+  font-family: "concourse-t3";
 }
 .article-more-link a:hover {
   background: #38b7ea;
@@ -1071,6 +1087,8 @@ a.article-title:hover {
   border-top: 1px solid #eceff2;
   padding-top: 1.6em;
   margin: 0 20px 20px;
+  /* Mara mod */
+  font-family: "concourse-t3";
 }
 .article-footer:before,
 .article-footer:after {
@@ -1174,6 +1192,8 @@ a.article-title:hover {
   font-weight: bold;
   color: #565a5f;
   text-transform: uppercase;
+  /* Mara mod */
+  font-family: "concourse-t3";
 }
 #article-nav-newer .article-nav-caption {
   margin-right: -2px;
@@ -1183,6 +1203,8 @@ a.article-title:hover {
   margin-top: 0.5em;
   color: #565a5f;
   line-height: 1.6em;
+  /* Mara mod */
+  font-family: "concourse-t3";
 }
 .article-share-box {
   position: absolute;
