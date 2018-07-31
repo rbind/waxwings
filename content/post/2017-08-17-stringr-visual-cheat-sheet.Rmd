@@ -15,16 +15,16 @@ So, kinda the whole point of this _“making-a-blog”_ endeavor (aside from get
 
 ## `stringr` «aide-mémoire»
 
-This visual guide (or cheat sheet, if you prefer) was made by [**Lise Vaudor**](http://perso.ens-lyon.fr/lise.vaudor/) ([\@LVaudor](https://twitter.com/lvaudor) on twitter), and originally shared in her blog post, [_Manipuler des strings avec R_](http://perso.ens-lyon.fr/lise.vaudor/manipuler-des-strings-avec-r/). 
+This visual guide (or cheat sheet, if you prefer) was made by [**Lise Vaudor**](https://perso.ens-lyon.fr/lise.vaudor/) ([\@LVaudor](https://twitter.com/lvaudor) on twitter), and originally shared in her blog post, [_Manipuler des strings avec R_](https://perso.ens-lyon.fr/lise.vaudor/manipuler-des-strings-avec-r/). 
 
 In case you hadn't caught on, her blog is in French 🇫🇷, and, while Google translate does a pretty solid job of rendering it _en anglais_, someone else ([\@suman12029](https://twitter.com/suman12029)) found it to be so darn helpful that they translated it into English 🇬🇧 and posted it [here](https://github.com/sumandoc/R-programming-notes/blob/master/strings_in_R.md) on GitHub. 
 
-Regardless of language, it's a helpful intro to the [`stringr`](http://stringr.tidyverse.org/) 📦. So, go check it out!
+Regardless of language, it's a helpful intro to the [`stringr`](https://stringr.tidyverse.org/) 📦. So, go check it out!
 
 The cheat sheet itself needs no translation 🌏:
 
-![](http://i.imgur.com/GU9cmbp.png)
+![](https://i.imgur.com/GU9cmbp.png)
 
-Just for kicks, I also exported a version as a [pdf](https://www.dropbox.com/s/cyan9n1ecnvmdl1/lvaudor_stringr.pdf?dl=0), but 💯% of the credit belongs to [Lise Vaudor](http://perso.ens-lyon.fr/lise.vaudor/).
+Just for kicks, I also exported a version as a [pdf](https://www.dropbox.com/s/cyan9n1ecnvmdl1/lvaudor_stringr.pdf?dl=0), but 💯% of the credit belongs to [Lise Vaudor](https://perso.ens-lyon.fr/lise.vaudor/).
 
 **Fin**
