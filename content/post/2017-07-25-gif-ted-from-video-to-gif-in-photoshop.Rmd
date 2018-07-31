@@ -9,17 +9,17 @@ description: 'How to make Tweetable GIFs from video, using Photoshop'
 banner: 'img/giffing_import.gif'
 ---
 
-When I found out that [Amelia McNamara](https://twitter.com/AmeliaMN) and [Aran Lunzer](https://twitter.com/AranLunzer) were about to release their extremely awesome, [interactive essay on histograms](http://tinlizzie.org/histograms/), I was quick to offer my advice in my true area of expertise: making GIFs out of video for the internet. Amelia found my infinite wisdom to be helpful, and suggested that I do a blog post about it.[^1] And so, here we are...
+When I found out that [Amelia McNamara](https://twitter.com/AmeliaMN) and [Aran Lunzer](https://twitter.com/AranLunzer) were about to release their extremely awesome, [interactive essay on histograms](https://tinlizzie.org/histograms/), I was quick to offer my advice in my true area of expertise: making GIFs out of video for the internet. Amelia found my infinite wisdom to be helpful, and suggested that I do a blog post about it.[^1] And so, here we are...
 
-![](http://i.imgur.com/ED0AO7a.png)
+![](https://i.imgur.com/ED0AO7a.png)
 
-**Big picture:** I read a [cool post](http://www.seascapemodels.org/rstats/2017/07/06/r-interactive-dataviz.html) by Christopher J. Brown (aka @[bluecology](https://twitter.com/bluecology)) which featured an interactive visualization.[^4] I wanted to share this post with my very closest friends (by which I mean Twitter), and capture the gist of it visually so they'd know whether to deem it click-worthy. Thus, I giffed (_not a real world, but it totally should be_) a few seconds of me playing around with the viz as tweetable enticement.  
+**Big picture:** I read a [cool post](https://www.seascapemodels.org/rstats/2017/07/06/r-interactive-dataviz.html) by Christopher J. Brown (aka @[bluecology](https://twitter.com/bluecology)) which featured an interactive visualization.[^4] I wanted to share this post with my very closest friends (by which I mean Twitter), and capture the gist of it visually so they'd know whether to deem it click-worthy. Thus, I giffed (_not a real world, but it totally should be_) a few seconds of me playing around with the viz as tweetable enticement.  
 
-![](http://i.imgur.com/vhxwW1W.gif)
+![](https://i.imgur.com/vhxwW1W.gif)
 
 ## Step 0: Getting and/or making a video
 
-I made my giffing bones on the back of the talented folks who actually _make_ Archer[^2], so this part isn't exactly my bailiwick (usually I just have the video file).[^3] I made this screen recording with [Snagit](https://www.techsmith.com/screen-capture.html), which costs money. So you may want to look into other options. If you're on a Mac/OS X, you can use [QuickTime's built-in functionality](http://osxdaily.com/2010/11/16/screen-recorder-mac/), and I'm sure there are roughly a gillion other options out there. The point is: you need a video file.
+I made my giffing bones on the back of the talented folks who actually _make_ Archer[^2], so this part isn't exactly my bailiwick (usually I just have the video file).[^3] I made this screen recording with [Snagit](https://www.techsmith.com/screen-capture.html), which costs money. So you may want to look into other options. If you're on a Mac/OS X, you can use [QuickTime's built-in functionality](https://osxdaily.com/2010/11/16/screen-recorder-mac/), and I'm sure there are roughly a gillion other options out there. The point is: you need a video file.
 
 ## Step 1: Importing video frames to layers in Photoshop
 
@@ -27,17 +27,17 @@ I made my giffing bones on the back of the talented folks who actually _make_ Ar
 
 If it's not self-evident, the first thing you should do is open Photoshop (PS). I have CS6, but, to my knowledge, this should work with CC. Because we'll be making an animation, I suggest you use the `Motion` workspace preset, which has the `Timeline` panel down at the bottom.
 
-![](http://i.imgur.com/fjfcNs0.gif)
+![](https://i.imgur.com/fjfcNs0.gif)
 
 ### b. Import video
 
 Now that you're in Photoshop go directly to `File >> Import >> Video Frames to Layers` (this will automatically generate a new file for you, so you don't need to open or make a new file in advance).
 
-![](http://i.imgur.com/h2n6yzS.png)
+![](https://i.imgur.com/h2n6yzS.png)
 
 Once you find and select your video file, the `Import Video to Layers` dialogue box will open. Here you can select the part of the video you want to use. Even if you want the entire video, I highly recommend limiting the number of frames. If you do _not_ limit the frames, it's likely your file size will be **huge**!
 
-![](http://i.imgur.com/qyo8DQX.gif)
+![](https://i.imgur.com/qyo8DQX.gif)
 
 As you can see, with this recording I limited to every 2 frames. However, the few times I've made a screen recording with QuickTime, I've limited to every 3 or 4 frames, depending on what I'm trying to capture.
 
@@ -51,11 +51,11 @@ The first few times I made GIFs in Photoshop, I couldn't figure out why my resul
 
 Though you _can_ adjust the delay for individual frames (and I sometimes do), my default move is to select all of the frames (`Shift-Click`) and set the delay to 0.1 seconds using the triangular drop-down.
 
-![](http://i.imgur.com/UJYFPdh.png)
+![](https://i.imgur.com/UJYFPdh.png)
 
 I almost always do this first because, among other things, it will make it much easier for you to catch any renegade frames if they're not flashing by at the speed of light.
 
-![](http://i.imgur.com/DPpsWHl.gif)
+![](https://i.imgur.com/DPpsWHl.gif)
 
 ### b. Other stuff
 
@@ -65,11 +65,11 @@ Yes, this is a total cop-out, but the _"other stuff"_ totally depends on what yo
 
 I'm sure there's an excellent explanation of what exactly happens when one uses the `Optimize Animation` feature in Photoshop out there somewhere, but this isn't it. 😳
 
-![](http://i.imgur.com/ENnDtsP.png)
+![](https://i.imgur.com/ENnDtsP.png)
 
 All I know is that by selecting all the frames (which I do using the same technique used for delay), clicking on `Optimize Animation`, and hitting `OK` with all the boxes ticked, I make my GIFs smaller (which is critical if you're hoping to share them on Twitter and the like).
 
-![](http://i.imgur.com/nq7vAFv.gif)
+![](https://i.imgur.com/nq7vAFv.gif)
 
 ## Step 3: Saving
 
@@ -81,7 +81,7 @@ I'm pretty sure I don't need to explain this step. When you save, it will be a P
 
 When you hit `Save for Web` the file type will default to whatever format you used the last time you saved something for the web in PS. In my case, this was already a GIF, but, if not, you can select a format from the drop-down (see below).
 
-![](http://i.imgur.com/yj2CShH.gif)
+![](https://i.imgur.com/yj2CShH.gif)
 
 This part involves quite a bit of playing around and seeing what happens. For me, there are two important "outcomes" I'm looking at: 
 
@@ -97,7 +97,7 @@ In addition to not wanting to be a drag on the worldwide bandwidth usage, the [T
 * **Dither**: For a technical explanation, look elsewhere! My very non-technical explanation: 100% dither Archer GIFs (even if at 128, as opposed to 256 colours) can be massive files (~15MB). The dithering smooths out what almost look like contour lines of colour. When I _do_ use dither (and I do, especially when it's video footage, and I've limited the number of frames involved) I usually go for the `Diffusion` setting.
 * **Lossy**: Use this if you must. It can result in grainy-looking dots, but if you've got a long GIF with many colours, and a lot of movement, you might have to go for it.
 
-![](http://i.imgur.com/3dbLv9N.png)
+![](https://i.imgur.com/3dbLv9N.png)
 
 The beauty of using the 4-up view here is that you can literally look at the outcomes of setting adjustments side-by-side. If you want to adjust a particular frame (e.g. see what 64 colours would look like with 100% dither), just select the panel you want, and adjust accordingly.Once you've gotten a file you're happy with ready to go, just make sure you have the panel you want to save selected when you hit `Save`.
 
@@ -115,7 +115,7 @@ If I got stuff wrong (which I'm sure I did, as I do so on the regular), feel fre
 
 [^3]: I'm an R user. If this step was really part of the tutorial, I would _never_ index it starting at 0.
 
-[^4]: In the post, ["Communicating trends and detail on the same dataviz with interactive visuals in R"](http://www.seascapemodels.org/rstats/2017/07/06/r-interactive-dataviz.html), this is accomplished using R (obviously), and the [dygraphs](https://rstudio.github.io/dygraphs/) package.
+[^4]: In the post, ["Communicating trends and detail on the same dataviz with interactive visuals in R"](https://www.seascapemodels.org/rstats/2017/07/06/r-interactive-dataviz.html), this is accomplished using R (obviously), and the [dygraphs](https://rstudio.github.io/dygraphs/) package.
 
 [^5]: [ezgif.com](https://ezgif.com/) is a really nice tool that I still use sometimes when editing pre-existing GIFs, as it has a few features that either don't exist in Photoshop, or that I just haven't figured out (e.g. removing every _nth_ frame in its [Online GIF optimizer](https://ezgif.com/optimize)).
 
