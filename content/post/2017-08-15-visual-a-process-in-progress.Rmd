@@ -14,7 +14,7 @@ I've always been a fan of [_marginalia_](https://en.wikipedia.org/wiki/Marginali
 
 Such was the case the other day, when I had a question about how best to approach a problem in GitHub. (I'm not going to explain it in words, because it's hard, and I'm lazy, and that's how I ended up here in the first place!)
 
-![](http://i.imgur.com/RGvpz8i.png)
+![](https://i.imgur.com/RGvpz8i.png)
 
 Though I [tweeted](https://twitter.com/dataandme/status/896712790185881600) my question, the visual aid would have been helpful (at least to me) regardless of the 140-character limit.
 
@@ -42,13 +42,13 @@ Crop as necessary to avoid visual overload. ✂️
 
 So, this is where things get a bit free-form. Behold the collection of photo/art/note apps I have amassed on my iPad over the past 7 years!
 
-![](http://i.imgur.com/o7MI94y.jpg) 
+![](https://i.imgur.com/o7MI94y.jpg) 
 
 I'm honestly not even sure that all of these work anymore. But, through some combination of [loss aversion](https://en.wikipedia.org/wiki/Loss_aversion), and certain little things I like/dislike about each one, they continue to hang out on my iPad.
 
 Of late, I've been into [Inkflow Plus](https://itunes.apple.com/us/app/inkflow-plus-visual-notebook/id550062698?mt=8) for this part. Though, again, I'm _sure_ you can do many of the same things with other applications.
 
-![](http://i.imgur.com/3dLYRVA.png)
+![](https://i.imgur.com/3dLYRVA.png)
 
  *  It's not _not_ a collage app, doesn't restrict or dictate anything about aspect ratio, and lets you resize/move each image individually.  
  *  You can use "custom stationary," which basically means any image you want can be the background (e.g. corkboard).
@@ -62,13 +62,13 @@ As mentioned above, you can draw on photos in Inkflow Plus (something I didn't f
 
 In this case, I happened to be on my computer, so I did the zoom in Snagit. However, I usually do this in iOS Markup, which you can access by editing a photo on your iPhone or iPad.
 
-![](http://i.imgur.com/ypj2M2Q.png)
+![](https://i.imgur.com/ypj2M2Q.png)
 
 #### Step 5: 🙂😎😝
 
 Optional (and likely extraneous) is the addition of emoji. I haven't found an app that I really like for this task yet. These are the two that I hate _least_ (Photo Editor and [Insta Emoji](https://itunes.apple.com/us/app/insta-emoji-photo-editor-add-cool-emoticon-stickers/id644680748?mt=8)).[^pe]
 
-![](http://i.imgur.com/YYNdBD6.jpg)
+![](https://i.imgur.com/YYNdBD6.jpg)
 
 One of them restricts your aspect ratio, often resulting in my adding emoji upside down. The other one forces you to scroll through every possible permutation of the people emoji to get to the one you want. My most-used emoji is 📦, which is on page **51**. All of the emoji reload each time, so it's not fast, either. However, the aspect ratio thing means that, after all my hard work, I'd be cutting something out just to add a dumb smiley face 😡![^argh]
 
@@ -76,7 +76,7 @@ One of them restricts your aspect ratio, often resulting in my adding emoji upsi
 
 Ta-da! There you have it: my crazy, inefficient workflow through which I can make code changes look like they've been requested by a 5 year-old with a crayon! 🖍
 
-[^haylib]: Though I resented it at the time, it was probably a good thing that they only let you enter the [special collections library](http://library.brown.edu/hay/) with a golf-✏️ in college.
+[^haylib]: Though I resented it at the time, it was probably a good thing that they only let you enter the [special collections library](https://library.brown.edu/hay/) with a golf-✏️ in college.
 
 [^snagit]: I use [Snagit](https://www.techsmith.com/screen-capture.html) sometimes (which costs 💸), but that's mainly for bells and whistles not used in this particular example.
 
