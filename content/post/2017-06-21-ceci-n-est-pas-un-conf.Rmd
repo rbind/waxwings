@@ -13,11 +13,11 @@ menu: ''
 
 ## Meta lesson learned
 
-This is _not_ the post I originally intended to write about the [**rOpenSci Unconf**](http://unconf17.ropensci.org/) (and, I promise, this isn't just a lame attempt to take the Magritte joke a step further). Rather, what follows is wisdom gleaned both at the unconf, and in in my (failed) attempts to write the aforementioned original post capturing my unconf experience.[^1]
+This is _not_ the post I originally intended to write about the [**rOpenSci Unconf**](https://unconf17.ropensci.org/) (and, I promise, this isn't just a lame attempt to take the Magritte joke a step further). Rather, what follows is wisdom gleaned both at the unconf, and in in my (failed) attempts to write the aforementioned original post capturing my unconf experience.[^1]
 
 <!--more-->
 
-In our two days of un-conferring, there were [**20 packages**](https://ropenscilabs.github.io/runconf17-projects/) written by ~70 [participants](http://unconf17.ropensci.org/#participants).[^2] So, how is it that almost _a month later_ I've been unable to produce a summary of/reflections on what went down? Well, I have some theories, and they have to do with the nature/organization of the unconf itself (something I've come to appreciate more and more with each passing day).[^3]
+In our two days of un-conferring, there were [**20 packages**](https://ropenscilabs.github.io/runconf17-projects/) written by ~70 [participants](https://unconf17.ropensci.org/#participants).[^2] So, how is it that almost _a month later_ I've been unable to produce a summary of/reflections on what went down? Well, I have some theories, and they have to do with the nature/organization of the unconf itself (something I've come to appreciate more and more with each passing day).[^3]
 
 ### I ❤️ deadlines?
 
@@ -25,7 +25,7 @@ Far-fetched though it may seem, a temporal constraint can be a beautiful thing. 
 
 Perhaps this comes naturally to some people. Alas, I am not one of them. Even ignoring the fact that my earlier unconf post drafts _had_ a bibliography, the amount of time I spent trying to deal with the side effects of having footnotes in side-notes (see below) was ridiculous.
 
-![](http://i.imgur.com/nWWYq0l.png)
+![](https://i.imgur.com/nWWYq0l.png)
 
 Unfortunately, _“perfect is the enemy of good”_, and similar apothegms alone don't always do the trick.[^4] So, what kept me from falling down a rabbit hole of quixotic fixes? Turns out that such "sanity checks" work much better with friends. 
 
@@ -33,7 +33,7 @@ Obviously, having other, more experienced R users/programmers working on a packa
 
 Someday, I hope my reams of half-finished blog posts will find their way to the Island of Misfit Toys, but, until then I should probably work on soliciting second opinions...
 
-![](http://i.imgur.com/to9Ybos.gif)
+![](https://i.imgur.com/to9Ybos.gif)
 
 ### Constraints can be your friends. ⛓
 
@@ -50,7 +50,7 @@ Thank you to everyone who participated, with a special shout-out to [Stefanie Bu
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Having a serious imposter-syndrome flare-up... You guys know I tweet things I need to read  in order to, like, *do* data stuffs, right? <a href="https://t.co/BpvwUIb1cr">pic.twitter.com/BpvwUIb1cr</a></p>&mdash; Mara Averick (@dataandme) <a href="https://twitter.com/dataandme/status/867358206355537920">May 24, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-[^1]: Luckily, you can find thorough recaps on the [rOpenSci blog unconf](https://ropensci.org/tags/unconf/) series, and through the written recollections of other attendees, including (but not limited to) posts by: [David Smith](http://blog.revolutionanalytics.com/2017/05/runconf17.html), [Jasmine Dumas](https://jasdumas.github.io/2017-05-28-runconf17-experience/), [Karl Broman](http://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/), [Bob Rudis](https://rud.is/b/2017/05/28/l-a-unconf-idential-a-k-a-an-ropensci-runconf17-retrospective/); and a [Storify by Karthik Ram](https://storify.com/_inundata/4th-annual-ropensci-unconf).
+[^1]: Luckily, you can find thorough recaps on the [rOpenSci blog unconf](https://ropensci.org/tags/unconf/) series, and through the written recollections of other attendees, including (but not limited to) posts by: [David Smith](https://blog.revolutionanalytics.com/2017/05/runconf17.html), [Jasmine Dumas](https://jasdumas.github.io/2017-05-28-runconf17-experience/), [Karl Broman](https://kbroman.org/blog/2017/05/27/ropensci-unconf-2017/), [Bob Rudis](https://rud.is/b/2017/05/28/l-a-unconf-idential-a-k-a-an-ropensci-runconf17-retrospective/); and a [Storify by Karthik Ram](https://storify.com/_inundata/4th-annual-ropensci-unconf).
 
 [^2]: I had the excellent fortune of collaborating with [Joe Cheng](https://twitter.com/jcheng), [Robert M Flight](https://twitter.com/rmflight), and [Christopher Tull](https://twitter.com/ctullito) on [**testrmd**](https://github.com/ropenscilabs/testrmd), which you should most definitely check out.
 

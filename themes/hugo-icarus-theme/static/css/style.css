@@ -9,7 +9,6 @@ text-rendering: optimizeLegibility;
 -ms-font-feature-settings: 'kern' 1;
 font-feature-settings: 'kern' 1;
 
-text-rendering: optimizeLegibility;
 -moz-font-feature-settings: 'liga=1';
 -moz-font-feature-settings: 'liga' 1;
 -webkit-font-feature-settings: 'liga' 1;
@@ -135,6 +134,7 @@ body {
   color: #565a5f;
   background: #f5f8f9;
   -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   /* Mara mod */
   font-family: "concourse-t3";
   font-size: 1em;
@@ -230,6 +230,7 @@ a code {
   -webkit-transition: 0.2s ease;
   -moz-transition: 0.2s ease;
   -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
   transition: 0.2s ease;
 }
 .archive-article-header a:hover,
@@ -256,6 +257,7 @@ a code {
 #toTop {
   background: #fff;
   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
   box-shadow: 0 1px 2px rgba(0,0,0,0.05);
 }
 .article-entry h1,
@@ -366,6 +368,7 @@ a code {
   -webkit-transition: 0.2s ease;
   -moz-transition: 0.2s ease;
   -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
   transition: 0.2s ease;
   color: #565a5f;
 }
@@ -566,17 +569,18 @@ a code {
 .search-form-input.st-ui-search-input,
 .search-form-input.st-default-search-input {
   -webkit-appearance: textarea;
-  -webkit-appearance: textarea;
   -moz-appearance: textarea;
   appearance: textarea;
   padding: 0;
   width: 200px;
   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none;
   color: #565a5f;
   -webkit-transition: 0.2s ease;
   -moz-transition: 0.2s ease;
   -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
   transition: 0.2s ease;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -589,19 +593,19 @@ a code {
   border: 1px solid #eceff2 !important;
 }
 .search-form-input:focus,
-.search-form-input.ins-search-input:focus,
-.search-form-input.st-ui-search-input:focus,
-.search-form-input.st-default-search-input:focus {
+.search-form-input .ins-search-input:focus,
+.search-form-input .st-ui-search-input:focus,
+.search-form-input .st-default-search-input:focus {
   border-color: #38b7ea !important;
 }
 .search-form-input::-webkit-search-results-decoration,
-.search-form-input.ins-search-input::-webkit-search-results-decoration,
-.search-form-input.st-ui-search-input::-webkit-search-results-decoration,
-.search-form-input.st-default-search-input::-webkit-search-results-decoration,
+.search-form-input .ins-search-input::-webkit-search-results-decoration,
+.search-form-input .st-ui-search-input::-webkit-search-results-decoration,
+.search-form-input .st-default-search-input::-webkit-search-results-decoration,
 .search-form-input::-webkit-search-cancel-button,
-.search-form-input.ins-search-input::-webkit-search-cancel-button,
-.search-form-input.st-ui-search-input::-webkit-search-cancel-button,
-.search-form-input.st-default-search-input::-webkit-search-cancel-button {
+.search-form-input .ins-search-input::-webkit-search-cancel-button,
+.search-form-input .st-ui-search-input::-webkit-search-cancel-button,
+.search-form-input .st-default-search-input::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 #main-nav-mobile {
@@ -721,7 +725,7 @@ a code {
   background: #49c8fb;
 }
 #profile .inner .article-info {
-  padding: 0px;
+  padding: 0;
 }
 #profile .inner .article-info:before,
 #profile .inner .article-info:after {

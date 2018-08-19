@@ -18,7 +18,7 @@ description: 'A roundup of helpful guides to containerizing packages, docs, proj
 library(emo)
 ```
 
-_Updated: 2018-07-15_
+_Updated: 2018-08-19_
 
 I am decidedly a novice when it comes to any and all things Docker (which, 
 incidentally, is why I've been reading these posts). But, since it's helpful for 
@@ -55,6 +55,12 @@ blogdown::shortcode("tweet", "919548925287297024")
 > liftr aims to solve the problem of _persistent reproducible reporting_. 
 > To achieve this goal, it extends the R Markdown metadata format, 
 > and uses Docker to containerize and render R Markdown documents.
+
+You can also learn more about liftr from the slides from Nan Xiao's talk from JSM 2018! `r emo::ji("point_down")`
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1024041204940513280")
+```
 
 ### [Docker for R Package Development](http://www.jimhester.com/2017/10/13/docker/) by Jim Hester
 
