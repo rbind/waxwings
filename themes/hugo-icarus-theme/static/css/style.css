@@ -234,10 +234,10 @@ a code {
   transition: 0.2s ease;
 }
 .archive-article-header a:hover,
-.layout-wrap-inner.tag-cloud a:hover,
+.layout-wrap-inner .tag-cloud a:hover,
 .timeline-row .content h1 a:hover,
 .archive-article-header a:visited:hover,
-.layout-wrap-inner.tag-cloud a:visited:hover,
+.layout-wrap-inner .tag-cloud a:visited:hover,
 .timeline-row .content h1 a:visited:hover {
   color: #38b7ea;
 }
@@ -247,6 +247,7 @@ a code {
   line-height: 1em;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 0.9em;
 }
 #header,
 #profile .inner,
@@ -545,6 +546,7 @@ a code {
 #search-form-wrap .search-form .search-form-input::-webkit-search-results-decoration,
 #search-form-wrap .search-form .search-form-input::-webkit-search-cancel-button {
   -webkit-appearance: none;
+  -moz-appearance: none;
 }
 #search-form-wrap .search-form .search-form-submit {
   top: 50%;
@@ -565,9 +567,9 @@ a code {
   color: #777;
 }
 .search-form-input,
-.search-form-input.ins-search-input,
-.search-form-input.st-ui-search-input,
-.search-form-input.st-default-search-input {
+.search-form-input .ins-search-input,
+.search-form-input .st-ui-search-input,
+.search-form-input .st-default-search-input {
   -webkit-appearance: textarea;
   -moz-appearance: textarea;
   appearance: textarea;
@@ -607,6 +609,7 @@ a code {
 .search-form-input .st-ui-search-input::-webkit-search-cancel-button,
 .search-form-input .st-default-search-input::-webkit-search-cancel-button {
   -webkit-appearance: none;
+  -moz-appearance: none;
 }
 #main-nav-mobile {
   overflow-y: hidden;
@@ -641,6 +644,7 @@ a code {
 #main-nav-mobile .menu .search-form-input::-webkit-search-results-decoration,
 #main-nav-mobile .menu .search-form-input::-webkit-search-cancel-button {
   -webkit-appearance: none;
+  -moz-appearance: none;
 }
 .bio {
   text-align: center;
