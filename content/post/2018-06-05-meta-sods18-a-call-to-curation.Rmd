@@ -124,6 +124,12 @@ it's like comparing apples to oranges (or doritos to a water pump).
 blogdown::shortcode("youtube", "4x04M8YwOBw")
 ```
 
+**Update**: Thanks to Ben Bolker, I can rest knowing that the source paper from which [mtcars](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html) is taken acknowledges this unsettling error.
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1033390648718753793")
+```
+
 ## `r emo::ji("singer")` And more...
 
 Let the spirit move you! Share your ideas with others (including me, naturally), 
