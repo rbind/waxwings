@@ -14,8 +14,6 @@ There are many things I'm good at, but writing about myself is _not_ one of them
 
 Fortunately, the wild and wonderful internet lets me punt the question...
 
-Twitter, [\@dataandme](https://twitter.com/dataandme), is probably the best place to go if you're looking to get info straight from the source (me). There's also that handy little sidebar with links to other sites. Oh, plus [my reading exploits](https://www.goodreads.com/user/show/1923002-mara) `r emo::ji_glue(":books:")` over on Goodreads.[^FA]
+Twitter, [\@dataandme](https://twitter.com/dataandme), is probably the best place to go if you're looking to get info straight from the source (me). There's also that handy little sidebar with links to other sites.
 
 `r emo::ji("detective")` Not sure it's really _the_ Mara Averick? Take a gander at my [keybase](https://keybase.io/maraaverick) page to put your mind at ease.
-
-[^FA]: Which will _finally_ make its way into official-social-icon-dom when [Font Awesome 5](https://github.com/FortAwesome/Font-Awesome/issues/1715) is released.
