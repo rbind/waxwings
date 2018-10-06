@@ -16,7 +16,7 @@ images: ["banners/tidyeval_combo.png"]
 description: 'Updated `r emo::ji("calendar")` 2018-05-10. After posting a link to Edwin Thoen’s "Tidy evaluation most common actions," I was asked if there were other tidy eval resources I knew of. So, here are some of the tutorials  I’ve found and tweeted.'
 ---
 
-_Updated: 2018-05-19_  
+_Updated: 2018-10-06_  
 
 Though, naturally, the [Honorable Professor Doctor Sir Lord General Hadley Wickham](http://hadley.nz/)'s [**Programming with dplyr**](http://dplyr.tidyverse.org/articles/programming.html) article is the _ne plus ultra_ of getting oneself aquainted with the latest and greatest in [tidyeval programming recipes](http://dplyr.tidyverse.org/articles/programming.html#programming-recipes), [quoting](http://dplyr.tidyverse.org/articles/programming.html#quoting), and [quasiquotation](http://dplyr.tidyverse.org/articles/programming.html#quasiquotation); there _are_ some other resources out there.
 
@@ -138,6 +138,12 @@ blogdown::shortcode("tweet", "919311107357069316")
 ### [Tidy evaluation: programming with ggplot2 and dplyr](https://speakerdeck.com/hadley/tidy-evaluation-programming-with-ggplot2-and-dplyr) by Hadley Wickham
 
 <script async class="speakerdeck-embed" data-id="1463da3d72894309a26ec21aef5aa7c4" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+### [Overscoping and eval](https://mailund.github.io/r-programmer-blog/2018/09/22/overscoping-and-eval/) by Thomas Mailund
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1044046018210418689")
+```
 
 ### Ta-da 🎉
 
