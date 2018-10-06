@@ -15,7 +15,7 @@ images: ["banners/purrr_apply_cheatsheet_rstudio.png"]
 description: 'Now that `r emo::ji("heart_eyes_cat")` purrr has a shiny new cheat sheet, it seemed like a fitting tribute to give the package its own tweet roundup...'
 ---
 
-Updated: `r emo::ji("calendar")` 2018-05-19.
+Updated: `r emo::ji("calendar")` 2018-10-06.
 
 
 ### `r emo::ji("tada")``r emo::ji("cat")`&nbsp; purrr-tiest cheat sheet
@@ -172,6 +172,12 @@ blogdown::shortcode("tweet", "949404399058776069")
 
 ```{r, echo = FALSE}
 blogdown::shortcode("tweet", "963611034022969345")
+```
+
+### [Calculating quantiles for groups with `dplyr::summarize` and `purrr::partial`](https://tbradley1013.github.io/2018/10/01/calculating-quantiles-for-groups-with-dplyr-summarize-and-purrr-partial/) by Tyler Bradley
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1047558404745691137")
 ```
 
 ### `purrr`-fection?
