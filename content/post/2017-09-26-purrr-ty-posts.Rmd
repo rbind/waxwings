@@ -1,8 +1,8 @@
 ---
-title: "😸 purrr-ty posts"
+title: '`r emo::ji("smile_cat")` purrr-ty posts'
 author: Mara Averick
 date: '2017-09-26'
-sastmod: '`r Sys.Date()`'
+lastmod: '`r Sys.Date()`'
 lug: purrr-ty-posts
 categories: []
 tags:
@@ -12,7 +12,7 @@ tags:
   - roundups
 banner: "banners/purrr_apply_cheatsheet_rstudio.png"
 images: ["banners/purrr_apply_cheatsheet_rstudio.png"]
-description: "Now that 😻 purrr has a shiny new cheat sheet, it seemed like a fitting tribute to give the package its own tweet roundup..."
+description: 'Now that `r emo::ji("heart_eyes_cat")` purrr has a shiny new cheat sheet, it seemed like a fitting tribute to give the package its own tweet roundup...'
 ---
 
 Updated: `r emo::ji("calendar")` 2018-05-19.
