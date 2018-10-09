@@ -180,6 +180,12 @@ blogdown::shortcode("tweet", "963611034022969345")
 blogdown::shortcode("tweet", "1047558404745691137")
 ```
 
+### [ Import a Directory of CSV Files at Once Using {purrr} and {readr}](https://www.gerkelab.com/blog/2018/09/import-directory-csv-purrr-readr/) by Garrick Aden-Buie
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1046807490200002560")
+```
+
 ### `purrr`-fection?
 
 This is a far cry from an exhaustive collection. If you've written something you think belongs here, send me a tweet `r emo::ji("bird")` &nbsp;([\@dataandme](https://twitter.com/dataandme)), or leave a comment. Blogging isn't exactly the best format for updated lists, but I'm hoping to cook up a better method soon!
