@@ -25,7 +25,7 @@ Once you've done that, be sure to include the code in your reprex, assign a name
 
 ## Scenario 2: from R object to pasta
 
-Now let's say you have a data frame in R, and want to use _it_ for a reprex. Don't worry, datapasta's got you covered. You can use `datapasta::dpasta()` to render your object into the format as the result of `Paste as tribble`, above.
+Now let's say you have a data frame in R, and want to use _it_ for a reprex. Don't worry, datapasta's got you covered. You can use `datapasta::dpasta()` to render your object into the same format as the result of `Paste as tribble`, above.
 
 ![existing object to reprex with dpasta](https://i.imgur.com/xPOpYDM.gif)
 
