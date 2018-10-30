@@ -13,7 +13,7 @@ images: ["banners/datapasta-reprex-spreadsheet.gif"]
 
 ## Scenario 1: from spreadsheet to reprex
 
-So, you've been asked to make a [reprex](https://reprex.tidyverse.org/) and you want to include a bit of data that you have in a spreadsheet.[^1] Meet [**{datapasta}**](https://github.com/MilesMcBain/datapasta), a package by [Miles McBain](https://milesmcbain.xyz/) that can make your life a whole lot easier. Once you've installed datapasta, you simply copy a selected number of rows from your spreadsheet (remember, this is a _minimal_ reproducible example), and select the `Paste as tribble` option from the **DATAPASTA** section of the **Addins** dropdown.[^2] 
+So, you've been asked to make a [reprex](https://reprex.tidyverse.org/) and you want to include a bit of data that you have in a spreadsheet.[^1] Meet [**{datapasta}**](https://github.com/MilesMcBain/datapasta), a package by [Miles McBain](https://milesmcbain.xyz/) that can make your life a whole lot easier. Once you've installed datapasta, you simply copy a selected number of rows from your spreadsheet (remember, this is a _minimal_ reproducible example), and click the `Paste as tribble` option from the **DATAPASTA** section of the **Addins** dropdown.[^2] 
 
 ![datapasta spreadsheet to reprex](https://i.imgur.com/kRwYL5F.gif)
 
