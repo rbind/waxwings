@@ -1,7 +1,7 @@
 ---
 title: 'reprex-ing with {datapasta} 🍝'
 author: Mara Averick
-date: '2018-10-31'
+date: '2018-10-30'
 slug: reprex-with-datapasta
 tags:
   - reprex
@@ -16,12 +16,20 @@ images: ["banners/datapasta-reprex-spreadsheet.gif"]
 <div id="scenario-1-from-spreadsheet-to-reprex" class="section level2">
 <h2>Scenario 1: from spreadsheet to reprex</h2>
 <p>So, you’ve been asked to make a <a href="https://reprex.tidyverse.org/">reprex</a> and you want to include a bit of data that you have in a spreadsheet.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> Meet <a href="https://github.com/MilesMcBain/datapasta"><strong>{datapasta}</strong></a>, a package by <a href="https://milesmcbain.xyz/">Miles McBain</a> that can make your life a whole lot easier. Once you’ve installed datapasta, you simply copy a selected number of rows from your spreadsheet (remember, this is a <em>minimal</em> reproducible example), and select the <code>Paste as tribble</code> option from the <strong>DATAPASTA</strong> section of the <strong>Addins</strong> dropdown.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<div class="figure">
+<img src="https://i.imgur.com/kRwYL5F.gif" alt="datapasta spreadsheet to reprex" />
+<p class="caption">datapasta spreadsheet to reprex</p>
+</div>
 {{% vimeo "297922980" %}}
 <p>Once you’ve done that, be sure to include the code in your reprex, assign a name to your data frame, and you’re good to go!</p>
 </div>
 <div id="scenario-2-from-r-object-to-pasta" class="section level2">
 <h2>Scenario 2: from R object to pasta</h2>
 <p>Now let’s say you have a data frame in R, and want to use <em>it</em> for a reprex. Don’t worry, datapasta’s got you covered. You can use <code>datapasta::dpasta()</code> to render your object into the format as the result of <code>Paste as tribble</code>, above.</p>
+<div class="figure">
+<img src="https://i.imgur.com/xPOpYDM.gif" alt="existing object to reprex with dpasta" />
+<p class="caption">existing object to reprex with dpasta</p>
+</div>
 {{% vimeo "297922943" %}}
 </div>
 <div id="tada" class="section level2">

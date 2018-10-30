@@ -1,7 +1,7 @@
 ---
 title: 'reprex-ing with {datapasta} `r emo::ji("pasta")`'
 author: Mara Averick
-date: '2018-10-31'
+date: '2018-10-30'
 slug: reprex-with-datapasta
 tags:
   - reprex
@@ -15,6 +15,8 @@ images: ["banners/datapasta-reprex-spreadsheet.gif"]
 
 So, you've been asked to make a [reprex](https://reprex.tidyverse.org/) and you want to include a bit of data that you have in a spreadsheet.[^1] Meet [**{datapasta}**](https://github.com/MilesMcBain/datapasta), a package by [Miles McBain](https://milesmcbain.xyz/) that can make your life a whole lot easier. Once you've installed datapasta, you simply copy a selected number of rows from your spreadsheet (remember, this is a _minimal_ reproducible example), and select the `Paste as tribble` option from the **DATAPASTA** section of the **Addins** dropdown.[^2] 
 
+![datapasta spreadsheet to reprex](https://i.imgur.com/kRwYL5F.gif)
+
 ```{r, echo = FALSE}
 blogdown::shortcode("vimeo", "297922980")
 ```
@@ -24,6 +26,8 @@ Once you've done that, be sure to include the code in your reprex, assign a name
 ## Scenario 2: from R object to pasta
 
 Now let's say you have a data frame in R, and want to use _it_ for a reprex. Don't worry, datapasta's got you covered. You can use `datapasta::dpasta()` to render your object into the format as the result of `Paste as tribble`, above.
+
+![existing object to reprex with dpasta](https://i.imgur.com/xPOpYDM.gif)
 
 ```{r, echo = FALSE}
 blogdown::shortcode("vimeo", "297922943")
