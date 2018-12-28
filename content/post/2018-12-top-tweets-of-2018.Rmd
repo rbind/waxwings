@@ -1,0 +1,136 @@
+---
+title: 'Top Tweets of 2018'
+author: Mara Averick
+date: '2018-12-29'
+lastmod: '`r Sys.Date()`'
+slug: top-tweets-of-2018
+categories: []
+tags:
+  - R
+banner: ''
+description: 'Top two tweets for each month of 2018, according to Twitter analytics.'
+images: []
+---
+
+Top two tweets per month for 2018, according to [Twitter analytics](https://analytics.twitter.com).
+
+## January
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "957450414827495425")
+```
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "955078036726206464")
+```
+
+## February
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "966674491987423232")
+```
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "965785338227712000")
+```
+
+## March
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "973730478476886016")
+```
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "970273182388314112")
+```
+
+## April
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "990050223048228869")
+```
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "980852887868887040")
+```
+
+## May
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "995486050821791744")
+```
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "991499785029943296")
+```
+
+## June
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1002616036997332992")
+```
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1009783524948414464")
+```
+
+## July
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1023175580261462017")
+```
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1021215590424465408")
+```
+
+## August
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1033807852060766209")
+```
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1034874845371228162")
+```
+
+## September
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1036435886408445952")
+```
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1038834940450930695")
+```
+
+## October
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1047109476791267330")
+```
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1047471853021876224")
+```
+
+## November
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1063194189805092865")
+```
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1064758950434881536")
+```
+
+## December
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1074501701305012224")
+```
+
+```{r, echo = FALSE}
+blogdown::shortcode("tweet", "1075307538776801286")
+```
+
