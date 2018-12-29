@@ -12,7 +12,7 @@ description: 'Top two tweets for each month of 2018, according to Twitter analyt
 images: []
 ---
 
-Top two tweets per month for 2018, according to [Twitter analytics](https://analytics.twitter.com).
+Top two tweets for each month in 2018, according to [Twitter analytics](https://analytics.twitter.com).
 
 ## January
 
