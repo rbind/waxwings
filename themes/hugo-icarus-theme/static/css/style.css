@@ -16,6 +16,13 @@ font-feature-settings: 'kern' 1;
 -ms-font-feature-settings: 'liga' 1;
 font-feature-settings: 'liga' 1;
 }
+/* Mara mod - selection color */
+::selection {
+  background: #FFE633; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #FFE633; /* Gecko Browsers */
+}
 body:before,
 body:after {
   content: "";
