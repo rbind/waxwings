@@ -1,6 +1,8 @@
 # History files
 .Rhistory
 .Rapp.history
+# Add thumbs
+Thumbs.db
 # Session Data files
 .RData
 # Example code in package build process
