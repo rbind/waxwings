@@ -1,4 +1,4 @@
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 
 baseurl = "https://maraaverick.rbind.io/"
 relativeurls = true
@@ -150,3 +150,8 @@ home = ["html", "rss", "Algolia"]
   [privacy.youtube]
     disable = false
     privacyEnhanced = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
